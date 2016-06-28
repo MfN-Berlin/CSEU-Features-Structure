@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the CSEU Structure feature.
+ */
+
+include_once 'cseu_features_structure.features.inc';
