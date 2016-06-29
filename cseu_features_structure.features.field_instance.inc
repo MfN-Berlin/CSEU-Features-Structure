@@ -368,6 +368,13 @@ function cseu_features_structure_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 11,
       ),
+      'cseu_ds_view_mode_tasks_full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 7,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'text',
@@ -418,6 +425,13 @@ function cseu_features_structure_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_plain',
         'weight' => 1,
+      ),
+      'cseu_ds_view_mode_tasks_full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_plain',
+        'weight' => 5,
       ),
       'default' => array(
         'label' => 'above',
@@ -470,6 +484,16 @@ function cseu_features_structure_field_default_field_instances() {
         ),
         'type' => 'entityreference_entity_view',
         'weight' => 3,
+      ),
+      'cseu_ds_view_mode_tasks_full' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'links' => 0,
+          'view_mode' => 'cseu_ds_view_mode_wgs_label',
+        ),
+        'type' => 'entityreference_entity_view',
+        'weight' => 4,
       ),
       'default' => array(
         'label' => 'above',
@@ -531,6 +555,19 @@ function cseu_features_structure_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 10,
       ),
+      'cseu_ds_view_mode_wgs_full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+      'cseu_ds_view_mode_wgs_label' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'text',
@@ -581,6 +618,20 @@ function cseu_features_structure_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_plain',
         'weight' => 1,
+      ),
+      'cseu_ds_view_mode_wgs_full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_plain',
+        'weight' => 1,
+      ),
+      'cseu_ds_view_mode_wgs_label' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_plain',
+        'weight' => 0,
       ),
       'default' => array(
         'label' => 'above',
