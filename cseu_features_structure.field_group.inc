@@ -47,6 +47,40 @@ function cseu_features_structure_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_cseu_view_mode_institution|node|cseu_institution|cseu_ds_view_mode_institution';
+  $field_group->group_name = 'group_cseu_view_mode_institution';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'cseu_institution';
+  $field_group->mode = 'cseu_ds_view_mode_institution';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Institution',
+    'weight' => '0',
+    'children' => array(
+      0 => 'field_cseu_department',
+      1 => 'field_cseu_address',
+      2 => 'title',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Institution',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-cseu-view-mode-institution field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_cseu_view_mode_institution|node|cseu_institution|cseu_ds_view_mode_institution'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_cseu_view_mode_tasks_full|node|cseu_task|cseu_ds_view_mode_tasks_full';
   $field_group->group_name = 'group_cseu_view_mode_tasks_full';
   $field_group->entity_type = 'node';
@@ -148,6 +182,7 @@ function cseu_features_structure_field_group_info() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Institution');
   t('Task');
   t('Working Group');
 
