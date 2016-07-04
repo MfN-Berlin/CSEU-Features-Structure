@@ -101,4 +101,6 @@ features[views_view][] = cseu_entityreference_tasks_label_descr_view
 features[views_view][] = cseu_entityreference_tasks_labelled_view
 features[views_view][] = cseu_entityreference_wgs_label_descr_view
 features[views_view][] = cseu_entityreference_wgs_labelled_view
+features[views_view][] = cseu_tasks_list_view
+features[views_view][] = cseu_wgs_list_view
 project path = sites/all/modules/custom
