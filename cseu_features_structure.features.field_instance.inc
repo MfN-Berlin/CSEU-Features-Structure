@@ -209,6 +209,18 @@ function cseu_features_structure_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'cseu_ds_view_mode_instit_depart' => array(
+        'label' => 'above',
+        'module' => 'addressfield',
+        'settings' => array(
+          'format_handlers' => array(
+            0 => 'address',
+          ),
+          'use_widget_handlers' => 1,
+        ),
+        'type' => 'addressfield_default',
+        'weight' => 2,
+      ),
       'cseu_ds_view_mode_institution' => array(
         'label' => 'hidden',
         'module' => 'addressfield',
@@ -276,6 +288,13 @@ function cseu_features_structure_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'cseu_ds_view_mode_instit_depart' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
       'cseu_ds_view_mode_institution' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -324,6 +343,12 @@ function cseu_features_structure_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'cseu_ds_view_mode_instit_depart' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
       'cseu_ds_view_mode_institution' => array(
         'label' => 'hidden',
         'settings' => array(),
