@@ -75,9 +75,6 @@ function cseu_features_structure_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
-      'cseu_ds_view_mode_instit_depart' => array(
-        'custom_settings' => FALSE,
-      ),
     ),
     'extra_fields' => array(
       'form' => array(
