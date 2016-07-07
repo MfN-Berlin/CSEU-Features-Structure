@@ -132,6 +132,12 @@ function cseu_features_structure_strongarm() {
       'cseu_ds_view_mode_wgs_label' => array(
         'custom_settings' => FALSE,
       ),
+      'cseu_ds_view_mode_task_labelonly' => array(
+        'custom_settings' => TRUE,
+      ),
+      'cseu_ds_view_mode_wg_label_only' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -182,6 +188,15 @@ function cseu_features_structure_strongarm() {
       ),
       'cseu_ds_view_mode_wgs_label' => array(
         'custom_settings' => TRUE,
+      ),
+      'cseu_ds_view_mode_wg_label_only' => array(
+        'custom_settings' => TRUE,
+      ),
+      'cseu_ds_view_mode_tasks_wg_label' => array(
+        'custom_settings' => FALSE,
+      ),
+      'cseu_ds_view_mode_institution' => array(
+        'custom_settings' => FALSE,
       ),
     ),
     'extra_fields' => array(

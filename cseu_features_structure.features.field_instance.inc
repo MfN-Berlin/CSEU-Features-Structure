@@ -412,6 +412,12 @@ function cseu_features_structure_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'cseu_ds_view_mode_task_labelonly' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
       'cseu_ds_view_mode_tasks' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -436,7 +442,7 @@ function cseu_features_structure_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -475,6 +481,13 @@ function cseu_features_structure_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'cseu_ds_view_mode_task_labelonly' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_plain',
+        'weight' => 0,
+      ),
       'cseu_ds_view_mode_tasks' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -501,7 +514,7 @@ function cseu_features_structure_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -538,6 +551,12 @@ function cseu_features_structure_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'cseu_ds_view_mode_task_labelonly' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
       'cseu_ds_view_mode_tasks' => array(
         'label' => 'hidden',
         'module' => 'entityreference',
@@ -575,7 +594,7 @@ function cseu_features_structure_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 4,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -622,6 +641,12 @@ function cseu_features_structure_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'cseu_ds_view_mode_wg_label_only' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
       'cseu_ds_view_mode_wgs' => array(
         'label' => 'above',
         'settings' => array(),
@@ -685,6 +710,13 @@ function cseu_features_structure_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'cseu_ds_view_mode_wg_label_only' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_plain',
+        'weight' => 0,
+      ),
       'cseu_ds_view_mode_wgs' => array(
         'label' => 'hidden',
         'module' => 'text',
