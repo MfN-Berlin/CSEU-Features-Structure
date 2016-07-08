@@ -161,8 +161,7 @@ function cseu_features_structure_field_group_info() {
     'weight' => '0',
     'children' => array(
       0 => 'field_cseu_label',
-      1 => 'field_cseu_working_group',
-      2 => 'title',
+      1 => 'title',
     ),
     'format_type' => 'div',
     'format_settings' => array(

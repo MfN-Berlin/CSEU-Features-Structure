@@ -422,7 +422,7 @@ function cseu_features_structure_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 11,
+        'weight' => 9,
       ),
       'cseu_ds_view_mode_tasks_full' => array(
         'label' => 'hidden',
@@ -559,13 +559,9 @@ function cseu_features_structure_field_default_field_instances() {
       ),
       'cseu_ds_view_mode_tasks' => array(
         'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'links' => 0,
-          'view_mode' => 'cseu_ds_view_mode_wgs',
-        ),
-        'type' => 'entityreference_entity_view',
-        'weight' => 3,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
       ),
       'cseu_ds_view_mode_tasks_full' => array(
         'label' => 'hidden',

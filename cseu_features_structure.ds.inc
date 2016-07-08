@@ -88,18 +88,6 @@ function cseu_features_structure_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_cseu_working_group' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'fis' => TRUE,
-          'fis-el' => 'div',
-          'fis-cl' => 'cseu-view-mode-tasks-field-wg',
-          'fis-at' => '',
-          'fis-def-at' => FALSE,
-        ),
-      ),
-    ),
   );
   $export['node|cseu_task|cseu_ds_view_mode_tasks'] = $ds_fieldsetting;
 
@@ -440,14 +428,12 @@ function cseu_features_structure_ds_layout_settings_info() {
         0 => 'group_cseu_view_mode_tasks',
         1 => 'field_cseu_label',
         2 => 'title',
-        3 => 'field_cseu_working_group',
       ),
     ),
     'fields' => array(
       'group_cseu_view_mode_tasks' => 'ds_content',
       'field_cseu_label' => 'ds_content',
       'title' => 'ds_content',
-      'field_cseu_working_group' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
