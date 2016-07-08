@@ -13,6 +13,34 @@ function cseu_features_structure_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'additional_settings__active_tab_cseu_deliverable';
+  $strongarm->value = 'edit-menu';
+  $export['additional_settings__active_tab_cseu_deliverable'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'additional_settings__active_tab_cseu_institution';
+  $strongarm->value = 'edit-submission';
+  $export['additional_settings__active_tab_cseu_institution'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'additional_settings__active_tab_cseu_task';
+  $strongarm->value = 'edit-menu';
+  $export['additional_settings__active_tab_cseu_task'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'additional_settings__active_tab_cseu_working_group';
+  $strongarm->value = 'edit-menu';
+  $export['additional_settings__active_tab_cseu_working_group'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__cseu_deliverable';
   $strongarm->value = array(
     'view_modes' => array(),
