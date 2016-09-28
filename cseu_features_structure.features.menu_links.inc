@@ -10,6 +10,48 @@
 function cseu_features_structure_menu_default_menu_links() {
   $menu_links = array();
 
+  // Exported menu link: menu-cseu-internals-menu_chairs-by-wg:internal/chairbygroup.
+  $menu_links['menu-cseu-internals-menu_chairs-by-wg:internal/chairbygroup'] = array(
+    'menu_name' => 'menu-cseu-internals-menu',
+    'link_path' => 'internal/chairbygroup',
+    'router_path' => 'internal/chairbygroup',
+    'link_title' => 'Chairs by WG',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Chairs by Working Group',
+      ),
+      'identifier' => 'menu-cseu-internals-menu_chairs-by-wg:internal/chairbygroup',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -49,
+    'customized' => 1,
+    'parent_identifier' => 'menu-cseu-internals-menu_member-assignments:<nolink>',
+  );
+  // Exported menu link: menu-cseu-internals-menu_co-chairs-by-wg:internal/cochairbygroup.
+  $menu_links['menu-cseu-internals-menu_co-chairs-by-wg:internal/cochairbygroup'] = array(
+    'menu_name' => 'menu-cseu-internals-menu',
+    'link_path' => 'internal/cochairbygroup',
+    'router_path' => 'internal/cochairbygroup',
+    'link_title' => 'Co-Chairs by WG',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Co-Chairs by Working Group',
+      ),
+      'identifier' => 'menu-cseu-internals-menu_co-chairs-by-wg:internal/cochairbygroup',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'customized' => 1,
+    'parent_identifier' => 'menu-cseu-internals-menu_member-assignments:<nolink>',
+  );
   // Exported menu link: menu-cseu-internals-menu_interest-in-chair-of-wg:internal/interestchairbygroup.
   $menu_links['menu-cseu-internals-menu_interest-in-chair-of-wg:internal/interestchairbygroup'] = array(
     'menu_name' => 'menu-cseu-internals-menu',
@@ -67,7 +109,7 @@ function cseu_features_structure_menu_default_menu_links() {
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 0,
+    'has_children' => 1,
     'expanded' => 1,
     'weight' => 0,
     'customized' => 1,
@@ -154,6 +196,27 @@ function cseu_features_structure_menu_default_menu_links() {
     'weight' => -49,
     'customized' => 1,
   );
+  // Exported menu link: menu-cseu-internals-menu_members-by-wg:internal/memberbygroup.
+  $menu_links['menu-cseu-internals-menu_members-by-wg:internal/memberbygroup'] = array(
+    'menu_name' => 'menu-cseu-internals-menu',
+    'link_path' => 'internal/memberbygroup',
+    'router_path' => 'internal/memberbygroup',
+    'link_title' => 'Members by WG',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Members by Working Group',
+      ),
+      'identifier' => 'menu-cseu-internals-menu_members-by-wg:internal/memberbygroup',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'parent_identifier' => 'menu-cseu-internals-menu_member-assignments:<nolink>',
+  );
   // Exported menu link: menu-cseu-internals-menu_tasks-of-interest:internal/interestbytask.
   $menu_links['menu-cseu-internals-menu_tasks-of-interest:internal/interestbytask'] = array(
     'menu_name' => 'menu-cseu-internals-menu',
@@ -199,6 +262,8 @@ function cseu_features_structure_menu_default_menu_links() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Chairs by WG');
+  t('Co-Chairs by WG');
   t('Interest in Chair of WG');
   t('Interest in Co-Chair of WG');
   t('Member Assignments');
@@ -206,6 +271,7 @@ function cseu_features_structure_menu_default_menu_links() {
   t('Members - Information');
   t('Members - WGs & Tasks');
   t('Members by Interest');
+  t('Members by WG');
   t('Tasks of Interest');
   t('WGs of Interest');
 
