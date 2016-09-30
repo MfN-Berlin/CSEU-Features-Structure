@@ -91,7 +91,6 @@ features[menu_links][] = menu-cseu-internals-menu_member-assignments:<nolink>
 features[menu_links][] = menu-cseu-internals-menu_member-lists:<nolink>
 features[menu_links][] = menu-cseu-internals-menu_members---information:internal/members
 features[menu_links][] = menu-cseu-internals-menu_members---wgs--tasks:internal/interests
-features[menu_links][] = menu-cseu-internals-menu_members-by-interest:<nolink>
 features[menu_links][] = menu-cseu-internals-menu_members-by-wg:internal/memberbygroup
 features[menu_links][] = menu-cseu-internals-menu_tasks-of-interest:internal/interestbytask
 features[menu_links][] = menu-cseu-internals-menu_wgs-of-interest:internal/interestbygroup

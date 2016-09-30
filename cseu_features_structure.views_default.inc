@@ -548,6 +548,7 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
     3 => '3',
+    2 => '2',
     4 => '4',
   );
   $handler->display->display_options['cache']['type'] = 'none';
@@ -956,6 +957,7 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
     3 => '3',
+    2 => '2',
     4 => '4',
   );
   $handler->display->display_options['cache']['type'] = 'none';

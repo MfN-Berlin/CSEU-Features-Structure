@@ -134,26 +134,6 @@ function cseu_features_structure_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'menu-cseu-internals-menu_member-lists:<nolink>',
   );
-  // Exported menu link: menu-cseu-internals-menu_members-by-interest:<nolink>.
-  $menu_links['menu-cseu-internals-menu_members-by-interest:<nolink>'] = array(
-    'menu_name' => 'menu-cseu-internals-menu',
-    'link_path' => '<nolink>',
-    'router_path' => '<nolink>',
-    'link_title' => 'Members by Interest',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'List of Members by Interest.',
-      ),
-      'identifier' => 'menu-cseu-internals-menu_members-by-interest:<nolink>',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 1,
-    'expanded' => 1,
-    'weight' => -49,
-    'customized' => 1,
-  );
   // Exported menu link: menu-cseu-internals-menu_members-by-wg:internal/memberbygroup.
   $menu_links['menu-cseu-internals-menu_members-by-wg:internal/memberbygroup'] = array(
     'menu_name' => 'menu-cseu-internals-menu',
@@ -194,7 +174,7 @@ function cseu_features_structure_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -47,
     'customized' => 1,
-    'parent_identifier' => 'menu-cseu-internals-menu_members-by-interest:<nolink>',
+    'parent_identifier' => 'menu-cseu-internals-menu_member-lists:<nolink>',
   );
   // Exported menu link: menu-cseu-internals-menu_wgs-of-interest:internal/interestbygroup.
   $menu_links['menu-cseu-internals-menu_wgs-of-interest:internal/interestbygroup'] = array(
@@ -213,9 +193,9 @@ function cseu_features_structure_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -50,
+    'weight' => -48,
     'customized' => 1,
-    'parent_identifier' => 'menu-cseu-internals-menu_members-by-interest:<nolink>',
+    'parent_identifier' => 'menu-cseu-internals-menu_member-lists:<nolink>',
   );
 
   // Translatables
@@ -226,7 +206,6 @@ function cseu_features_structure_menu_default_menu_links() {
   t('Member Lists');
   t('Members - Information');
   t('Members - WGs & Tasks');
-  t('Members by Interest');
   t('Members by WG');
   t('Tasks of Interest');
   t('WGs of Interest');
