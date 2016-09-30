@@ -77,6 +77,16 @@ function cseu_features_structure_filter_default_formats() {
         'status' => 1,
         'settings' => array(),
       ),
+      'accordion' => array(
+        'weight' => 0,
+        'status' => 1,
+        'settings' => array(),
+      ),
+      'tabs' => array(
+        'weight' => 0,
+        'status' => 1,
+        'settings' => array(),
+      ),
     ),
   );
 

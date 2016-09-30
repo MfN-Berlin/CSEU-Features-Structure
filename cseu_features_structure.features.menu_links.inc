@@ -52,48 +52,6 @@ function cseu_features_structure_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'menu-cseu-internals-menu_member-assignments:<nolink>',
   );
-  // Exported menu link: menu-cseu-internals-menu_interest-in-chair-of-wg:internal/interestchairbygroup.
-  $menu_links['menu-cseu-internals-menu_interest-in-chair-of-wg:internal/interestchairbygroup'] = array(
-    'menu_name' => 'menu-cseu-internals-menu',
-    'link_path' => 'internal/interestchairbygroup',
-    'router_path' => 'internal/interestchairbygroup',
-    'link_title' => 'Interest in Chair of WG',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Interest in being appointed Chair of Woking Group.',
-      ),
-      'identifier' => 'menu-cseu-internals-menu_interest-in-chair-of-wg:internal/interestchairbygroup',
-    ),
-    'module' => 'system',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
-    'parent_identifier' => 'menu-cseu-internals-menu_members-by-interest:<nolink>',
-  );
-  // Exported menu link: menu-cseu-internals-menu_interest-in-co-chair-of-wg:internal/interestcochairbygroup.
-  $menu_links['menu-cseu-internals-menu_interest-in-co-chair-of-wg:internal/interestcochairbygroup'] = array(
-    'menu_name' => 'menu-cseu-internals-menu',
-    'link_path' => 'internal/interestcochairbygroup',
-    'router_path' => 'internal/interestcochairbygroup',
-    'link_title' => 'Interest in Co-Chair of WG',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Interest in being appointed Co-Chair of Woking Group.',
-      ),
-      'identifier' => 'menu-cseu-internals-menu_interest-in-co-chair-of-wg:internal/interestcochairbygroup',
-    ),
-    'module' => 'system',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -48,
-    'customized' => 1,
-    'parent_identifier' => 'menu-cseu-internals-menu_members-by-interest:<nolink>',
-  );
   // Exported menu link: menu-cseu-internals-menu_member-assignments:<nolink>.
   $menu_links['menu-cseu-internals-menu_member-assignments:<nolink>'] = array(
     'menu_name' => 'menu-cseu-internals-menu',
@@ -264,8 +222,6 @@ function cseu_features_structure_menu_default_menu_links() {
   // Included for use with string extractors like potx.
   t('Chairs by WG');
   t('Co-Chairs by WG');
-  t('Interest in Chair of WG');
-  t('Interest in Co-Chair of WG');
   t('Member Assignments');
   t('Member Lists');
   t('Members - Information');
