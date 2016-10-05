@@ -3698,6 +3698,7 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['fields']['field_cseu_title']['field'] = 'field_cseu_title';
   $handler->display->display_options['fields']['field_cseu_title']['relationship'] = 'profile';
   $handler->display->display_options['fields']['field_cseu_title']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cseu_title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cseu_title']['type'] = 'text_plain';
   /* Field: Profile: Last Name */
@@ -3706,6 +3707,7 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['fields']['field_cseu_last_name']['field'] = 'field_cseu_last_name';
   $handler->display->display_options['fields']['field_cseu_last_name']['relationship'] = 'profile';
   $handler->display->display_options['fields']['field_cseu_last_name']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_last_name']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cseu_last_name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cseu_last_name']['type'] = 'text_plain';
   /* Field: Profile: First Name */
