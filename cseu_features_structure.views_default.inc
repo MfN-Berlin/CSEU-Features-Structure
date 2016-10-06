@@ -2504,11 +2504,34 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'cseu_profile_personal' => 'cseu_profile_personal',
   );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Global: Combine fields filter */
+  $handler->display->display_options['filters']['combine']['id'] = 'combine';
+  $handler->display->display_options['filters']['combine']['table'] = 'views';
+  $handler->display->display_options['filters']['combine']['field'] = 'combine';
+  $handler->display->display_options['filters']['combine']['operator'] = 'word';
+  $handler->display->display_options['filters']['combine']['group'] = 1;
+  $handler->display->display_options['filters']['combine']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['combine']['expose']['operator_id'] = 'combine_op';
+  $handler->display->display_options['filters']['combine']['expose']['label'] = 'Name';
+  $handler->display->display_options['filters']['combine']['expose']['operator'] = 'combine_op';
+  $handler->display->display_options['filters']['combine']['expose']['identifier'] = 'combine';
+  $handler->display->display_options['filters']['combine']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    3 => 0,
+  );
+  $handler->display->display_options['filters']['combine']['fields'] = array(
+    'field_cseu_last_name' => 'field_cseu_last_name',
+    'field_cseu_first_name' => 'field_cseu_first_name',
+  );
   /* Filter criterion: Content: Address - Country */
   $handler->display->display_options['filters']['field_cseu_address_country']['id'] = 'field_cseu_address_country';
   $handler->display->display_options['filters']['field_cseu_address_country']['table'] = 'field_data_field_cseu_address';
   $handler->display->display_options['filters']['field_cseu_address_country']['field'] = 'field_cseu_address_country';
   $handler->display->display_options['filters']['field_cseu_address_country']['relationship'] = 'field_cseu_institution_target_id';
+  $handler->display->display_options['filters']['field_cseu_address_country']['group'] = 1;
   $handler->display->display_options['filters']['field_cseu_address_country']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_cseu_address_country']['expose']['operator_id'] = 'field_cseu_address_country_op';
   $handler->display->display_options['filters']['field_cseu_address_country']['expose']['label'] = 'Country';
@@ -2526,9 +2549,10 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['filters']['field_cseu_secondary_proposer_value']['table'] = 'field_data_field_cseu_secondary_proposer';
   $handler->display->display_options['filters']['field_cseu_secondary_proposer_value']['field'] = 'field_cseu_secondary_proposer_value';
   $handler->display->display_options['filters']['field_cseu_secondary_proposer_value']['relationship'] = 'profile';
+  $handler->display->display_options['filters']['field_cseu_secondary_proposer_value']['group'] = 1;
   $handler->display->display_options['filters']['field_cseu_secondary_proposer_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_cseu_secondary_proposer_value']['expose']['operator_id'] = 'field_cseu_secondary_proposer_value_op';
-  $handler->display->display_options['filters']['field_cseu_secondary_proposer_value']['expose']['label'] = 'Status';
+  $handler->display->display_options['filters']['field_cseu_secondary_proposer_value']['expose']['label'] = 'Status (Role)';
   $handler->display->display_options['filters']['field_cseu_secondary_proposer_value']['expose']['operator'] = 'field_cseu_secondary_proposer_value_op';
   $handler->display->display_options['filters']['field_cseu_secondary_proposer_value']['expose']['identifier'] = 'field_cseu_secondary_proposer_value';
   $handler->display->display_options['filters']['field_cseu_secondary_proposer_value']['expose']['remember'] = TRUE;

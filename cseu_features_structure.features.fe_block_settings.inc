@@ -37,6 +37,12 @@ function cseu_features_structure_default_fe_block_settings() {
         'theme' => 'bartik',
         'weight' => 0,
       ),
+      'cseu_theme' => array(
+        'region' => 'sidebar_first',
+        'status' => 1,
+        'theme' => 'cseu_theme',
+        'weight' => -8,
+      ),
       'gratis' => array(
         'region' => '',
         'status' => 0,
@@ -77,6 +83,12 @@ function cseu_features_structure_default_fe_block_settings() {
         'status' => 0,
         'theme' => 'bartik',
         'weight' => 0,
+      ),
+      'cseu_theme' => array(
+        'region' => 'sidebar_first',
+        'status' => 1,
+        'theme' => 'cseu_theme',
+        'weight' => -7,
       ),
       'gratis' => array(
         'region' => '',
