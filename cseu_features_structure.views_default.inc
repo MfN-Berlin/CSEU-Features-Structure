@@ -3078,6 +3078,8 @@ function cseu_features_structure_views_default_views() {
 
   /* Display: Data export */
   $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
   $handler->display->display_options['style_options']['provide_file'] = 1;
   $handler->display->display_options['style_options']['filename'] = 'cseu-members-by-project-role.csv';
