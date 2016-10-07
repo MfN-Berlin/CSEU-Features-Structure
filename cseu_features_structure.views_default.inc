@@ -2196,7 +2196,7 @@ function cseu_features_structure_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Member List';
+  $handler->display->display_options['title'] = 'Members List';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
