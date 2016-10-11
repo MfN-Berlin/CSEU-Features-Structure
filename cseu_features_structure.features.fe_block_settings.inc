@@ -38,10 +38,10 @@ function cseu_features_structure_default_fe_block_settings() {
         'weight' => 0,
       ),
       'gratis' => array(
-        'region' => '',
-        'status' => 0,
+        'region' => 'sidebar_first',
+        'status' => 1,
         'theme' => 'gratis',
-        'weight' => 0,
+        'weight' => -9,
       ),
       'seven' => array(
         'region' => '',
@@ -79,10 +79,10 @@ function cseu_features_structure_default_fe_block_settings() {
         'weight' => 0,
       ),
       'gratis' => array(
-        'region' => '',
-        'status' => 0,
+        'region' => 'sidebar_first',
+        'status' => 1,
         'theme' => 'gratis',
-        'weight' => 0,
+        'weight' => -8,
       ),
       'seven' => array(
         'region' => '',
