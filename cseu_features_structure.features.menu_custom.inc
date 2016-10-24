@@ -10,6 +10,12 @@
 function cseu_features_structure_menu_default_menu_custom() {
   $menus = array();
 
+  // Exported menu: menu-cseu-footer-bottom-menu.
+  $menus['menu-cseu-footer-bottom-menu'] = array(
+    'menu_name' => 'menu-cseu-footer-bottom-menu',
+    'title' => 'Footer Bottom Menu',
+    'description' => '',
+  );
   // Exported menu: menu-cseu-internals-menu.
   $menus['menu-cseu-internals-menu'] = array(
     'menu_name' => 'menu-cseu-internals-menu',
@@ -24,6 +30,7 @@ function cseu_features_structure_menu_default_menu_custom() {
   );
   // Translatables
   // Included for use with string extractors like potx.
+  t('Footer Bottom Menu');
   t('Internal Lists');
   t('Restricted Lists');
   t('The Internal Lists menu contains links for CS-EU administrative lists.');
