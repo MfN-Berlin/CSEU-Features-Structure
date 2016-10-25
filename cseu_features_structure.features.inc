@@ -44,7 +44,7 @@ function cseu_features_structure_node_info() {
       'base' => 'node_content',
       'description' => t('Content type for Deliverables.'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Name'),
       'help' => '',
     ),
     'cseu_institution' => array(
@@ -52,7 +52,7 @@ function cseu_features_structure_node_info() {
       'base' => 'node_content',
       'description' => t('Content type for Institutions.'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Name'),
       'help' => '',
     ),
     'cseu_task' => array(
@@ -60,7 +60,7 @@ function cseu_features_structure_node_info() {
       'base' => 'node_content',
       'description' => t('Content type for Tasks.'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Name'),
       'help' => '',
     ),
     'cseu_working_group' => array(
@@ -68,7 +68,7 @@ function cseu_features_structure_node_info() {
       'base' => 'node_content',
       'description' => t('Content type for Working Groups.'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Name'),
       'help' => '',
     ),
     'page' => array(

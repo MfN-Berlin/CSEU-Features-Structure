@@ -25,12 +25,6 @@ function cseu_features_structure_default_fe_block_settings() {
       'Site Administrator' => 4,
     ),
     'themes' => array(
-      'antonelli' => array(
-        'region' => 'sidebar_first',
-        'status' => 1,
-        'theme' => 'antonelli',
-        'weight' => -8,
-      ),
       'bartik' => array(
         'region' => '',
         'status' => 0,
@@ -42,12 +36,6 @@ function cseu_features_structure_default_fe_block_settings() {
         'status' => 1,
         'theme' => 'cseu_theme',
         'weight' => -8,
-      ),
-      'gratis' => array(
-        'region' => 'sidebar_first',
-        'status' => 1,
-        'theme' => 'gratis',
-        'weight' => -9,
       ),
       'seven' => array(
         'region' => '',
@@ -72,12 +60,6 @@ function cseu_features_structure_default_fe_block_settings() {
       'Site Administrator' => 4,
     ),
     'themes' => array(
-      'antonelli' => array(
-        'region' => 'sidebar_first',
-        'status' => 1,
-        'theme' => 'antonelli',
-        'weight' => -7,
-      ),
       'bartik' => array(
         'region' => '',
         'status' => 0,
@@ -89,12 +71,6 @@ function cseu_features_structure_default_fe_block_settings() {
         'status' => 1,
         'theme' => 'cseu_theme',
         'weight' => -7,
-      ),
-      'gratis' => array(
-        'region' => 'sidebar_first',
-        'status' => 1,
-        'theme' => 'gratis',
-        'weight' => -8,
       ),
       'seven' => array(
         'region' => '',
