@@ -79,6 +79,14 @@ function cseu_features_structure_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'simplenews' => array(
+      'name' => t('Simplenews newsletter'),
+      'base' => 'node_content',
+      'description' => t('A newsletter issue to be sent to subscribed email addresses.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
   );
   drupal_alter('node_info', $items);
   return $items;
