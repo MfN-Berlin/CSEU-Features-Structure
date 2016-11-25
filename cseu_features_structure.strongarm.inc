@@ -14,7 +14,7 @@ function cseu_features_structure_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_cseu_deliverable';
-  $strongarm->value = 'edit-submission';
+  $strongarm->value = 'edit-menu';
   $export['additional_settings__active_tab_cseu_deliverable'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -28,14 +28,14 @@ function cseu_features_structure_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_cseu_task';
-  $strongarm->value = 'edit-submission';
+  $strongarm->value = 'edit-menu';
   $export['additional_settings__active_tab_cseu_task'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_cseu_working_group';
-  $strongarm->value = 'edit-submission';
+  $strongarm->value = 'edit-menu';
   $export['additional_settings__active_tab_cseu_working_group'] = $strongarm;
 
   $strongarm = new stdClass();

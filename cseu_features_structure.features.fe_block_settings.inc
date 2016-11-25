@@ -25,6 +25,12 @@ function cseu_features_structure_default_fe_block_settings() {
       'Site Administrator' => 4,
     ),
     'themes' => array(
+      'adminimal' => array(
+        'region' => 'hidden',
+        'status' => 1,
+        'theme' => 'adminimal',
+        'weight' => -8,
+      ),
       'bartik' => array(
         'region' => '',
         'status' => 0,
@@ -60,6 +66,12 @@ function cseu_features_structure_default_fe_block_settings() {
       'Site Administrator' => 4,
     ),
     'themes' => array(
+      'adminimal' => array(
+        'region' => 'hidden',
+        'status' => 1,
+        'theme' => 'adminimal',
+        'weight' => -7,
+      ),
       'bartik' => array(
         'region' => '',
         'status' => 0,
