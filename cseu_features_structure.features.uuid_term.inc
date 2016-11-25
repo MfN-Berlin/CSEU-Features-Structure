@@ -11,6 +11,14 @@ function cseu_features_structure_uuid_features_default_terms() {
   $terms = array();
 
   $terms[] = array(
+    'name' => 'citizen science',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '0ba78837-762e-4fe5-a328-8594dfa95154',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
     'name' => 'innovation',
     'description' => NULL,
     'format' => NULL,
@@ -35,20 +43,28 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
-    'name' => 'Working Group 6',
-    'description' => 'WG6: Overaching - Cross-WG-Synthesis and overarching measures',
+    'name' => 'Newsletter Working Group 1',
+    'description' => 'WG1: Ensure scientific quality of Citizen Science',
     'format' => NULL,
     'weight' => 0,
-    'uuid' => '3724b5c0-8cd4-48c6-858d-945d6c651893',
+    'uuid' => '3461fb0d-1e83-4dd2-93f5-819308f8c0ac',
     'vocabulary_machine_name' => 'newsletter',
   );
   $terms[] = array(
-    'name' => 'Secondary Proposer',
-    'description' => 'Secondary Proposer',
+    'name' => 'Newsletter Management Committee Substitute',
+    'description' => 'Newsletter Management Committee Substitute',
     'format' => NULL,
     'weight' => 0,
-    'uuid' => '4e5aa17c-faff-4e6a-b6f2-b1c62c18077c',
+    'uuid' => '364ad312-69b8-4ac0-becf-a5a406f8c728',
     'vocabulary_machine_name' => 'newsletter',
+  );
+  $terms[] = array(
+    'name' => 'education',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '41c2686a-01b0-44fb-8308-89506fe3f07d',
+    'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
     'name' => 'Europe',
@@ -59,12 +75,12 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
-    'name' => 'Working Group 3',
-    'description' => 'WG3: Improve society-science-policy interface',
+    'name' => 'policy',
+    'description' => NULL,
     'format' => NULL,
     'weight' => 0,
-    'uuid' => '68fff7e5-e7fa-49e6-bcb7-8c590f57e327',
-    'vocabulary_machine_name' => 'newsletter',
+    'uuid' => '69c7bc1a-a920-469e-a93f-bf36582b7093',
+    'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
     'name' => 'education',
@@ -75,43 +91,19 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
-    'name' => 'Early-Stage Researcher Representative',
-    'description' => 'Early-Stage Researcher Representative',
+    'name' => 'Newsletter Working Group 3',
+    'description' => 'WG3: Improve society-science-policy interface',
     'format' => NULL,
     'weight' => 0,
-    'uuid' => '723f0243-c863-4a50-a877-31c666d6d0bf',
+    'uuid' => '7040e70f-8d18-4301-bcc1-468e286af966',
     'vocabulary_machine_name' => 'newsletter',
   );
   $terms[] = array(
-    'name' => 'Working Group 5',
-    'description' => 'WG5: Improve data standardization and interoperability',
+    'name' => 'Newsletter Management Committee',
+    'description' => 'Newsletter Management Committee',
     'format' => NULL,
     'weight' => 0,
-    'uuid' => '7c7c647b-d2b2-480d-a51d-d5e5c4464404',
-    'vocabulary_machine_name' => 'newsletter',
-  );
-  $terms[] = array(
-    'name' => 'Chairs',
-    'description' => 'Chairs',
-    'format' => NULL,
-    'weight' => 0,
-    'uuid' => '8b08d935-1b86-48d4-9e7d-c517ad40e35e',
-    'vocabulary_machine_name' => 'newsletter',
-  );
-  $terms[] = array(
-    'name' => 'Management Committee Substitute',
-    'description' => 'Management Committee Substitute',
-    'format' => NULL,
-    'weight' => 0,
-    'uuid' => '905e7ba4-8daf-4f66-8695-bbb7639d0289',
-    'vocabulary_machine_name' => 'newsletter',
-  );
-  $terms[] = array(
-    'name' => 'Equal Opportunity Officer',
-    'description' => 'Equal Opportunity Officer',
-    'format' => NULL,
-    'weight' => 0,
-    'uuid' => '90edc6e2-7098-4b6e-ac71-25f5141ac423',
+    'uuid' => '75fbe5f1-0c0b-429a-b75d-55e2121ea02b',
     'vocabulary_machine_name' => 'newsletter',
   );
   $terms[] = array(
@@ -123,60 +115,92 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
-    'name' => 'Co-Chairs',
-    'description' => 'Co-Chairs',
+    'name' => 'research',
+    'description' => NULL,
     'format' => NULL,
     'weight' => 0,
-    'uuid' => '98d2e446-b499-451e-85ff-515fb68b73bb',
+    'uuid' => '996fea90-9cdb-48d5-9b26-b4f0041196fd',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
+    'name' => 'Newsletter Members',
+    'description' => 'Newsletter ALL Members',
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'bcce246c-4dc3-4f7e-af0e-1d7fa2af68c9',
     'vocabulary_machine_name' => 'newsletter',
   );
   $terms[] = array(
-    'name' => 'STM Coordinator',
-    'description' => 'STM Coordinator',
+    'name' => 'Newsletter Co-Chairs',
+    'description' => 'Newsletter Co-Chairs',
     'format' => NULL,
     'weight' => 0,
-    'uuid' => 'adcb3535-7147-4b6f-8285-38ab5fa8c40d',
+    'uuid' => 'bff166a0-bc54-4fde-9fd5-d337d7e2dd35',
     'vocabulary_machine_name' => 'newsletter',
   );
   $terms[] = array(
-    'name' => 'Working Group 2',
-    'description' => 'WG2: Develop synergies with education',
+    'name' => 'Newsletter Working Group 6',
+    'description' => 'WG6: Overaching - Cross-WG-Synthesis and overarching measures',
     'format' => NULL,
     'weight' => 0,
-    'uuid' => 'b08438f3-3da9-4b84-8298-4003d206b996',
+    'uuid' => 'cfb1f191-b7b9-40ad-899a-5c75e3105b7f',
     'vocabulary_machine_name' => 'newsletter',
   );
   $terms[] = array(
-    'name' => 'Management Committee',
-    'description' => 'Management Committee',
-    'format' => NULL,
-    'weight' => 0,
-    'uuid' => 'c40e5736-7df4-4a1d-9e02-df73923373fe',
-    'vocabulary_machine_name' => 'newsletter',
-  );
-  $terms[] = array(
-    'name' => 'External Liaison Officer',
-    'description' => 'External Liaison Officer',
-    'format' => NULL,
-    'weight' => 0,
-    'uuid' => 'e35674ea-dc91-4d04-8b3d-6cdb1961da4c',
-    'vocabulary_machine_name' => 'newsletter',
-  );
-  $terms[] = array(
-    'name' => 'Working Group 1',
-    'description' => 'WG1: Ensure scientific quality of Citizen Science',
-    'format' => NULL,
-    'weight' => 0,
-    'uuid' => 'e3d79656-e0d3-4cf6-aa31-409e580ee8f3',
-    'vocabulary_machine_name' => 'newsletter',
-  );
-  $terms[] = array(
-    'name' => 'Working Group 4',
+    'name' => 'Newsletter Working Group 4',
     'description' => 'WG4: Enhance the role of CS for civil society',
     'format' => NULL,
     'weight' => 0,
-    'uuid' => 'e83d3680-5650-463e-bbee-230471dbafd0',
+    'uuid' => 'dbf70826-c0bd-400f-8726-eeb54264324f',
     'vocabulary_machine_name' => 'newsletter',
+  );
+  $terms[] = array(
+    'name' => 'Newsletter Working Group 2',
+    'description' => 'WG2: Develop synergies with education',
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'e3680f16-d3e3-47c3-858c-07c1075ee7f4',
+    'vocabulary_machine_name' => 'newsletter',
+  );
+  $terms[] = array(
+    'name' => 'innovation',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'e5649622-4e50-42a9-9d98-2a37970d8ff8',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
+    'name' => 'Newsletter Secondary Proposer',
+    'description' => 'Newsletter Secondary Proposer',
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'ef7917b2-db36-42a8-be74-25326cffe748',
+    'vocabulary_machine_name' => 'newsletter',
+  );
+  $terms[] = array(
+    'name' => 'Newsletter Chairs',
+    'description' => 'Newsletter Chairs',
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'f2c08be9-03bf-414b-9000-b1fd83936a03',
+    'vocabulary_machine_name' => 'newsletter',
+  );
+  $terms[] = array(
+    'name' => 'Newsletter Working Group 5',
+    'description' => 'WG5: Improve data standardization and interoperability',
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'fae487b4-946a-44cc-a115-bdc6ff7e0776',
+    'vocabulary_machine_name' => 'newsletter',
+  );
+  $terms[] = array(
+    'name' => 'Europe',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'ff2758bc-009b-4e91-9ecf-a4566dec5bad',
+    'vocabulary_machine_name' => 'tags',
   );
   return $terms;
 }
