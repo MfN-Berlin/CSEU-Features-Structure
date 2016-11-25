@@ -11,14 +11,6 @@ function cseu_features_structure_uuid_features_default_terms() {
   $terms = array();
 
   $terms[] = array(
-    'name' => 'Working Group 1',
-    'description' => 'WG1: Ensure scientific quality of Citizen Science',
-    'format' => NULL,
-    'weight' => 0,
-    'uuid' => '05015bf1-5fb3-4482-9f88-f40d2d6ec73d',
-    'vocabulary_machine_name' => 'newsletter',
-  );
-  $terms[] = array(
     'name' => 'innovation',
     'description' => NULL,
     'format' => NULL,
@@ -43,51 +35,19 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
-    'name' => 'STM Coordinator',
-    'description' => 'STM Coordinator',
-    'format' => NULL,
-    'weight' => 0,
-    'uuid' => '1e04b719-ef6f-4381-8cc1-4ff1bb769852',
-    'vocabulary_machine_name' => 'newsletter',
-  );
-  $terms[] = array(
-    'name' => 'Working Group 5',
-    'description' => 'WG5: Improve data standardization and interoperability',
-    'format' => NULL,
-    'weight' => 0,
-    'uuid' => '269be0f2-b8f7-4022-b7d8-d3906234b64b',
-    'vocabulary_machine_name' => 'newsletter',
-  );
-  $terms[] = array(
-    'name' => 'Chairs',
-    'description' => 'Chairs',
-    'format' => NULL,
-    'weight' => 0,
-    'uuid' => '3059e640-8ccf-48a2-8fb9-dcefbc6320a3',
-    'vocabulary_machine_name' => 'newsletter',
-  );
-  $terms[] = array(
-    'name' => 'Early-Stage Researcher Representative',
-    'description' => 'Early-Stage Researcher Representative',
-    'format' => NULL,
-    'weight' => 0,
-    'uuid' => '3bf96995-6f2c-47be-b7af-4c29b6477449',
-    'vocabulary_machine_name' => 'newsletter',
-  );
-  $terms[] = array(
-    'name' => 'Management Committee Substitute',
-    'description' => 'Management Committee Substitute',
-    'format' => NULL,
-    'weight' => 0,
-    'uuid' => '3f56a06e-3958-43a6-9e34-c567689ae09f',
-    'vocabulary_machine_name' => 'newsletter',
-  );
-  $terms[] = array(
     'name' => 'Working Group 6',
     'description' => 'WG6: Overaching - Cross-WG-Synthesis and overarching measures',
     'format' => NULL,
     'weight' => 0,
-    'uuid' => '4148aaad-b84b-44d1-bb98-c7f843fc926c',
+    'uuid' => '3724b5c0-8cd4-48c6-858d-945d6c651893',
+    'vocabulary_machine_name' => 'newsletter',
+  );
+  $terms[] = array(
+    'name' => 'Secondary Proposer',
+    'description' => 'Secondary Proposer',
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '4e5aa17c-faff-4e6a-b6f2-b1c62c18077c',
     'vocabulary_machine_name' => 'newsletter',
   );
   $terms[] = array(
@@ -99,11 +59,11 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
-    'name' => 'Working Group 4',
-    'description' => 'WG4: Enhance the role of CS for civil society',
+    'name' => 'Working Group 3',
+    'description' => 'WG3: Improve society-science-policy interface',
     'format' => NULL,
     'weight' => 0,
-    'uuid' => '6a37cb77-d0f7-4ec6-830d-671a9b30b696',
+    'uuid' => '68fff7e5-e7fa-49e6-bcb7-8c590f57e327',
     'vocabulary_machine_name' => 'newsletter',
   );
   $terms[] = array(
@@ -115,19 +75,43 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
-    'name' => 'Management Committee',
-    'description' => 'Management Committee',
+    'name' => 'Early-Stage Researcher Representative',
+    'description' => 'Early-Stage Researcher Representative',
     'format' => NULL,
     'weight' => 0,
-    'uuid' => '90fb546d-08ae-4ff0-a3b1-ee14c7ea81ae',
+    'uuid' => '723f0243-c863-4a50-a877-31c666d6d0bf',
     'vocabulary_machine_name' => 'newsletter',
   );
   $terms[] = array(
-    'name' => 'Co-Chairs',
-    'description' => 'Co-Chairs',
+    'name' => 'Working Group 5',
+    'description' => 'WG5: Improve data standardization and interoperability',
     'format' => NULL,
     'weight' => 0,
-    'uuid' => '95c59c1d-2614-4456-9f90-2b9caa7cd670',
+    'uuid' => '7c7c647b-d2b2-480d-a51d-d5e5c4464404',
+    'vocabulary_machine_name' => 'newsletter',
+  );
+  $terms[] = array(
+    'name' => 'Chairs',
+    'description' => 'Chairs',
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '8b08d935-1b86-48d4-9e7d-c517ad40e35e',
+    'vocabulary_machine_name' => 'newsletter',
+  );
+  $terms[] = array(
+    'name' => 'Management Committee Substitute',
+    'description' => 'Management Committee Substitute',
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '905e7ba4-8daf-4f66-8695-bbb7639d0289',
+    'vocabulary_machine_name' => 'newsletter',
+  );
+  $terms[] = array(
+    'name' => 'Equal Opportunity Officer',
+    'description' => 'Equal Opportunity Officer',
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '90edc6e2-7098-4b6e-ac71-25f5141ac423',
     'vocabulary_machine_name' => 'newsletter',
   );
   $terms[] = array(
@@ -139,11 +123,19 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
-    'name' => 'Working Group 3',
-    'description' => 'WG3: Improve society-science-policy interface',
+    'name' => 'Co-Chairs',
+    'description' => 'Co-Chairs',
     'format' => NULL,
     'weight' => 0,
-    'uuid' => 'aad7afc5-8ce5-4bc1-87b1-86674b4550f7',
+    'uuid' => '98d2e446-b499-451e-85ff-515fb68b73bb',
+    'vocabulary_machine_name' => 'newsletter',
+  );
+  $terms[] = array(
+    'name' => 'STM Coordinator',
+    'description' => 'STM Coordinator',
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'adcb3535-7147-4b6f-8285-38ab5fa8c40d',
     'vocabulary_machine_name' => 'newsletter',
   );
   $terms[] = array(
@@ -151,23 +143,15 @@ function cseu_features_structure_uuid_features_default_terms() {
     'description' => 'WG2: Develop synergies with education',
     'format' => NULL,
     'weight' => 0,
-    'uuid' => 'c2e5383f-9f5e-48b3-b3c4-6b9e829d2152',
+    'uuid' => 'b08438f3-3da9-4b84-8298-4003d206b996',
     'vocabulary_machine_name' => 'newsletter',
   );
   $terms[] = array(
-    'name' => 'Secondary Proposer',
-    'description' => 'Secondary Proposer',
+    'name' => 'Management Committee',
+    'description' => 'Management Committee',
     'format' => NULL,
     'weight' => 0,
-    'uuid' => 'db266d87-7f87-4199-b6ab-6a8d1aa653dc',
-    'vocabulary_machine_name' => 'newsletter',
-  );
-  $terms[] = array(
-    'name' => 'Equal Opportunity Officer',
-    'description' => 'Equal Opportunity Officer',
-    'format' => NULL,
-    'weight' => 0,
-    'uuid' => 'fd6760c9-3de5-4941-8342-f76da77dd1bd',
+    'uuid' => 'c40e5736-7df4-4a1d-9e02-df73923373fe',
     'vocabulary_machine_name' => 'newsletter',
   );
   $terms[] = array(
@@ -175,7 +159,23 @@ function cseu_features_structure_uuid_features_default_terms() {
     'description' => 'External Liaison Officer',
     'format' => NULL,
     'weight' => 0,
-    'uuid' => 'ff30412b-d215-48b5-bacb-06fc6b85561c',
+    'uuid' => 'e35674ea-dc91-4d04-8b3d-6cdb1961da4c',
+    'vocabulary_machine_name' => 'newsletter',
+  );
+  $terms[] = array(
+    'name' => 'Working Group 1',
+    'description' => 'WG1: Ensure scientific quality of Citizen Science',
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'e3d79656-e0d3-4cf6-aa31-409e580ee8f3',
+    'vocabulary_machine_name' => 'newsletter',
+  );
+  $terms[] = array(
+    'name' => 'Working Group 4',
+    'description' => 'WG4: Enhance the role of CS for civil society',
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'e83d3680-5650-463e-bbee-230471dbafd0',
     'vocabulary_machine_name' => 'newsletter',
   );
   return $terms;
