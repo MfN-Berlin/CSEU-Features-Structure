@@ -43,6 +43,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
+    'name' => 'Newsletter Core Group',
+    'description' => 'Chairs, Co-Chairs, STM Coordinator, Early Stage Representative, Equal Opportunity Officer, External Liason Officer, Marisa Ponti',
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '2a6cd0bb-a4eb-4a12-8163-7be215f12504',
+    'vocabulary_machine_name' => 'newsletter',
+  );
+  $terms[] = array(
     'name' => 'Newsletter Working Group 1',
     'description' => 'WG1: Ensure scientific quality of Citizen Science',
     'format' => NULL,
