@@ -172,6 +172,27 @@ function cseu_features_structure_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'email_plain' => array(
+        'custom_settings' => FALSE,
+      ),
+      'email_html' => array(
+        'custom_settings' => FALSE,
+      ),
+      'email_textalt' => array(
+        'custom_settings' => FALSE,
+      ),
+      'cseu_ds_view_mode_task_labelonly' => array(
+        'custom_settings' => FALSE,
+      ),
+      'cseu_ds_view_mode_tasks_wg_label' => array(
+        'custom_settings' => FALSE,
+      ),
+      'cseu_ds_view_mode_wg_label_only' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

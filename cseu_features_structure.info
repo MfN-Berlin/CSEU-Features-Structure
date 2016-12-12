@@ -18,6 +18,7 @@ dependencies[] = geofield
 dependencies[] = image
 dependencies[] = jquery_ui_filter_accordion
 dependencies[] = jquery_ui_filter_tabs
+dependencies[] = leaflet
 dependencies[] = leaflet_views
 dependencies[] = media_wysiwyg
 dependencies[] = menu
