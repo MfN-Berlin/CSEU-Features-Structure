@@ -179,6 +179,7 @@ features[variable][] = maxlength_js_label_cseu_deliverable
 features[variable][] = maxlength_js_label_cseu_institution
 features[variable][] = maxlength_js_label_cseu_task
 features[variable][] = maxlength_js_label_cseu_working_group
+features[variable][] = media_wysiwyg_wysiwyg_upload_directory
 features[variable][] = menu_options_article
 features[variable][] = menu_options_cseu_deliverable
 features[variable][] = menu_options_cseu_institution
