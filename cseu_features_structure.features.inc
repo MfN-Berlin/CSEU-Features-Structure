@@ -33,6 +33,31 @@ function cseu_features_structure_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function cseu_features_structure_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: cseu_document_thumbnail_style.
+  $styles['cseu_document_thumbnail_style'] = array(
+    'label' => 'Document Thumbnail (150x*)',
+    'effects' => array(
+      1 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 150,
+          'height' => '',
+          'upscale' => 1,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_node_info().
  */
 function cseu_features_structure_node_info() {
@@ -51,6 +76,14 @@ function cseu_features_structure_node_info() {
       'description' => t('Content type for Deliverables.'),
       'has_title' => '1',
       'title_label' => t('Name'),
+      'help' => '',
+    ),
+    'cseu_document' => array(
+      'name' => t('Document'),
+      'base' => 'node_content',
+      'description' => t('Content type for documents.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
       'help' => '',
     ),
     'cseu_institution' => array(

@@ -75,6 +75,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
+    'name' => 'CSCW Special Issue',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '43b7a66e-6f7c-41be-98f5-0567edc4e029',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
     'name' => 'Europe',
     'description' => NULL,
     'format' => NULL,
@@ -115,6 +123,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'newsletter',
   );
   $terms[] = array(
+    'name' => 'acknowledgements',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '84806a75-d971-4bd4-a113-1e6de36079b8',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
     'name' => 'research',
     'description' => NULL,
     'format' => NULL,
@@ -139,6 +155,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'newsletter',
   );
   $terms[] = array(
+    'name' => 'call for papers',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'beb59b6c-bc07-458f-aa4d-5976dcef4030',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
     'name' => 'Newsletter Co-Chairs',
     'description' => 'Newsletter Co-Chairs',
     'format' => NULL,
@@ -161,6 +185,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'weight' => 0,
     'uuid' => 'dbf70826-c0bd-400f-8726-eeb54264324f',
     'vocabulary_machine_name' => 'newsletter',
+  );
+  $terms[] = array(
+    'name' => 'publications',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'dca687b8-8c7f-4943-ae6d-b4f473c4ed60',
+    'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
     'name' => 'Newsletter Working Group 2',

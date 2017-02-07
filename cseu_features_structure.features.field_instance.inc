@@ -571,6 +571,175 @@ function cseu_features_structure_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-cseu_document-field_cseu_description'.
+  $field_instances['node-cseu_document-field_cseu_description'] = array(
+    'bundle' => 'cseu_document',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_cseu_description',
+    'label' => 'Description',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => '',
+        'maxlength_js_enforce' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_truncate_html' => 0,
+        'rows' => 3,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'node-cseu_document-field_cseu_document'.
+  $field_instances['node-cseu_document-field_cseu_document'] = array(
+    'bundle' => 'cseu_document',
+    'default_value' => array(),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_default',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_cseu_document',
+    'label' => 'Document',
+    'required' => 1,
+    'settings' => array(
+      'description_field' => 1,
+      'file_directory' => 'documents',
+      'file_extensions' => 'txt pdf cvs ods odt odp odg odf odb oxt doc docx xls xlsx ppt pptx',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'oembed' => 0,
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 'document',
+          'image' => 0,
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 'media_default--media_browser_1',
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 0,
+          'upload' => 'upload',
+        ),
+      ),
+      'type' => 'media_generic',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-cseu_document-field_cseu_document_cover'.
+  $field_instances['node-cseu_document-field_cseu_document_cover'] = array(
+    'bundle' => 'cseu_document',
+    'deleted' => 0,
+    'description' => 'Minimum image resolution: 150x225 Pixel. Allowed extensions: PNG, GIF, JPG, JPEG.',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'cseu_document_thumbnail_style',
+        ),
+        'type' => 'image',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_cseu_document_cover',
+    'label' => 'Cover',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => 'documents',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '150x225',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'oembed' => 0,
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 'media_default--media_browser_1',
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 0,
+          'upload' => 'upload',
+        ),
+      ),
+      'type' => 'media_generic',
+      'weight' => 3,
+    ),
+  );
+
   // Exported field_instance: 'node-cseu_institution-field_cseu_address'.
   $field_instances['node-cseu_institution-field_cseu_address'] = array(
     'bundle' => 'cseu_institution',
@@ -1339,14 +1508,17 @@ function cseu_features_structure_field_default_field_instances() {
   t('Alternative text is used by screen readers, search engines, and when the image cannot be loaded. By adding alt text you improve accessibility and search engine optimization.');
   t('Body');
   t('Caption');
+  t('Cover');
   t('Credit');
   t('Deadline');
   t('Department');
   t('Description');
+  t('Document');
   t('Enter a comma-separated list of words to describe your content.');
   t('Geofield');
   t('Image');
   t('Label');
+  t('Minimum image resolution: 150x225 Pixel. Allowed extensions: PNG, GIF, JPG, JPEG.');
   t('Name the person who owns the picture.');
   t('Newsletter category');
   t('Provide additional details about the image.');

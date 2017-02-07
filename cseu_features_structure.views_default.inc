@@ -484,6 +484,152 @@ function cseu_features_structure_views_default_views() {
   $export['cseu_community_map_view'] = $view;
 
   $view = new view();
+  $view->name = 'cseu_documents_view';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Documents';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Documents';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['row_class'] = 'cseu-documents-view-row';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
+  /* Field: Content: Document */
+  $handler->display->display_options['fields']['field_cseu_document']['id'] = 'field_cseu_document';
+  $handler->display->display_options['fields']['field_cseu_document']['table'] = 'field_data_field_cseu_document';
+  $handler->display->display_options['fields']['field_cseu_document']['field'] = 'field_cseu_document';
+  $handler->display->display_options['fields']['field_cseu_document']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_document']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_document']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_document']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_document']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_cseu_document']['type'] = 'file_url_plain';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['path'] = '[field_cseu_document]';
+  $handler->display->display_options['fields']['title']['alter']['target'] = '_blank';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Cover */
+  $handler->display->display_options['fields']['field_cseu_document_cover']['id'] = 'field_cseu_document_cover';
+  $handler->display->display_options['fields']['field_cseu_document_cover']['table'] = 'field_data_field_cseu_document_cover';
+  $handler->display->display_options['fields']['field_cseu_document_cover']['field'] = 'field_cseu_document_cover';
+  $handler->display->display_options['fields']['field_cseu_document_cover']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_document_cover']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_document_cover']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_document_cover']['alter']['path'] = '[field_cseu_document]';
+  $handler->display->display_options['fields']['field_cseu_document_cover']['alter']['target'] = '_blank';
+  $handler->display->display_options['fields']['field_cseu_document_cover']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_document_cover']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_document_cover']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_cseu_document_cover']['settings'] = array(
+    'image_style' => 'cseu_document_thumbnail_style',
+    'image_link' => '',
+  );
+  /* Field: Content: Description */
+  $handler->display->display_options['fields']['field_cseu_description']['id'] = 'field_cseu_description';
+  $handler->display->display_options['fields']['field_cseu_description']['table'] = 'field_data_field_cseu_description';
+  $handler->display->display_options['fields']['field_cseu_description']['field'] = 'field_cseu_description';
+  $handler->display->display_options['fields']['field_cseu_description']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_description']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_description']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_description']['element_default_classes'] = FALSE;
+  /* Field: Wrapper Col1 */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['ui_name'] = 'Wrapper Col1';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="cseu-view-documents-cover">[field_cseu_document_cover]</div>';
+  $handler->display->display_options['fields']['nothing']['element_type'] = 'div';
+  $handler->display->display_options['fields']['nothing']['element_class'] = 'cseu-documents-view-col1';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing']['element_default_classes'] = FALSE;
+  /* Field: Wrapper Col2 */
+  $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
+  $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_1']['ui_name'] = 'Wrapper Col2';
+  $handler->display->display_options['fields']['nothing_1']['label'] = '';
+  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<h2>[title]</h2>
+<p>[field_cseu_description]</p>';
+  $handler->display->display_options['fields']['nothing_1']['element_type'] = 'div';
+  $handler->display->display_options['fields']['nothing_1']['element_class'] = 'cseu-documents-view-col2';
+  $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_1']['element_default_classes'] = FALSE;
+  /* Field: Content: Edit link */
+  $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['label'] = '';
+  $handler->display->display_options['fields']['edit_node']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
+  /* Field: Global: Contextual Links */
+  $handler->display->display_options['fields']['contextual_links']['id'] = 'contextual_links';
+  $handler->display->display_options['fields']['contextual_links']['table'] = 'views';
+  $handler->display->display_options['fields']['contextual_links']['field'] = 'contextual_links';
+  $handler->display->display_options['fields']['contextual_links']['label'] = '';
+  $handler->display->display_options['fields']['contextual_links']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['contextual_links']['fields'] = array(
+    'edit_node' => 'edit_node',
+  );
+  $handler->display->display_options['fields']['contextual_links']['check_access'] = 0;
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'cseu_document' => 'cseu_document',
+  );
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['path'] = 'documents';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Documents';
+  $handler->display->display_options['menu']['description'] = 'Documents';
+  $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['name'] = 'main-menu';
+  $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
+  $export['cseu_documents_view'] = $view;
+
+  $view = new view();
   $view->name = 'cseu_entityreference_institution_department_view';
   $view->description = '';
   $view->tag = 'default';
