@@ -702,16 +702,6 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['fields']['field_cseu_address_country']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cseu_address_country']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_cseu_address_country']['display_name'] = 1;
-  /* Field: Institution: Name */
-  $handler->display->display_options['fields']['field_cseu_institution']['id'] = 'field_cseu_institution';
-  $handler->display->display_options['fields']['field_cseu_institution']['table'] = 'field_data_field_cseu_institution';
-  $handler->display->display_options['fields']['field_cseu_institution']['field'] = 'field_cseu_institution';
-  $handler->display->display_options['fields']['field_cseu_institution']['ui_name'] = 'Institution: Name';
-  $handler->display->display_options['fields']['field_cseu_institution']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_cseu_institution']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_cseu_institution']['settings'] = array(
-    'link' => 1,
-  );
   /* Field: Institution: Department */
   $handler->display->display_options['fields']['field_cseu_department']['id'] = 'field_cseu_department';
   $handler->display->display_options['fields']['field_cseu_department']['table'] = 'field_data_field_cseu_department';
@@ -770,6 +760,16 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['fields']['field_cseu_first_name']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cseu_first_name']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_cseu_first_name']['type'] = 'text_plain';
+  /* Field: Institution: Name */
+  $handler->display->display_options['fields']['field_cseu_institution']['id'] = 'field_cseu_institution';
+  $handler->display->display_options['fields']['field_cseu_institution']['table'] = 'field_data_field_cseu_institution';
+  $handler->display->display_options['fields']['field_cseu_institution']['field'] = 'field_cseu_institution';
+  $handler->display->display_options['fields']['field_cseu_institution']['ui_name'] = 'Institution: Name';
+  $handler->display->display_options['fields']['field_cseu_institution']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_institution']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_institution']['settings'] = array(
+    'link' => 1,
+  );
   /* Field: Profile: Telephone */
   $handler->display->display_options['fields']['field_cseu_telephone']['id'] = 'field_cseu_telephone';
   $handler->display->display_options['fields']['field_cseu_telephone']['table'] = 'field_data_field_cseu_telephone';
@@ -792,6 +792,7 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['fields']['field_cseu_secondary_proposer']['table'] = 'field_data_field_cseu_secondary_proposer';
   $handler->display->display_options['fields']['field_cseu_secondary_proposer']['field'] = 'field_cseu_secondary_proposer';
   $handler->display->display_options['fields']['field_cseu_secondary_proposer']['relationship'] = 'profile';
+  $handler->display->display_options['fields']['field_cseu_secondary_proposer']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cseu_secondary_proposer']['delta_offset'] = '0';
   $handler->display->display_options['displays'] = array(
     'community_map' => 'community_map',
