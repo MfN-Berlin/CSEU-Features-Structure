@@ -77,6 +77,557 @@ function cseu_features_structure_views_default_views() {
   $export['cseu_block_frontpage_news'] = $view;
 
   $view = new view();
+  $view->name = 'cseu_community_list_view';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'profile';
+  $view->human_name = 'Community List';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Members List';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['reset_button'] = TRUE;
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '20';
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'user' => 'user',
+    'field_cseu_address_premise' => 'field_cseu_address_premise',
+    'field_cseu_address_postal_code' => 'field_cseu_address_postal_code',
+    'field_cseu_address_locality' => 'field_cseu_address_locality',
+    'url' => 'url',
+    'field_cseu_title' => 'field_cseu_title',
+    'field_cseu_last_name' => 'field_cseu_last_name',
+    'field_cseu_first_name' => 'field_cseu_first_name',
+    'field_cseu_institution' => 'field_cseu_institution',
+    'field_cseu_address_country' => 'field_cseu_address_country',
+    'field_cseu_department' => 'field_cseu_department',
+    'field_cseu_address_thoroughfare' => 'field_cseu_address_thoroughfare',
+    'field_cseu_telephone' => 'field_cseu_telephone',
+    'field_cseu_url' => 'field_cseu_url',
+    'mail' => 'mail',
+    'field_cseu_secondary_proposer' => 'field_cseu_secondary_proposer',
+  );
+  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['info'] = array(
+    'user' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_cseu_address_premise' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_cseu_address_postal_code' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_cseu_address_locality' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'url' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_cseu_title' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_cseu_last_name' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_cseu_first_name' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_cseu_institution' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_cseu_address_country' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_cseu_department' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_cseu_address_thoroughfare' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_cseu_telephone' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_cseu_url' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'mail' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_cseu_secondary_proposer' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+  );
+  /* Relationship: Profile: User uid */
+  $handler->display->display_options['relationships']['user']['id'] = 'user';
+  $handler->display->display_options['relationships']['user']['table'] = 'profile';
+  $handler->display->display_options['relationships']['user']['field'] = 'user';
+  $handler->display->display_options['relationships']['user']['required'] = TRUE;
+  /* Relationship: User: Profile */
+  $handler->display->display_options['relationships']['profile']['id'] = 'profile';
+  $handler->display->display_options['relationships']['profile']['table'] = 'users';
+  $handler->display->display_options['relationships']['profile']['field'] = 'profile';
+  $handler->display->display_options['relationships']['profile']['relationship'] = 'user';
+  $handler->display->display_options['relationships']['profile']['bundle_types'] = array(
+    'cseu_profile_assignments' => 'cseu_profile_assignments',
+  );
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_cseu_institution_target_id']['id'] = 'field_cseu_institution_target_id';
+  $handler->display->display_options['relationships']['field_cseu_institution_target_id']['table'] = 'field_data_field_cseu_institution';
+  $handler->display->display_options['relationships']['field_cseu_institution_target_id']['field'] = 'field_cseu_institution_target_id';
+  $handler->display->display_options['relationships']['field_cseu_institution_target_id']['required'] = TRUE;
+  /* Field: Profile: User uid */
+  $handler->display->display_options['fields']['user']['id'] = 'user';
+  $handler->display->display_options['fields']['user']['table'] = 'profile';
+  $handler->display->display_options['fields']['user']['field'] = 'user';
+  $handler->display->display_options['fields']['user']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['user']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['user']['element_default_classes'] = FALSE;
+  /* Field: Institution: Premise */
+  $handler->display->display_options['fields']['field_cseu_address_premise']['id'] = 'field_cseu_address_premise';
+  $handler->display->display_options['fields']['field_cseu_address_premise']['table'] = 'field_data_field_cseu_address';
+  $handler->display->display_options['fields']['field_cseu_address_premise']['field'] = 'field_cseu_address_premise';
+  $handler->display->display_options['fields']['field_cseu_address_premise']['relationship'] = 'field_cseu_institution_target_id';
+  $handler->display->display_options['fields']['field_cseu_address_premise']['ui_name'] = 'Institution: Premise';
+  $handler->display->display_options['fields']['field_cseu_address_premise']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_address_premise']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_address_premise']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_address_premise']['alter']['text'] = '<br />[field_cseu_address_premise]';
+  $handler->display->display_options['fields']['field_cseu_address_premise']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_address_premise']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_address_premise']['hide_empty'] = TRUE;
+  /* Field: Institution: Postal Code */
+  $handler->display->display_options['fields']['field_cseu_address_postal_code']['id'] = 'field_cseu_address_postal_code';
+  $handler->display->display_options['fields']['field_cseu_address_postal_code']['table'] = 'field_data_field_cseu_address';
+  $handler->display->display_options['fields']['field_cseu_address_postal_code']['field'] = 'field_cseu_address_postal_code';
+  $handler->display->display_options['fields']['field_cseu_address_postal_code']['relationship'] = 'field_cseu_institution_target_id';
+  $handler->display->display_options['fields']['field_cseu_address_postal_code']['ui_name'] = 'Institution: Postal Code';
+  $handler->display->display_options['fields']['field_cseu_address_postal_code']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_address_postal_code']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_address_postal_code']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_address_postal_code']['alter']['text'] = '<br />[field_cseu_address_postal_code]';
+  $handler->display->display_options['fields']['field_cseu_address_postal_code']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_address_postal_code']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_address_postal_code']['hide_empty'] = TRUE;
+  /* Field: Institution: City */
+  $handler->display->display_options['fields']['field_cseu_address_locality']['id'] = 'field_cseu_address_locality';
+  $handler->display->display_options['fields']['field_cseu_address_locality']['table'] = 'field_data_field_cseu_address';
+  $handler->display->display_options['fields']['field_cseu_address_locality']['field'] = 'field_cseu_address_locality';
+  $handler->display->display_options['fields']['field_cseu_address_locality']['relationship'] = 'field_cseu_institution_target_id';
+  $handler->display->display_options['fields']['field_cseu_address_locality']['ui_name'] = 'Institution: City';
+  $handler->display->display_options['fields']['field_cseu_address_locality']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_address_locality']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_address_locality']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_address_locality']['alter']['text'] = ' [field_cseu_address_locality]';
+  $handler->display->display_options['fields']['field_cseu_address_locality']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_address_locality']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_address_locality']['hide_empty'] = TRUE;
+  /* Field: Profile: Title */
+  $handler->display->display_options['fields']['field_cseu_title']['id'] = 'field_cseu_title';
+  $handler->display->display_options['fields']['field_cseu_title']['table'] = 'field_data_field_cseu_title';
+  $handler->display->display_options['fields']['field_cseu_title']['field'] = 'field_cseu_title';
+  $handler->display->display_options['fields']['field_cseu_title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_title']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_title']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_title']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_title']['type'] = 'text_plain';
+  /* Field: Profile: Last Name */
+  $handler->display->display_options['fields']['field_cseu_last_name']['id'] = 'field_cseu_last_name';
+  $handler->display->display_options['fields']['field_cseu_last_name']['table'] = 'field_data_field_cseu_last_name';
+  $handler->display->display_options['fields']['field_cseu_last_name']['field'] = 'field_cseu_last_name';
+  $handler->display->display_options['fields']['field_cseu_last_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_last_name']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_last_name']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_last_name']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_last_name']['type'] = 'text_plain';
+  /* Field: Profile: First Name */
+  $handler->display->display_options['fields']['field_cseu_first_name']['id'] = 'field_cseu_first_name';
+  $handler->display->display_options['fields']['field_cseu_first_name']['table'] = 'field_data_field_cseu_first_name';
+  $handler->display->display_options['fields']['field_cseu_first_name']['field'] = 'field_cseu_first_name';
+  $handler->display->display_options['fields']['field_cseu_first_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_first_name']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_first_name']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_first_name']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_first_name']['type'] = 'text_plain';
+  /* Field: Institution: Name */
+  $handler->display->display_options['fields']['field_cseu_institution']['id'] = 'field_cseu_institution';
+  $handler->display->display_options['fields']['field_cseu_institution']['table'] = 'field_data_field_cseu_institution';
+  $handler->display->display_options['fields']['field_cseu_institution']['field'] = 'field_cseu_institution';
+  $handler->display->display_options['fields']['field_cseu_institution']['ui_name'] = 'Institution: Name';
+  $handler->display->display_options['fields']['field_cseu_institution']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_institution']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_institution']['settings'] = array(
+    'link' => 0,
+  );
+  /* Field: Institution: Department */
+  $handler->display->display_options['fields']['field_cseu_department']['id'] = 'field_cseu_department';
+  $handler->display->display_options['fields']['field_cseu_department']['table'] = 'field_data_field_cseu_department';
+  $handler->display->display_options['fields']['field_cseu_department']['field'] = 'field_cseu_department';
+  $handler->display->display_options['fields']['field_cseu_department']['relationship'] = 'field_cseu_institution_target_id';
+  $handler->display->display_options['fields']['field_cseu_department']['ui_name'] = 'Institution: Department';
+  $handler->display->display_options['fields']['field_cseu_department']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_department']['element_default_classes'] = FALSE;
+  /* Field: Institution: Country */
+  $handler->display->display_options['fields']['field_cseu_address_country']['id'] = 'field_cseu_address_country';
+  $handler->display->display_options['fields']['field_cseu_address_country']['table'] = 'field_data_field_cseu_address';
+  $handler->display->display_options['fields']['field_cseu_address_country']['field'] = 'field_cseu_address_country';
+  $handler->display->display_options['fields']['field_cseu_address_country']['relationship'] = 'field_cseu_institution_target_id';
+  $handler->display->display_options['fields']['field_cseu_address_country']['ui_name'] = 'Institution: Country';
+  $handler->display->display_options['fields']['field_cseu_address_country']['label'] = 'Country';
+  $handler->display->display_options['fields']['field_cseu_address_country']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_address_country']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_address_country']['display_name'] = 1;
+  /* Field: Institution: Address */
+  $handler->display->display_options['fields']['field_cseu_address_thoroughfare']['id'] = 'field_cseu_address_thoroughfare';
+  $handler->display->display_options['fields']['field_cseu_address_thoroughfare']['table'] = 'field_data_field_cseu_address';
+  $handler->display->display_options['fields']['field_cseu_address_thoroughfare']['field'] = 'field_cseu_address_thoroughfare';
+  $handler->display->display_options['fields']['field_cseu_address_thoroughfare']['relationship'] = 'field_cseu_institution_target_id';
+  $handler->display->display_options['fields']['field_cseu_address_thoroughfare']['ui_name'] = 'Institution: Address';
+  $handler->display->display_options['fields']['field_cseu_address_thoroughfare']['label'] = 'Address';
+  $handler->display->display_options['fields']['field_cseu_address_thoroughfare']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_address_thoroughfare']['alter']['text'] = '[field_cseu_address_thoroughfare][field_cseu_address_premise][field_cseu_address_postal_code][field_cseu_address_locality]';
+  $handler->display->display_options['fields']['field_cseu_address_thoroughfare']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_address_thoroughfare']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_address_thoroughfare']['hide_empty'] = TRUE;
+  /* Field: Profile: Telephone */
+  $handler->display->display_options['fields']['field_cseu_telephone']['id'] = 'field_cseu_telephone';
+  $handler->display->display_options['fields']['field_cseu_telephone']['table'] = 'field_data_field_cseu_telephone';
+  $handler->display->display_options['fields']['field_cseu_telephone']['field'] = 'field_cseu_telephone';
+  $handler->display->display_options['fields']['field_cseu_telephone']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_telephone']['element_default_classes'] = FALSE;
+  /* Field: Profile: URL */
+  $handler->display->display_options['fields']['field_cseu_url']['id'] = 'field_cseu_url';
+  $handler->display->display_options['fields']['field_cseu_url']['table'] = 'field_data_field_cseu_url';
+  $handler->display->display_options['fields']['field_cseu_url']['field'] = 'field_cseu_url';
+  $handler->display->display_options['fields']['field_cseu_url']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_url']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_url']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_cseu_url']['type'] = 'link_url';
+  /* Field: User: E-mail */
+  $handler->display->display_options['fields']['mail']['id'] = 'mail';
+  $handler->display->display_options['fields']['mail']['table'] = 'users';
+  $handler->display->display_options['fields']['mail']['field'] = 'mail';
+  $handler->display->display_options['fields']['mail']['relationship'] = 'user';
+  $handler->display->display_options['fields']['mail']['label'] = 'Email';
+  $handler->display->display_options['fields']['mail']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['mail']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['mail']['link_to_user'] = '0';
+  /* Field: Profile: Status */
+  $handler->display->display_options['fields']['field_cseu_secondary_proposer']['id'] = 'field_cseu_secondary_proposer';
+  $handler->display->display_options['fields']['field_cseu_secondary_proposer']['table'] = 'field_data_field_cseu_secondary_proposer';
+  $handler->display->display_options['fields']['field_cseu_secondary_proposer']['field'] = 'field_cseu_secondary_proposer';
+  $handler->display->display_options['fields']['field_cseu_secondary_proposer']['relationship'] = 'profile';
+  $handler->display->display_options['fields']['field_cseu_secondary_proposer']['delta_offset'] = '0';
+  /* Sort criterion: Profile: Last Name (field_cseu_last_name) */
+  $handler->display->display_options['sorts']['field_cseu_last_name_value']['id'] = 'field_cseu_last_name_value';
+  $handler->display->display_options['sorts']['field_cseu_last_name_value']['table'] = 'field_data_field_cseu_last_name';
+  $handler->display->display_options['sorts']['field_cseu_last_name_value']['field'] = 'field_cseu_last_name_value';
+  /* Filter criterion: Profile: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'profile';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'cseu_profile_personal' => 'cseu_profile_personal',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Global: Combine fields filter */
+  $handler->display->display_options['filters']['combine']['id'] = 'combine';
+  $handler->display->display_options['filters']['combine']['table'] = 'views';
+  $handler->display->display_options['filters']['combine']['field'] = 'combine';
+  $handler->display->display_options['filters']['combine']['operator'] = 'word';
+  $handler->display->display_options['filters']['combine']['group'] = 1;
+  $handler->display->display_options['filters']['combine']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['combine']['expose']['operator_id'] = 'combine_op';
+  $handler->display->display_options['filters']['combine']['expose']['label'] = 'Name';
+  $handler->display->display_options['filters']['combine']['expose']['operator'] = 'combine_op';
+  $handler->display->display_options['filters']['combine']['expose']['identifier'] = 'combine';
+  $handler->display->display_options['filters']['combine']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    3 => 0,
+  );
+  $handler->display->display_options['filters']['combine']['fields'] = array(
+    'field_cseu_last_name' => 'field_cseu_last_name',
+    'field_cseu_first_name' => 'field_cseu_first_name',
+  );
+  /* Filter criterion: Content: Address - Country */
+  $handler->display->display_options['filters']['field_cseu_address_country']['id'] = 'field_cseu_address_country';
+  $handler->display->display_options['filters']['field_cseu_address_country']['table'] = 'field_data_field_cseu_address';
+  $handler->display->display_options['filters']['field_cseu_address_country']['field'] = 'field_cseu_address_country';
+  $handler->display->display_options['filters']['field_cseu_address_country']['relationship'] = 'field_cseu_institution_target_id';
+  $handler->display->display_options['filters']['field_cseu_address_country']['group'] = 1;
+  $handler->display->display_options['filters']['field_cseu_address_country']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_cseu_address_country']['expose']['operator_id'] = 'field_cseu_address_country_op';
+  $handler->display->display_options['filters']['field_cseu_address_country']['expose']['label'] = 'Country';
+  $handler->display->display_options['filters']['field_cseu_address_country']['expose']['operator'] = 'field_cseu_address_country_op';
+  $handler->display->display_options['filters']['field_cseu_address_country']['expose']['identifier'] = 'field_cseu_address_country';
+  $handler->display->display_options['filters']['field_cseu_address_country']['expose']['remember'] = TRUE;
+  $handler->display->display_options['filters']['field_cseu_address_country']['expose']['remember_roles'] = array(
+    2 => 0,
+    4 => '4',
+    3 => '3',
+    1 => 0,
+  );
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  /* Header: Global: Result summary */
+  $handler->display->display_options['header']['result']['id'] = 'result';
+  $handler->display->display_options['header']['result']['table'] = 'views';
+  $handler->display->display_options['header']['result']['field'] = 'result';
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Footer: Global: Result summary */
+  $handler->display->display_options['footer']['result']['id'] = 'result';
+  $handler->display->display_options['footer']['result']['table'] = 'views';
+  $handler->display->display_options['footer']['result']['field'] = 'result';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Profile: User uid */
+  $handler->display->display_options['fields']['user']['id'] = 'user';
+  $handler->display->display_options['fields']['user']['table'] = 'profile';
+  $handler->display->display_options['fields']['user']['field'] = 'user';
+  $handler->display->display_options['fields']['user']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['user']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['user']['element_default_classes'] = FALSE;
+  /* Field: Institution: Premise */
+  $handler->display->display_options['fields']['field_cseu_address_premise']['id'] = 'field_cseu_address_premise';
+  $handler->display->display_options['fields']['field_cseu_address_premise']['table'] = 'field_data_field_cseu_address';
+  $handler->display->display_options['fields']['field_cseu_address_premise']['field'] = 'field_cseu_address_premise';
+  $handler->display->display_options['fields']['field_cseu_address_premise']['relationship'] = 'field_cseu_institution_target_id';
+  $handler->display->display_options['fields']['field_cseu_address_premise']['ui_name'] = 'Institution: Premise';
+  $handler->display->display_options['fields']['field_cseu_address_premise']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_address_premise']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_address_premise']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_address_premise']['alter']['text'] = '<br />[field_cseu_address_premise]';
+  $handler->display->display_options['fields']['field_cseu_address_premise']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_address_premise']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_address_premise']['hide_empty'] = TRUE;
+  /* Field: Institution: Postal Code */
+  $handler->display->display_options['fields']['field_cseu_address_postal_code']['id'] = 'field_cseu_address_postal_code';
+  $handler->display->display_options['fields']['field_cseu_address_postal_code']['table'] = 'field_data_field_cseu_address';
+  $handler->display->display_options['fields']['field_cseu_address_postal_code']['field'] = 'field_cseu_address_postal_code';
+  $handler->display->display_options['fields']['field_cseu_address_postal_code']['relationship'] = 'field_cseu_institution_target_id';
+  $handler->display->display_options['fields']['field_cseu_address_postal_code']['ui_name'] = 'Institution: Postal Code';
+  $handler->display->display_options['fields']['field_cseu_address_postal_code']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_address_postal_code']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_address_postal_code']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_address_postal_code']['alter']['text'] = '<br />[field_cseu_address_postal_code]';
+  $handler->display->display_options['fields']['field_cseu_address_postal_code']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_address_postal_code']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_address_postal_code']['hide_empty'] = TRUE;
+  /* Field: Institution: City */
+  $handler->display->display_options['fields']['field_cseu_address_locality']['id'] = 'field_cseu_address_locality';
+  $handler->display->display_options['fields']['field_cseu_address_locality']['table'] = 'field_data_field_cseu_address';
+  $handler->display->display_options['fields']['field_cseu_address_locality']['field'] = 'field_cseu_address_locality';
+  $handler->display->display_options['fields']['field_cseu_address_locality']['relationship'] = 'field_cseu_institution_target_id';
+  $handler->display->display_options['fields']['field_cseu_address_locality']['ui_name'] = 'Institution: City';
+  $handler->display->display_options['fields']['field_cseu_address_locality']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_address_locality']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_address_locality']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_address_locality']['alter']['text'] = ' [field_cseu_address_locality]';
+  $handler->display->display_options['fields']['field_cseu_address_locality']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_address_locality']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_address_locality']['hide_empty'] = TRUE;
+  /* Field: Profile: URL */
+  $handler->display->display_options['fields']['url']['id'] = 'url';
+  $handler->display->display_options['fields']['url']['table'] = 'views_entity_profile2';
+  $handler->display->display_options['fields']['url']['field'] = 'url';
+  $handler->display->display_options['fields']['url']['label'] = '';
+  $handler->display->display_options['fields']['url']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['url']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['url']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['url']['display_as_link'] = FALSE;
+  $handler->display->display_options['fields']['url']['link_to_entity'] = 0;
+  /* Field: Profile: Title */
+  $handler->display->display_options['fields']['field_cseu_title']['id'] = 'field_cseu_title';
+  $handler->display->display_options['fields']['field_cseu_title']['table'] = 'field_data_field_cseu_title';
+  $handler->display->display_options['fields']['field_cseu_title']['field'] = 'field_cseu_title';
+  $handler->display->display_options['fields']['field_cseu_title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_title']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_title']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_title']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_title']['type'] = 'text_plain';
+  /* Field: Profile: Last Name */
+  $handler->display->display_options['fields']['field_cseu_last_name']['id'] = 'field_cseu_last_name';
+  $handler->display->display_options['fields']['field_cseu_last_name']['table'] = 'field_data_field_cseu_last_name';
+  $handler->display->display_options['fields']['field_cseu_last_name']['field'] = 'field_cseu_last_name';
+  $handler->display->display_options['fields']['field_cseu_last_name']['alter']['path'] = '[url]';
+  $handler->display->display_options['fields']['field_cseu_last_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_last_name']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_last_name']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_last_name']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_last_name']['type'] = 'text_plain';
+  /* Field: Profile: First Name */
+  $handler->display->display_options['fields']['field_cseu_first_name']['id'] = 'field_cseu_first_name';
+  $handler->display->display_options['fields']['field_cseu_first_name']['table'] = 'field_data_field_cseu_first_name';
+  $handler->display->display_options['fields']['field_cseu_first_name']['field'] = 'field_cseu_first_name';
+  $handler->display->display_options['fields']['field_cseu_first_name']['alter']['path'] = '[url]';
+  $handler->display->display_options['fields']['field_cseu_first_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_first_name']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_first_name']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_first_name']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_first_name']['type'] = 'text_plain';
+  /* Field: Institution: Name */
+  $handler->display->display_options['fields']['field_cseu_institution']['id'] = 'field_cseu_institution';
+  $handler->display->display_options['fields']['field_cseu_institution']['table'] = 'field_data_field_cseu_institution';
+  $handler->display->display_options['fields']['field_cseu_institution']['field'] = 'field_cseu_institution';
+  $handler->display->display_options['fields']['field_cseu_institution']['ui_name'] = 'Institution: Name';
+  $handler->display->display_options['fields']['field_cseu_institution']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_institution']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_institution']['settings'] = array(
+    'link' => 1,
+  );
+  /* Field: Institution: Country */
+  $handler->display->display_options['fields']['field_cseu_address_country']['id'] = 'field_cseu_address_country';
+  $handler->display->display_options['fields']['field_cseu_address_country']['table'] = 'field_data_field_cseu_address';
+  $handler->display->display_options['fields']['field_cseu_address_country']['field'] = 'field_cseu_address_country';
+  $handler->display->display_options['fields']['field_cseu_address_country']['relationship'] = 'field_cseu_institution_target_id';
+  $handler->display->display_options['fields']['field_cseu_address_country']['ui_name'] = 'Institution: Country';
+  $handler->display->display_options['fields']['field_cseu_address_country']['label'] = 'Country';
+  $handler->display->display_options['fields']['field_cseu_address_country']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_address_country']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_address_country']['display_name'] = 1;
+  /* Field: Institution: Department */
+  $handler->display->display_options['fields']['field_cseu_department']['id'] = 'field_cseu_department';
+  $handler->display->display_options['fields']['field_cseu_department']['table'] = 'field_data_field_cseu_department';
+  $handler->display->display_options['fields']['field_cseu_department']['field'] = 'field_cseu_department';
+  $handler->display->display_options['fields']['field_cseu_department']['relationship'] = 'field_cseu_institution_target_id';
+  $handler->display->display_options['fields']['field_cseu_department']['ui_name'] = 'Institution: Department';
+  $handler->display->display_options['fields']['field_cseu_department']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_department']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_department']['element_default_classes'] = FALSE;
+  /* Field: Institution: Address */
+  $handler->display->display_options['fields']['field_cseu_address_thoroughfare']['id'] = 'field_cseu_address_thoroughfare';
+  $handler->display->display_options['fields']['field_cseu_address_thoroughfare']['table'] = 'field_data_field_cseu_address';
+  $handler->display->display_options['fields']['field_cseu_address_thoroughfare']['field'] = 'field_cseu_address_thoroughfare';
+  $handler->display->display_options['fields']['field_cseu_address_thoroughfare']['relationship'] = 'field_cseu_institution_target_id';
+  $handler->display->display_options['fields']['field_cseu_address_thoroughfare']['ui_name'] = 'Institution: Address';
+  $handler->display->display_options['fields']['field_cseu_address_thoroughfare']['label'] = 'Address';
+  $handler->display->display_options['fields']['field_cseu_address_thoroughfare']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_address_thoroughfare']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_address_thoroughfare']['alter']['text'] = '[field_cseu_address_thoroughfare][field_cseu_address_premise][field_cseu_address_postal_code][field_cseu_address_locality]';
+  $handler->display->display_options['fields']['field_cseu_address_thoroughfare']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_address_thoroughfare']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_address_thoroughfare']['hide_empty'] = TRUE;
+  /* Field: Profile: Telephone */
+  $handler->display->display_options['fields']['field_cseu_telephone']['id'] = 'field_cseu_telephone';
+  $handler->display->display_options['fields']['field_cseu_telephone']['table'] = 'field_data_field_cseu_telephone';
+  $handler->display->display_options['fields']['field_cseu_telephone']['field'] = 'field_cseu_telephone';
+  $handler->display->display_options['fields']['field_cseu_telephone']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_telephone']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_telephone']['element_default_classes'] = FALSE;
+  /* Field: Profile: URL */
+  $handler->display->display_options['fields']['field_cseu_url']['id'] = 'field_cseu_url';
+  $handler->display->display_options['fields']['field_cseu_url']['table'] = 'field_data_field_cseu_url';
+  $handler->display->display_options['fields']['field_cseu_url']['field'] = 'field_cseu_url';
+  $handler->display->display_options['fields']['field_cseu_url']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_url']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_url']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_url']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_cseu_url']['type'] = 'link_url';
+  /* Field: User: E-mail */
+  $handler->display->display_options['fields']['mail']['id'] = 'mail';
+  $handler->display->display_options['fields']['mail']['table'] = 'users';
+  $handler->display->display_options['fields']['mail']['field'] = 'mail';
+  $handler->display->display_options['fields']['mail']['relationship'] = 'user';
+  $handler->display->display_options['fields']['mail']['label'] = 'Email';
+  $handler->display->display_options['fields']['mail']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['mail']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['mail']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['mail']['link_to_user'] = '0';
+  /* Field: Profile: Status */
+  $handler->display->display_options['fields']['field_cseu_secondary_proposer']['id'] = 'field_cseu_secondary_proposer';
+  $handler->display->display_options['fields']['field_cseu_secondary_proposer']['table'] = 'field_data_field_cseu_secondary_proposer';
+  $handler->display->display_options['fields']['field_cseu_secondary_proposer']['field'] = 'field_cseu_secondary_proposer';
+  $handler->display->display_options['fields']['field_cseu_secondary_proposer']['relationship'] = 'profile';
+  $handler->display->display_options['fields']['field_cseu_secondary_proposer']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_secondary_proposer']['delta_offset'] = '0';
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Profile: Last Name (field_cseu_last_name) */
+  $handler->display->display_options['sorts']['field_cseu_last_name_value']['id'] = 'field_cseu_last_name_value';
+  $handler->display->display_options['sorts']['field_cseu_last_name_value']['table'] = 'field_data_field_cseu_last_name';
+  $handler->display->display_options['sorts']['field_cseu_last_name_value']['field'] = 'field_cseu_last_name_value';
+  $handler->display->display_options['path'] = 'community/list';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Members List';
+  $handler->display->display_options['menu']['description'] = 'Members List';
+  $handler->display->display_options['menu']['weight'] = '2';
+  $handler->display->display_options['menu']['name'] = 'main-menu';
+  $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
+  $export['cseu_community_list_view'] = $view;
+
+  $view = new view();
   $view->name = 'cseu_community_map_view';
   $view->description = '';
   $view->tag = 'default';
@@ -503,7 +1054,7 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['sorts']['field_cseu_last_name_value']['field'] = 'field_cseu_last_name_value';
   $handler->display->display_options['path'] = 'community/map';
   $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'Community';
+  $handler->display->display_options['menu']['title'] = 'Community Map';
   $handler->display->display_options['menu']['description'] = 'Community Map';
   $handler->display->display_options['menu']['weight'] = '1';
   $handler->display->display_options['menu']['name'] = 'main-menu';
