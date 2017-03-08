@@ -2038,6 +2038,7 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['access']['role'] = array(
     3 => '3',
     2 => '2',
+    5 => '5',
     4 => '4',
   );
   $handler->display->display_options['cache']['type'] = 'none';
@@ -3654,6 +3655,8 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
     3 => '3',
+    2 => '2',
+    5 => '5',
     4 => '4',
   );
   $handler->display->display_options['cache']['type'] = 'none';
@@ -4191,12 +4194,12 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['sorts']['field_cseu_last_name_value']['id'] = 'field_cseu_last_name_value';
   $handler->display->display_options['sorts']['field_cseu_last_name_value']['table'] = 'field_data_field_cseu_last_name';
   $handler->display->display_options['sorts']['field_cseu_last_name_value']['field'] = 'field_cseu_last_name_value';
-  $handler->display->display_options['path'] = 'restricted/members';
+  $handler->display->display_options['path'] = 'internal/members';
   $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'Members - Information';
-  $handler->display->display_options['menu']['description'] = 'List of Members';
+  $handler->display->display_options['menu']['title'] = 'Members List';
+  $handler->display->display_options['menu']['description'] = 'List of all members';
   $handler->display->display_options['menu']['weight'] = '1';
-  $handler->display->display_options['menu']['name'] = 'menu-restricted-lists';
+  $handler->display->display_options['menu']['name'] = 'menu-cseu-internals-menu';
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
 
@@ -4362,7 +4365,7 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['sorts']['field_cseu_last_name_value']['id'] = 'field_cseu_last_name_value';
   $handler->display->display_options['sorts']['field_cseu_last_name_value']['table'] = 'field_data_field_cseu_last_name';
   $handler->display->display_options['sorts']['field_cseu_last_name_value']['field'] = 'field_cseu_last_name_value';
-  $handler->display->display_options['path'] = 'restricted/members/export';
+  $handler->display->display_options['path'] = 'internal/members/export';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
     'default' => 0,
