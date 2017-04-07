@@ -285,6 +285,7 @@ features[variable][] = save_continue_cseu_institute
 features[variable][] = save_continue_cseu_task
 features[variable][] = save_continue_cseu_working_group
 features[views_view][] = cseu_block_disruptive
+features[views_view][] = cseu_block_fp_events
 features[views_view][] = cseu_block_frontpage_news
 features[views_view][] = cseu_community_list_view
 features[views_view][] = cseu_community_map_view
