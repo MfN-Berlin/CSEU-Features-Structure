@@ -41,6 +41,13 @@ function cseu_features_structure_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'date_format_cseu_frontpage_short_date';
+  $strongarm->value = 'm/d/Y';
+  $export['date_format_cseu_frontpage_short_date'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'ds_extras_view_modes_cseu_institution';
   $strongarm->value = array(
     0 => 'default',
@@ -820,7 +827,7 @@ function cseu_features_structure_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_page_pattern';
-  $strongarm->value = '';
+  $strongarm->value = '[node:menu-link:parent:url:path]/[node:menu-link:title]';
   $export['pathauto_node_page_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
