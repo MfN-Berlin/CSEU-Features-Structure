@@ -993,6 +993,130 @@ function cseu_features_structure_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance:
+  // 'node-cseu_slideshow_entry-field_cseu_slideshow_image'.
+  $field_instances['node-cseu_slideshow_entry-field_cseu_slideshow_image'] = array(
+    'bundle' => 'cseu_slideshow_entry',
+    'deleted' => 0,
+    'description' => 'Minimum image resolution: 800x380 pixels',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'cseu_slideshow_style',
+        ),
+        'type' => 'image',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_cseu_slideshow_image',
+    'label' => 'Image',
+    'required' => 1,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => 'pictures/slideshow',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '800x380',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'oembed' => 0,
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 'media_default--media_browser_1',
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 0,
+          'upload' => 'upload',
+        ),
+      ),
+      'type' => 'media_generic',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-cseu_slideshow_entry-field_cseu_target_url'.
+  $field_instances['node-cseu_slideshow_entry-field_cseu_target_url'] = array(
+    'bundle' => 'cseu_slideshow_entry',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_cseu_target_url',
+    'label' => 'Target URL',
+    'required' => 1,
+    'settings' => array(
+      'absolute_url' => 0,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'rel_remove' => 'default',
+      'title' => 'none',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 1,
+    ),
+  );
+
   // Exported field_instance: 'node-cseu_task-field_cseu_description'.
   $field_instances['node-cseu_task-field_cseu_description'] = array(
     'bundle' => 'cseu_task',
@@ -1519,10 +1643,12 @@ function cseu_features_structure_field_default_field_instances() {
   t('Image');
   t('Label');
   t('Minimum image resolution: 150x225 Pixel. Allowed extensions: PNG, GIF, JPG, JPEG.');
+  t('Minimum image resolution: 800x380 pixels');
   t('Name the person who owns the picture.');
   t('Newsletter category');
   t('Provide additional details about the image.');
   t('Tags');
+  t('Target URL');
   t('Task');
   t('Title Text');
   t('Title text is used in the tool tip when a user hovers their mouse over the image. Adding title text makes it easier to understand the context of an image and improves usability.');

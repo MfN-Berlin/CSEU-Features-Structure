@@ -54,6 +54,21 @@ function cseu_features_structure_image_default_styles() {
     ),
   );
 
+  // Exported image style: cseu_slideshow_style.
+  $styles['cseu_slideshow_style'] = array(
+    'label' => 'Slideshow (800x380)',
+    'effects' => array(
+      2 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 800,
+          'height' => 380,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   return $styles;
 }
 
@@ -92,6 +107,14 @@ function cseu_features_structure_node_info() {
       'description' => t('Content type for Institutions.'),
       'has_title' => '1',
       'title_label' => t('Name'),
+      'help' => '',
+    ),
+    'cseu_slideshow_entry' => array(
+      'name' => t('Slideshow Entry'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
       'help' => '',
     ),
     'cseu_task' => array(
