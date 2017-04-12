@@ -10,47 +10,6 @@
 function cseu_features_structure_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: main-menu_community-map:community/map.
-  $menu_links['main-menu_community-map:community/map'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'community/map',
-    'router_path' => 'community/map',
-    'link_title' => 'Community Map',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Community Map',
-      ),
-      'identifier' => 'main-menu_community-map:community/map',
-    ),
-    'module' => 'system',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -50,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_community:<nolink>',
-  );
-  // Exported menu link: main-menu_community:<nolink>.
-  $menu_links['main-menu_community:<nolink>'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => '<nolink>',
-    'router_path' => '<nolink>',
-    'link_title' => 'Community',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Research Community',
-      ),
-      'identifier' => 'main-menu_community:<nolink>',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 1,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
-  );
   // Exported menu link: main-menu_documents:documents.
   $menu_links['main-menu_documents:documents'] = array(
     'menu_name' => 'main-menu',
@@ -64,11 +23,11 @@ function cseu_features_structure_menu_default_menu_links() {
       'identifier' => 'main-menu_documents:documents',
     ),
     'module' => 'system',
-    'hidden' => 0,
+    'hidden' => 1,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -45,
+    'weight' => -42,
     'customized' => 1,
   );
   // Exported menu link: main-menu_events:events.
@@ -81,11 +40,11 @@ function cseu_features_structure_menu_default_menu_links() {
       'identifier' => 'main-menu_events:events',
     ),
     'module' => 'system',
-    'hidden' => 1,
+    'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -42,
+    'weight' => -45,
     'customized' => 1,
   );
   // Exported menu link: main-menu_home:<front>.
@@ -105,46 +64,6 @@ function cseu_features_structure_menu_default_menu_links() {
     'weight' => -50,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_log-out:user/logout.
-  $menu_links['main-menu_log-out:user/logout'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'user/logout',
-    'router_path' => 'user/logout',
-    'link_title' => 'Log out',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Log out',
-      ),
-      'identifier' => 'main-menu_log-out:user/logout',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -43,
-    'customized' => 1,
-  );
-  // Exported menu link: main-menu_login:user/login.
-  $menu_links['main-menu_login:user/login'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'user/login',
-    'router_path' => 'user/login',
-    'link_title' => 'Login',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Login',
-      ),
-      'identifier' => 'main-menu_login:user/login',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -44,
-    'customized' => 1,
-  );
   // Exported menu link: main-menu_members-list:community/list.
   $menu_links['main-menu_members-list:community/list'] = array(
     'menu_name' => 'main-menu',
@@ -158,32 +77,11 @@ function cseu_features_structure_menu_default_menu_links() {
       'identifier' => 'main-menu_members-list:community/list',
     ),
     'module' => 'system',
-    'hidden' => 0,
+    'hidden' => 1,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_community:<nolink>',
-  );
-  // Exported menu link: main-menu_news--events:news.
-  $menu_links['main-menu_news--events:news'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'news',
-    'router_path' => 'news',
-    'link_title' => 'News & Events',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'main-menu_news--events:news',
-    ),
-    'module' => 'system',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -47,
+    'weight' => -41,
     'customized' => 1,
   );
   // Exported menu link: main-menu_tasks:tasks.
@@ -203,7 +101,7 @@ function cseu_features_structure_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -46,
+    'weight' => -43,
     'customized' => 1,
   );
   // Exported menu link: main-menu_working-group-1:wgs/wg1.
@@ -349,27 +247,7 @@ function cseu_features_structure_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -48,
-    'customized' => 1,
-  );
-  // Exported menu link: menu-cseu-footer-bottom-menu_contact:node/220.
-  $menu_links['menu-cseu-footer-bottom-menu_contact:node/220'] = array(
-    'menu_name' => 'menu-cseu-footer-bottom-menu',
-    'link_path' => 'node/220',
-    'router_path' => 'node/%',
-    'link_title' => 'Contact',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Contact',
-      ),
-      'identifier' => 'menu-cseu-footer-bottom-menu_contact:node/220',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -50,
+    'weight' => -47,
     'customized' => 1,
   );
   // Exported menu link: menu-cseu-footer-bottom-menu_imprint:node/219.
@@ -389,7 +267,7 @@ function cseu_features_structure_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -48,
+    'weight' => -50,
     'customized' => 1,
   );
   // Exported menu link: menu-cseu-footer-bottom-menu_privacy-policy:node/178.
@@ -706,22 +584,16 @@ function cseu_features_structure_menu_default_menu_links() {
   t('Chairs by WG');
   t('Co-Chairs');
   t('Co-Chairs by WG');
-  t('Community');
-  t('Community Map');
-  t('Contact');
   t('Documents');
   t('Emails CSV');
   t('Events');
   t('Home');
   t('Imprint');
-  t('Log out');
-  t('Login');
   t('Members - Selections');
   t('Members List');
   t('Members by Role');
   t('Members by Task');
   t('Members by WG');
-  t('News & Events');
   t('Privacy Policy');
   t('Tasks');
   t('Working Group 1');

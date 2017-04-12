@@ -1273,6 +1273,115 @@ function cseu_features_structure_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'responsive_menus_ignore_admin';
+  $strongarm->value = array(
+    1 => '1',
+  );
+  $export['responsive_menus_ignore_admin'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'responsive_menus_mean_menu_close_size';
+  $strongarm->value = '18px';
+  $export['responsive_menus_mean_menu_close_size'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'responsive_menus_mean_menu_close_txt';
+  $strongarm->value = 'X';
+  $export['responsive_menus_mean_menu_close_txt'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'responsive_menus_mean_menu_container';
+  $strongarm->value = '.l-region--navigation';
+  $export['responsive_menus_mean_menu_container'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'responsive_menus_mean_menu_contract_txt';
+  $strongarm->value = '-';
+  $export['responsive_menus_mean_menu_contract_txt'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'responsive_menus_mean_menu_css_selectors';
+  $strongarm->value = '#block-system-main-menu';
+  $export['responsive_menus_mean_menu_css_selectors'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'responsive_menus_mean_menu_expand_children';
+  $strongarm->value = '1';
+  $export['responsive_menus_mean_menu_expand_children'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'responsive_menus_mean_menu_expand_txt';
+  $strongarm->value = '+';
+  $export['responsive_menus_mean_menu_expand_txt'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'responsive_menus_mean_menu_media_size';
+  $strongarm->value = '479';
+  $export['responsive_menus_mean_menu_media_size'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'responsive_menus_mean_menu_position';
+  $strongarm->value = 'left';
+  $export['responsive_menus_mean_menu_position'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'responsive_menus_mean_menu_remove_attrs';
+  $strongarm->value = '1';
+  $export['responsive_menus_mean_menu_remove_attrs'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'responsive_menus_mean_menu_show_children';
+  $strongarm->value = '1';
+  $export['responsive_menus_mean_menu_show_children'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'responsive_menus_mean_menu_trigger_txt';
+  $strongarm->value = '<span /><span /><span />';
+  $export['responsive_menus_mean_menu_trigger_txt'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'responsive_menus_no_jquery_update';
+  $strongarm->value = array(
+    1 => 0,
+  );
+  $export['responsive_menus_no_jquery_update'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'responsive_menus_style';
+  $strongarm->value = 'mean_menu';
+  $export['responsive_menus_style'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'save_continue_cseu_deliverable';
   $strongarm->value = 'Save and add fields';
   $export['save_continue_cseu_deliverable'] = $strongarm;
@@ -1304,6 +1413,131 @@ function cseu_features_structure_strongarm() {
   $strongarm->name = 'save_continue_cseu_working_group';
   $strongarm->value = 'Save and add fields';
   $export['save_continue_cseu_working_group'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search_active_modules';
+  $strongarm->value = array(
+    'node' => 'node',
+    'user' => 'user',
+    'file_entity' => 0,
+  );
+  $export['search_active_modules'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search_cron_limit';
+  $strongarm->value = '100';
+  $export['search_cron_limit'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search_default_module';
+  $strongarm->value = 'node';
+  $export['search_default_module'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search_logging';
+  $strongarm->value = 0;
+  $export['search_logging'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'theme_cseu_theme_settings';
+  $strongarm->value = array(
+    'toggle_logo' => 1,
+    'toggle_name' => 0,
+    'toggle_slogan' => 0,
+    'toggle_node_user_picture' => 0,
+    'toggle_comment_user_picture' => 1,
+    'toggle_comment_user_verification' => 1,
+    'toggle_favicon' => 0,
+    'toggle_main_menu' => 1,
+    'toggle_secondary_menu' => 1,
+    'omega_toggle_front_page_content' => 1,
+    'default_logo' => 1,
+    'logo_path' => '',
+    'logo_upload' => '',
+    'default_favicon' => 0,
+    'favicon_path' => '',
+    'favicon_upload' => '',
+    'omega_enable_warning' => TRUE,
+    'omega_toggle_extension_compatibility' => 1,
+    'omega_conditional_classes_html' => 1,
+    'omega_apple_touch' => 1,
+    'omega_cleartype' => 1,
+    'omega_handheld_friendly' => 1,
+    'omega_mobile_optimized' => 1,
+    'omega_viewport' => 1,
+    'omega_viewport_initial_scale' => '_default',
+    'omega_viewport_user_scaleable' => 1,
+    'omega_viewport_minimum_scale' => '_default',
+    'omega_viewport_maximum_scale' => '_default',
+    'omega_chrome_edge' => 1,
+    'omega_internet_explorer_support' => '_none',
+    'omega_toggle_extension_assets' => 1,
+    'omega_js_footer' => array(),
+    'omega_css_exclude' => array(),
+    'omega_js_exclude' => array(),
+    'omega_libraries' => array(
+      'selectivizr' => array(
+        'status' => 0,
+        'variant' => '_default',
+      ),
+      'respond' => array(
+        'status' => 0,
+        'variant' => '_default',
+      ),
+      'pie' => array(
+        'status' => 0,
+        'variant' => '_default',
+        'selectors' => array(),
+      ),
+      'html5shiv' => array(
+        'status' => 0,
+        'variant' => '_default',
+      ),
+    ),
+    'omega_toggle_extension_layouts' => 1,
+    'omega_layout' => 'page',
+    'omega_toggle_extension_development' => 0,
+    'omega_enable_export_reminder' => 1,
+    'omega_rebuild_theme_registry' => 0,
+    'omega_rebuild_aggregates' => 0,
+    'omega_browser_width_indicator' => 0,
+    'omega_livereload' => 1,
+    'omega_livereload_script' => 'http://localhost:35729/livereload.js',
+    'omega_livereload_host' => 'localhost',
+    'omega_livereload_port' => '35729',
+    'omega_demo_regions' => 1,
+    'omega_demo_regions_list' => array(
+      'branding' => 'branding',
+      'header' => 'header',
+      'navigation' => 'navigation',
+      'highlighted' => 'highlighted',
+      'help' => 'help',
+      'content' => 'content',
+      'featured' => 'featured',
+      'slider' => 'slider',
+      'news' => 'news',
+      'misc' => 'misc',
+      'sidebar_first' => 'sidebar_first',
+      'sidebar_second' => 'sidebar_second',
+      'footer' => 'footer',
+      'footer_first' => 'footer_first',
+      'footer_second' => 'footer_second',
+      'footer_third' => 'footer_third',
+      'footer_fourth' => 'footer_fourth',
+      'footer_bottom' => 'footer_bottom',
+    ),
+  );
+  $export['theme_cseu_theme_settings'] = $strongarm;
 
   return $export;
 }

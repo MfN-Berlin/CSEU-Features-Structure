@@ -74,7 +74,7 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['filters']['nid']['id'] = 'nid';
   $handler->display->display_options['filters']['nid']['table'] = 'node';
   $handler->display->display_options['filters']['nid']['field'] = 'nid';
-  $handler->display->display_options['filters']['nid']['value']['value'] = '266';
+  $handler->display->display_options['filters']['nid']['value']['value'] = '268';
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
