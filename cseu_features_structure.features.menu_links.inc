@@ -10,26 +10,6 @@
 function cseu_features_structure_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: main-menu_documents:documents.
-  $menu_links['main-menu_documents:documents'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'documents',
-    'router_path' => 'documents',
-    'link_title' => 'Documents',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Documents',
-      ),
-      'identifier' => 'main-menu_documents:documents',
-    ),
-    'module' => 'system',
-    'hidden' => 1,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -42,
-    'customized' => 1,
-  );
   // Exported menu link: main-menu_events:events.
   $menu_links['main-menu_events:events'] = array(
     'menu_name' => 'main-menu',
@@ -584,7 +564,6 @@ function cseu_features_structure_menu_default_menu_links() {
   t('Chairs by WG');
   t('Co-Chairs');
   t('Co-Chairs by WG');
-  t('Documents');
   t('Emails CSV');
   t('Events');
   t('Home');
