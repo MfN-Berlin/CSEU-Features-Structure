@@ -304,7 +304,6 @@ features[variable][] = pathauto_node_cseu_institution_pattern
 features[variable][] = pathauto_node_cseu_task_pattern
 features[variable][] = pathauto_node_cseu_working_group_pattern
 features[variable][] = pathauto_node_page_pattern
-features[variable][] = pathauto_taxonomy_term_newsletter_pattern
 features[variable][] = pathauto_taxonomy_term_tags_pattern
 features[variable][] = responsive_menus_ignore_admin
 features[variable][] = responsive_menus_mean_menu_close_size
