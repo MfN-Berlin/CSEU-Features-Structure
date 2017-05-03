@@ -1218,6 +1218,14 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['filters']['field_cseu_secondary_proposer_value']['table'] = 'field_data_field_cseu_secondary_proposer';
   $handler->display->display_options['filters']['field_cseu_secondary_proposer_value']['field'] = 'field_cseu_secondary_proposer_value';
   $handler->display->display_options['filters']['field_cseu_secondary_proposer_value']['relationship'] = 'profile';
+  $handler->display->display_options['filters']['field_cseu_secondary_proposer_value']['value'] = array(
+    2 => '2',
+    3 => '3',
+    4 => '4',
+    5 => '5',
+    6 => '6',
+    7 => '7',
+  );
   $handler->display->display_options['filters']['field_cseu_secondary_proposer_value']['group'] = 1;
   $handler->display->display_options['filters']['field_cseu_secondary_proposer_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_cseu_secondary_proposer_value']['expose']['operator_id'] = 'field_cseu_secondary_proposer_value_op';
@@ -1230,7 +1238,9 @@ function cseu_features_structure_views_default_views() {
     4 => '4',
     3 => '3',
     1 => 0,
+    5 => 0,
   );
+  $handler->display->display_options['filters']['field_cseu_secondary_proposer_value']['expose']['reduce'] = TRUE;
   /* Filter criterion: Profile: Chair of Woking Group (field_cseu_group_chair) */
   $handler->display->display_options['filters']['field_cseu_group_chair_target_id']['id'] = 'field_cseu_group_chair_target_id';
   $handler->display->display_options['filters']['field_cseu_group_chair_target_id']['table'] = 'field_data_field_cseu_group_chair';
