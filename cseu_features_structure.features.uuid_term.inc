@@ -27,6 +27,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
+    'name' => 'ontology',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '0e56ab36-7d0b-4813-88ea-52e6a1721ee5',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
     'name' => 'citizen science',
     'description' => NULL,
     'format' => NULL,
@@ -131,6 +139,17 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
+    'name' => 'Publications',
+    'description' => '<p>Full catalogue of COST Action 151212 publications, some of which can be downloaded.</p>',
+    'format' => 'full_html',
+    'weight' => 1,
+    'uuid' => '9418bf2f-ba9c-49df-b732-656b79b04450',
+    'vocabulary_machine_name' => 'cseu_resource_types',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+  );
+  $terms[] = array(
     'name' => 'research',
     'description' => NULL,
     'format' => NULL,
@@ -145,6 +164,17 @@ function cseu_features_structure_uuid_features_default_terms() {
     'weight' => 0,
     'uuid' => '996fea90-9cdb-48d5-9b26-b4f0041196fd',
     'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
+    'name' => 'Information Material',
+    'description' => '<p>Full catalogue of COST Action 151212 information material, some of which can be downloaded.</p>',
+    'format' => 'full_html',
+    'weight' => 2,
+    'uuid' => 'b0fd259c-400c-466b-af75-9e2e4f132d45',
+    'vocabulary_machine_name' => 'cseu_resource_types',
+    'path' => array(
+      'pathauto' => 0,
+    ),
   );
   $terms[] = array(
     'name' => 'Newsletter Members',
@@ -195,6 +225,17 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
+    'name' => 'Reports',
+    'description' => '<p>Full catalogue of COST Action 151212 reports, some of which can be downloaded.</p>',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => 'dfe14ee2-37f9-456a-92cf-101459ad825c',
+    'vocabulary_machine_name' => 'cseu_resource_types',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+  );
+  $terms[] = array(
     'name' => 'Newsletter Working Group 2',
     'description' => 'WG2: Develop synergies with education',
     'format' => NULL,
@@ -208,6 +249,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'format' => NULL,
     'weight' => 0,
     'uuid' => 'e5649622-4e50-42a9-9d98-2a37970d8ff8',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
+    'name' => 'data',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'e90e3ca1-cf47-45ed-8e9e-2ad4c4264dac',
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
