@@ -366,6 +366,7 @@ features[views_view][] = cseu_internal_users_by_status_view
 features[views_view][] = cseu_internal_users_by_wg_subview
 features[views_view][] = cseu_internal_users_by_wg_view
 features[views_view][] = cseu_news_view
+features[views_view][] = cseu_resources_view
 features[views_view][] = cseu_restricted_emails_by_status_view
 features[views_view][] = cseu_restricted_emails_by_wg_view
 features[views_view][] = cseu_restricted_emails_chairs_view
