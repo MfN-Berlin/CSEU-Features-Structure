@@ -12,6 +12,37 @@ function cseu_features_structure_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'node|cseu_event|cseu_ds_view_mode_event';
+  $ds_fieldsetting->entity_type = 'node';
+  $ds_fieldsetting->bundle = 'cseu_event';
+  $ds_fieldsetting->view_mode = 'cseu_ds_view_mode_event';
+  $ds_fieldsetting->settings = array(
+    'title' => array(
+      'weight' => '0',
+      'label' => 'hidden',
+      'format' => 'default',
+      'formatter_settings' => array(
+        'link' => '1',
+        'wrapper' => '',
+        'class' => '',
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'lb-el' => 'div',
+        ),
+      ),
+    ),
+    'field_cseu_event_date' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+        ),
+      ),
+    ),
+  );
+  $export['node|cseu_event|cseu_ds_view_mode_event'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'node|cseu_institution|cseu_ds_view_mode_institution';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'cseu_institution';
@@ -654,6 +685,15 @@ function cseu_features_structure_ds_layout_settings_info() {
  */
 function cseu_features_structure_ds_view_modes_info() {
   $export = array();
+
+  $ds_view_mode = new stdClass();
+  $ds_view_mode->api_version = 1;
+  $ds_view_mode->view_mode = 'cseu_ds_view_mode_event';
+  $ds_view_mode->label = 'Event View Mode';
+  $ds_view_mode->entities = array(
+    'node' => 'node',
+  );
+  $export['cseu_ds_view_mode_event'] = $ds_view_mode;
 
   $ds_view_mode = new stdClass();
   $ds_view_mode->api_version = 1;

@@ -1436,6 +1436,49 @@ function cseu_features_structure_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-webform-field_event'.
+  $field_instances['node-webform-field_event'] = array(
+    'bundle' => 'webform',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'links' => 0,
+          'view_mode' => 'cseu_ds_view_mode_event',
+        ),
+        'type' => 'entityreference_entity_view',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_event',
+    'label' => 'Event',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
+      'weight' => 1,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Address');
@@ -1448,6 +1491,7 @@ function cseu_features_structure_field_default_field_instances() {
   t('Department');
   t('Description');
   t('Enter a comma-separated list of words to describe your content.');
+  t('Event');
   t('Geofield');
   t('Image');
   t('Label');

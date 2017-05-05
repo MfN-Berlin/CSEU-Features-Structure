@@ -41,7 +41,7 @@ function cseu_features_structure_default_fe_block_settings() {
         'region' => 'sidebar_first',
         'status' => 1,
         'theme' => 'cseu_theme',
-        'weight' => -8,
+        'weight' => -22,
       ),
       'seven' => array(
         'region' => '',
@@ -82,7 +82,7 @@ function cseu_features_structure_default_fe_block_settings() {
         'region' => 'sidebar_first',
         'status' => 1,
         'theme' => 'cseu_theme',
-        'weight' => -7,
+        'weight' => -21,
       ),
       'seven' => array(
         'region' => '',
