@@ -22,7 +22,7 @@ function cseu_features_structure_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'What ist COST Action 151212?';
+  $handler->display->display_options['title'] = 'What is the Citizen Science Cost Action CA15212?';
   $handler->display->display_options['use_more_always'] = TRUE;
   $handler->display->display_options['use_more_text'] = 'Read more';
   $handler->display->display_options['access']['type'] = 'perm';
@@ -1025,7 +1025,7 @@ function cseu_features_structure_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Community Map';
+  $handler->display->display_options['title'] = 'Network';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -1448,9 +1448,9 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['sorts']['field_cseu_last_name_value']['id'] = 'field_cseu_last_name_value';
   $handler->display->display_options['sorts']['field_cseu_last_name_value']['table'] = 'field_data_field_cseu_last_name';
   $handler->display->display_options['sorts']['field_cseu_last_name_value']['field'] = 'field_cseu_last_name_value';
-  $handler->display->display_options['path'] = 'community/map';
+  $handler->display->display_options['path'] = 'network';
   $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'Community Map';
+  $handler->display->display_options['menu']['title'] = 'Network';
   $handler->display->display_options['menu']['description'] = 'Community Map';
   $handler->display->display_options['menu']['weight'] = '1';
   $handler->display->display_options['menu']['name'] = 'main-menu';
