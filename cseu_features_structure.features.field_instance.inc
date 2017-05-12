@@ -649,6 +649,51 @@ function cseu_features_structure_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-cseu_event-field_working_group'.
+  $field_instances['node-cseu_event-field_working_group'] = array(
+    'bundle' => 'cseu_event',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'cseu_ds_view_mode_event' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_working_group',
+    'label' => 'Working Group',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 5,
+    ),
+  );
+
   // Exported field_instance: 'node-cseu_institution-field_cseu_address'.
   $field_instances['node-cseu_institution-field_cseu_address'] = array(
     'bundle' => 'cseu_institution',

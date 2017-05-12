@@ -118,6 +118,7 @@ features[field_instance][] = node-cseu_deliverable-field_cseu_deadline
 features[field_instance][] = node-cseu_deliverable-field_cseu_description
 features[field_instance][] = node-cseu_deliverable-field_cseu_label
 features[field_instance][] = node-cseu_deliverable-field_cseu_task
+features[field_instance][] = node-cseu_event-field_working_group
 features[field_instance][] = node-cseu_institution-field_cseu_address
 features[field_instance][] = node-cseu_institution-field_cseu_department
 features[field_instance][] = node-cseu_institution-field_cseu_geofield
