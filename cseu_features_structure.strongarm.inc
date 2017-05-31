@@ -430,6 +430,24 @@ function cseu_features_structure_strongarm() {
       'cseu_ds_view_mode_institution' => array(
         'custom_settings' => FALSE,
       ),
+      'search_index' => array(
+        'custom_settings' => FALSE,
+      ),
+      'search_result' => array(
+        'custom_settings' => FALSE,
+      ),
+      'ical' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'cseu_ds_view_mode_event' => array(
+        'custom_settings' => FALSE,
+      ),
+      'cseu_ds_view_mode_task_labelonly' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

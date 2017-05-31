@@ -54,6 +54,21 @@ function cseu_features_structure_image_default_styles() {
     ),
   );
 
+  // Exported image style: cseu_profile_style.
+  $styles['cseu_profile_style'] = array(
+    'label' => 'Profile (220x280)',
+    'effects' => array(
+      1 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 220,
+          'height' => 280,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: cseu_slideshow_style.
   $styles['cseu_slideshow_style'] = array(
     'label' => 'Slideshow (800x380)',

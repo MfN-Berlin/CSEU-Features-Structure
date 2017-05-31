@@ -1335,13 +1335,13 @@ function cseu_features_structure_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'node',
@@ -1363,7 +1363,7 @@ function cseu_features_structure_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -1372,7 +1372,7 @@ function cseu_features_structure_field_default_field_instances() {
     'bundle' => 'cseu_working_group',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'E.g. WG1',
     'display' => array(
       'cseu_ds_view_mode_wg_label_only' => array(
         'label' => 'hidden',
@@ -1407,7 +1407,7 @@ function cseu_features_structure_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1416,6 +1416,7 @@ function cseu_features_structure_field_default_field_instances() {
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_cseu_label',
     'label' => 'Label',
@@ -1434,6 +1435,72 @@ function cseu_features_structure_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'node-cseu_working_group-field_cseu_long_label'.
+  $field_instances['node-cseu_working_group-field_cseu_long_label'] = array(
+    'bundle' => 'cseu_working_group',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'E.g. Working Group 1',
+    'display' => array(
+      'cseu_ds_view_mode_wg_label_only' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'cseu_ds_view_mode_wgs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'cseu_ds_view_mode_wgs_full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'cseu_ds_view_mode_wgs_label' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_cseu_long_label',
+    'label' => 'Long label ',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 2,
     ),
   );
 
@@ -1535,11 +1602,14 @@ function cseu_features_structure_field_default_field_instances() {
   t('Deadline');
   t('Department');
   t('Description');
+  t('E.g. WG1');
+  t('E.g. Working Group 1');
   t('Enter a comma-separated list of words to describe your content.');
   t('Event');
   t('Geofield');
   t('Image');
   t('Label');
+  t('Long label ');
   t('Minimum image resolution: 800x380 pixels');
   t('Name the person who owns the picture.');
   t('Provide additional details about the image.');

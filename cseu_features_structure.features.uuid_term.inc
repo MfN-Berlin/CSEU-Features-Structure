@@ -11,6 +11,14 @@ function cseu_features_structure_uuid_features_default_terms() {
   $terms = array();
 
   $terms[] = array(
+    'name' => 'Working Groups',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '0a449cf6-d14a-4930-9297-905e5ac64335',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
     'name' => 'citizen science',
     'description' => NULL,
     'format' => NULL,
@@ -91,6 +99,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
+    'name' => 'participation',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '59e4edc1-6114-4261-93ed-47ebb50ece8f',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
     'name' => 'Europe',
     'description' => NULL,
     'format' => NULL,
@@ -136,6 +152,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'format' => NULL,
     'weight' => 0,
     'uuid' => '84806a75-d971-4bd4-a113-1e6de36079b8',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
+    'name' => 'selection',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '892712a7-3f5b-48ac-b4d2-46a104ae99fe',
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
