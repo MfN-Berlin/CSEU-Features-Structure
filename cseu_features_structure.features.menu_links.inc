@@ -10,6 +10,26 @@
 function cseu_features_structure_menu_default_menu_links() {
   $menu_links = array();
 
+  // Exported menu link: main-menu_about:node/268.
+  $menu_links['main-menu_about:node/268'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/268',
+    'router_path' => 'node/%',
+    'link_title' => 'About',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'About CA151212',
+      ),
+      'identifier' => 'main-menu_about:node/268',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -49,
+    'customized' => 1,
+  );
   // Exported menu link: main-menu_events:events.
   $menu_links['main-menu_events:events'] = array(
     'menu_name' => 'main-menu',
@@ -44,6 +64,27 @@ function cseu_features_structure_menu_default_menu_links() {
     'weight' => -50,
     'customized' => 1,
   );
+  // Exported menu link: main-menu_information-material:taxonomy/term/52.
+  $menu_links['main-menu_information-material:taxonomy/term/52'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'taxonomy/term/52',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Information Material',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Information Material',
+      ),
+      'identifier' => 'main-menu_information-material:taxonomy/term/52',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_resources:resources',
+  );
   // Exported menu link: main-menu_members-list:community/list.
   $menu_links['main-menu_members-list:community/list'] = array(
     'menu_name' => 'main-menu',
@@ -62,6 +103,231 @@ function cseu_features_structure_menu_default_menu_links() {
     'has_children' => 0,
     'expanded' => 0,
     'weight' => -41,
+    'customized' => 1,
+  );
+  // Exported menu link: main-menu_members:wgs/1/members.
+  $menu_links['main-menu_members:wgs/1/members'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'wgs/1/members',
+    'router_path' => 'wgs/%/members',
+    'link_title' => 'Members',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Members of Working Group 1',
+      ),
+      'identifier' => 'main-menu_members:wgs/1/members',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_working-group-1:wgs/1',
+  );
+  // Exported menu link: main-menu_members:wgs/2/members.
+  $menu_links['main-menu_members:wgs/2/members'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'wgs/2/members',
+    'router_path' => 'wgs/%/members',
+    'link_title' => 'Members',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Members of Working Group 2',
+      ),
+      'identifier' => 'main-menu_members:wgs/2/members',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_working-group-2:wgs/2',
+  );
+  // Exported menu link: main-menu_members:wgs/3/members.
+  $menu_links['main-menu_members:wgs/3/members'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'wgs/3/members',
+    'router_path' => 'wgs/%/members',
+    'link_title' => 'Members',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Members of Working Group 3',
+      ),
+      'identifier' => 'main-menu_members:wgs/3/members',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_working-group-3:wgs/3',
+  );
+  // Exported menu link: main-menu_members:wgs/4/members.
+  $menu_links['main-menu_members:wgs/4/members'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'wgs/4/members',
+    'router_path' => 'wgs/%/members',
+    'link_title' => 'Members',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Members of Working Group 4',
+      ),
+      'identifier' => 'main-menu_members:wgs/4/members',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_working-group-4:wgs/4',
+  );
+  // Exported menu link: main-menu_members:wgs/5/members.
+  $menu_links['main-menu_members:wgs/5/members'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'wgs/5/members',
+    'router_path' => 'wgs/%/members',
+    'link_title' => 'Members',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Members of Working Group 5',
+      ),
+      'identifier' => 'main-menu_members:wgs/5/members',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_working-group-5:wgs/5',
+  );
+  // Exported menu link: main-menu_members:wgs/6/members.
+  $menu_links['main-menu_members:wgs/6/members'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'wgs/6/members',
+    'router_path' => 'wgs/%/members',
+    'link_title' => 'Members',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Members of Working Group 6',
+      ),
+      'identifier' => 'main-menu_members:wgs/6/members',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_working-group-6:wgs/6',
+  );
+  // Exported menu link: main-menu_network:network.
+  $menu_links['main-menu_network:network'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'network',
+    'router_path' => 'network',
+    'link_title' => 'Network',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Community Map',
+      ),
+      'identifier' => 'main-menu_network:network',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'customized' => 1,
+  );
+  // Exported menu link: main-menu_news:news.
+  $menu_links['main-menu_news:news'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'news',
+    'router_path' => 'news',
+    'link_title' => 'News',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'main-menu_news:news',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -46,
+    'customized' => 1,
+  );
+  // Exported menu link: main-menu_publications:taxonomy/term/51.
+  $menu_links['main-menu_publications:taxonomy/term/51'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'taxonomy/term/51',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Publications',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Publications',
+      ),
+      'identifier' => 'main-menu_publications:taxonomy/term/51',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -49,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_resources:resources',
+  );
+  // Exported menu link: main-menu_reports:taxonomy/term/53.
+  $menu_links['main-menu_reports:taxonomy/term/53'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'taxonomy/term/53',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Reports',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Reports',
+      ),
+      'identifier' => 'main-menu_reports:taxonomy/term/53',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_resources:resources',
+  );
+  // Exported menu link: main-menu_resources:resources.
+  $menu_links['main-menu_resources:resources'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'resources',
+    'router_path' => 'resources',
+    'link_title' => 'Resources',
+    'options' => array(
+      'identifier' => 'main-menu_resources:resources',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 1,
+    'expanded' => 0,
+    'weight' => -44,
     'customized' => 1,
   );
   // Exported menu link: main-menu_tasks:tasks.
@@ -84,61 +350,61 @@ function cseu_features_structure_menu_default_menu_links() {
     'weight' => -42,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_working-group-1:wgs/wg1.
-  $menu_links['main-menu_working-group-1:wgs/wg1'] = array(
+  // Exported menu link: main-menu_working-group-1:wgs/1.
+  $menu_links['main-menu_working-group-1:wgs/1'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'wgs/wg1',
-    'router_path' => 'wgs/wg1',
+    'link_path' => 'wgs/1',
+    'router_path' => 'wgs/%',
     'link_title' => 'Working Group 1',
     'options' => array(
       'attributes' => array(
         'title' => 'Working Group 1',
       ),
-      'identifier' => 'main-menu_working-group-1:wgs/wg1',
+      'identifier' => 'main-menu_working-group-1:wgs/1',
     ),
-    'module' => 'system',
+    'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 0,
+    'has_children' => 1,
     'expanded' => 0,
     'weight' => -50,
     'customized' => 1,
     'parent_identifier' => 'main-menu_working-groups:wgs',
   );
-  // Exported menu link: main-menu_working-group-2:wgs/wg2.
-  $menu_links['main-menu_working-group-2:wgs/wg2'] = array(
+  // Exported menu link: main-menu_working-group-2:wgs/2.
+  $menu_links['main-menu_working-group-2:wgs/2'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'wgs/wg2',
-    'router_path' => 'wgs/wg2',
+    'link_path' => 'wgs/2',
+    'router_path' => 'wgs/%',
     'link_title' => 'Working Group 2',
     'options' => array(
       'attributes' => array(
         'title' => 'Working Group 2',
       ),
-      'identifier' => 'main-menu_working-group-2:wgs/wg2',
+      'identifier' => 'main-menu_working-group-2:wgs/2',
     ),
-    'module' => 'system',
+    'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 0,
+    'has_children' => 1,
     'expanded' => 0,
     'weight' => -49,
     'customized' => 1,
     'parent_identifier' => 'main-menu_working-groups:wgs',
   );
-  // Exported menu link: main-menu_working-group-3:wgs/wg3.
-  $menu_links['main-menu_working-group-3:wgs/wg3'] = array(
+  // Exported menu link: main-menu_working-group-3:wgs/3.
+  $menu_links['main-menu_working-group-3:wgs/3'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'wgs/wg3',
-    'router_path' => 'wgs/wg3',
+    'link_path' => 'wgs/3',
+    'router_path' => 'wgs/%',
     'link_title' => 'Working Group 3',
     'options' => array(
       'attributes' => array(
         'title' => 'Working Group 3',
       ),
-      'identifier' => 'main-menu_working-group-3:wgs/wg3',
+      'identifier' => 'main-menu_working-group-3:wgs/3',
     ),
-    'module' => 'system',
+    'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 1,
@@ -147,64 +413,64 @@ function cseu_features_structure_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_working-groups:wgs',
   );
-  // Exported menu link: main-menu_working-group-4:wgs/wg4.
-  $menu_links['main-menu_working-group-4:wgs/wg4'] = array(
+  // Exported menu link: main-menu_working-group-4:wgs/4.
+  $menu_links['main-menu_working-group-4:wgs/4'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'wgs/wg4',
-    'router_path' => 'wgs/wg4',
+    'link_path' => 'wgs/4',
+    'router_path' => 'wgs/%',
     'link_title' => 'Working Group 4',
     'options' => array(
       'attributes' => array(
         'title' => 'Working Group 4',
       ),
-      'identifier' => 'main-menu_working-group-4:wgs/wg4',
+      'identifier' => 'main-menu_working-group-4:wgs/4',
     ),
-    'module' => 'system',
+    'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 0,
+    'has_children' => 1,
     'expanded' => 0,
     'weight' => -47,
     'customized' => 1,
     'parent_identifier' => 'main-menu_working-groups:wgs',
   );
-  // Exported menu link: main-menu_working-group-5:wgs/wg5.
-  $menu_links['main-menu_working-group-5:wgs/wg5'] = array(
+  // Exported menu link: main-menu_working-group-5:wgs/5.
+  $menu_links['main-menu_working-group-5:wgs/5'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'wgs/wg5',
-    'router_path' => 'wgs/wg5',
+    'link_path' => 'wgs/5',
+    'router_path' => 'wgs/%',
     'link_title' => 'Working Group 5',
     'options' => array(
       'attributes' => array(
         'title' => 'Working Group 5',
       ),
-      'identifier' => 'main-menu_working-group-5:wgs/wg5',
+      'identifier' => 'main-menu_working-group-5:wgs/5',
     ),
-    'module' => 'system',
+    'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 0,
+    'has_children' => 1,
     'expanded' => 0,
     'weight' => -46,
     'customized' => 1,
     'parent_identifier' => 'main-menu_working-groups:wgs',
   );
-  // Exported menu link: main-menu_working-group-6:wgs/wg6.
-  $menu_links['main-menu_working-group-6:wgs/wg6'] = array(
+  // Exported menu link: main-menu_working-group-6:wgs/6.
+  $menu_links['main-menu_working-group-6:wgs/6'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'wgs/wg6',
-    'router_path' => 'wgs/wg6',
+    'link_path' => 'wgs/6',
+    'router_path' => 'wgs/%',
     'link_title' => 'Working Group 6',
     'options' => array(
       'attributes' => array(
         'title' => 'Working Group 6',
       ),
-      'identifier' => 'main-menu_working-group-6:wgs/wg6',
+      'identifier' => 'main-menu_working-group-6:wgs/6',
     ),
-    'module' => 'system',
+    'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 0,
+    'has_children' => 1,
     'expanded' => 0,
     'weight' => -45,
     'customized' => 1,
@@ -558,6 +824,7 @@ function cseu_features_structure_menu_default_menu_links() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('About');
   t('All members');
   t('By Role');
   t('Chairs');
@@ -568,12 +835,19 @@ function cseu_features_structure_menu_default_menu_links() {
   t('Events');
   t('Home');
   t('Imprint');
+  t('Information Material');
+  t('Members');
   t('Members - Selections');
   t('Members List');
   t('Members by Role');
   t('Members by Task');
   t('Members by WG');
+  t('Network');
+  t('News');
   t('Privacy Policy');
+  t('Publications');
+  t('Reports');
+  t('Resources');
   t('Tasks');
   t('Working Group 1');
   t('Working Group 2');

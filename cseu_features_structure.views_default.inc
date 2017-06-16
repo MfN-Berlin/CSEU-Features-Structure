@@ -7206,10 +7206,850 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
 
+  /* Display: WG */
+  $handler = $view->new_display('page', 'WG', 'wg_page');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['row_class'] = 'cseu-wgs-list-view-row';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nid']['element_default_classes'] = FALSE;
+  /* Field: Content: Label */
+  $handler->display->display_options['fields']['field_cseu_label']['id'] = 'field_cseu_label';
+  $handler->display->display_options['fields']['field_cseu_label']['table'] = 'field_data_field_cseu_label';
+  $handler->display->display_options['fields']['field_cseu_label']['field'] = 'field_cseu_label';
+  $handler->display->display_options['fields']['field_cseu_label']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_label']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_label']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_label']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_label']['type'] = 'text_plain';
+  /* Field: Content: Long label  */
+  $handler->display->display_options['fields']['field_cseu_long_label']['id'] = 'field_cseu_long_label';
+  $handler->display->display_options['fields']['field_cseu_long_label']['table'] = 'field_data_field_cseu_long_label';
+  $handler->display->display_options['fields']['field_cseu_long_label']['field'] = 'field_cseu_long_label';
+  $handler->display->display_options['fields']['field_cseu_long_label']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_long_label']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_long_label']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_long_label']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_long_label']['type'] = 'text_plain';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['text'] = '[field_cseu_long_label] - [title]';
+  $handler->display->display_options['fields']['title']['alter']['path'] = '/wgs/wg[nid]';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Description */
+  $handler->display->display_options['fields']['field_cseu_description']['id'] = 'field_cseu_description';
+  $handler->display->display_options['fields']['field_cseu_description']['table'] = 'field_data_field_cseu_description';
+  $handler->display->display_options['fields']['field_cseu_description']['field'] = 'field_cseu_description';
+  $handler->display->display_options['fields']['field_cseu_description']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_description']['element_type'] = 'h3';
+  $handler->display->display_options['fields']['field_cseu_description']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_description']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_description']['type'] = 'text_plain';
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'not found';
+  $handler->display->display_options['arguments']['nid']['title_enable'] = TRUE;
+  $handler->display->display_options['arguments']['nid']['title'] = '%1';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['nid']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['nid']['validate']['type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['validate_options']['types'] = array(
+    'cseu_working_group' => 'cseu_working_group',
+  );
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'cseu_working_group' => 'cseu_working_group',
+  );
+  $handler->display->display_options['path'] = 'wgs/%';
+  $handler->display->display_options['menu']['title'] = 'Working Groups';
+  $handler->display->display_options['menu']['description'] = 'Working Groups';
+  $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['name'] = 'main-menu';
+  $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
+
+  /* Display: WG Members */
+  $handler = $view->new_display('page', 'WG Members', 'members_page');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['row_class'] = 'cseu-wgs-list-view-row';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nid']['element_default_classes'] = FALSE;
+  /* Field: Content: Label */
+  $handler->display->display_options['fields']['field_cseu_label']['id'] = 'field_cseu_label';
+  $handler->display->display_options['fields']['field_cseu_label']['table'] = 'field_data_field_cseu_label';
+  $handler->display->display_options['fields']['field_cseu_label']['field'] = 'field_cseu_label';
+  $handler->display->display_options['fields']['field_cseu_label']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_label']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_label']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_label']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_label']['type'] = 'text_plain';
+  /* Field: Content: Long label  */
+  $handler->display->display_options['fields']['field_cseu_long_label']['id'] = 'field_cseu_long_label';
+  $handler->display->display_options['fields']['field_cseu_long_label']['table'] = 'field_data_field_cseu_long_label';
+  $handler->display->display_options['fields']['field_cseu_long_label']['field'] = 'field_cseu_long_label';
+  $handler->display->display_options['fields']['field_cseu_long_label']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_long_label']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_long_label']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_long_label']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_long_label']['type'] = 'text_plain';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['text'] = '[field_cseu_long_label] - [title]';
+  $handler->display->display_options['fields']['title']['alter']['path'] = '/wgs/wg[nid]';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'div';
+  $handler->display->display_options['fields']['title']['element_class'] = 'cseu-wgs-list-view-title-hidden';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'not found';
+  $handler->display->display_options['arguments']['nid']['title_enable'] = TRUE;
+  $handler->display->display_options['arguments']['nid']['title'] = '%1';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['nid']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['nid']['validate']['type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['validate_options']['types'] = array(
+    'cseu_working_group' => 'cseu_working_group',
+  );
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'cseu_working_group' => 'cseu_working_group',
+  );
+  $handler->display->display_options['path'] = 'wgs/%/members';
+  $handler->display->display_options['menu']['title'] = 'Working Groups';
+  $handler->display->display_options['menu']['description'] = 'Working Groups';
+  $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['name'] = 'main-menu';
+  $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
+
+  /* Display: Attach WG Chairs */
+  $handler = $view->new_display('attachment', 'Attach WG Chairs', 'chairs');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['row_class'] = 'cseu-wgs-list-attachment-chairs-row';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Profile referencing Content from field_cseu_group_chair */
+  $handler->display->display_options['relationships']['reverse_field_cseu_group_chair_profile2']['id'] = 'reverse_field_cseu_group_chair_profile2';
+  $handler->display->display_options['relationships']['reverse_field_cseu_group_chair_profile2']['table'] = 'node';
+  $handler->display->display_options['relationships']['reverse_field_cseu_group_chair_profile2']['field'] = 'reverse_field_cseu_group_chair_profile2';
+  $handler->display->display_options['relationships']['reverse_field_cseu_group_chair_profile2']['ui_name'] = 'Profile referencing Content from field_cseu_group_chair';
+  /* Relationship: User Chair */
+  $handler->display->display_options['relationships']['user']['id'] = 'user';
+  $handler->display->display_options['relationships']['user']['table'] = 'profile';
+  $handler->display->display_options['relationships']['user']['field'] = 'user';
+  $handler->display->display_options['relationships']['user']['relationship'] = 'reverse_field_cseu_group_chair_profile2';
+  $handler->display->display_options['relationships']['user']['ui_name'] = 'User Chair';
+  $handler->display->display_options['relationships']['user']['label'] = 'User Chair';
+  /* Relationship: Chair Profile */
+  $handler->display->display_options['relationships']['profile']['id'] = 'profile';
+  $handler->display->display_options['relationships']['profile']['table'] = 'users';
+  $handler->display->display_options['relationships']['profile']['field'] = 'profile';
+  $handler->display->display_options['relationships']['profile']['relationship'] = 'user';
+  $handler->display->display_options['relationships']['profile']['ui_name'] = 'Chair Profile';
+  $handler->display->display_options['relationships']['profile']['label'] = 'User Chair Profile';
+  $handler->display->display_options['relationships']['profile']['bundle_types'] = array(
+    'cseu_profile_personal' => 'cseu_profile_personal',
+  );
+  /* Relationship: Profile referencing Content from field_cseu_group_cochair */
+  $handler->display->display_options['relationships']['reverse_field_cseu_group_cochair_profile2']['id'] = 'reverse_field_cseu_group_cochair_profile2';
+  $handler->display->display_options['relationships']['reverse_field_cseu_group_cochair_profile2']['table'] = 'node';
+  $handler->display->display_options['relationships']['reverse_field_cseu_group_cochair_profile2']['field'] = 'reverse_field_cseu_group_cochair_profile2';
+  $handler->display->display_options['relationships']['reverse_field_cseu_group_cochair_profile2']['ui_name'] = 'Profile referencing Content from field_cseu_group_cochair';
+  /* Relationship: User Co-Chair */
+  $handler->display->display_options['relationships']['user_1']['id'] = 'user_1';
+  $handler->display->display_options['relationships']['user_1']['table'] = 'profile';
+  $handler->display->display_options['relationships']['user_1']['field'] = 'user';
+  $handler->display->display_options['relationships']['user_1']['relationship'] = 'reverse_field_cseu_group_cochair_profile2';
+  $handler->display->display_options['relationships']['user_1']['ui_name'] = 'User Co-Chair';
+  $handler->display->display_options['relationships']['user_1']['label'] = 'User Co-Chair';
+  /* Relationship: Co-Chair Profile */
+  $handler->display->display_options['relationships']['profile_1']['id'] = 'profile_1';
+  $handler->display->display_options['relationships']['profile_1']['table'] = 'users';
+  $handler->display->display_options['relationships']['profile_1']['field'] = 'profile';
+  $handler->display->display_options['relationships']['profile_1']['relationship'] = 'user_1';
+  $handler->display->display_options['relationships']['profile_1']['ui_name'] = 'Co-Chair Profile';
+  $handler->display->display_options['relationships']['profile_1']['label'] = 'Co-Chair Profile';
+  $handler->display->display_options['relationships']['profile_1']['bundle_types'] = array(
+    'cseu_profile_personal' => 'cseu_profile_personal',
+  );
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_cseu_institution_target_id']['id'] = 'field_cseu_institution_target_id';
+  $handler->display->display_options['relationships']['field_cseu_institution_target_id']['table'] = 'field_data_field_cseu_institution';
+  $handler->display->display_options['relationships']['field_cseu_institution_target_id']['field'] = 'field_cseu_institution_target_id';
+  $handler->display->display_options['relationships']['field_cseu_institution_target_id']['relationship'] = 'profile';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_cseu_institution_target_id_1']['id'] = 'field_cseu_institution_target_id_1';
+  $handler->display->display_options['relationships']['field_cseu_institution_target_id_1']['table'] = 'field_data_field_cseu_institution';
+  $handler->display->display_options['relationships']['field_cseu_institution_target_id_1']['field'] = 'field_cseu_institution_target_id';
+  $handler->display->display_options['relationships']['field_cseu_institution_target_id_1']['relationship'] = 'profile_1';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nid']['element_default_classes'] = FALSE;
+  /* Field: User: Picture */
+  $handler->display->display_options['fields']['picture']['id'] = 'picture';
+  $handler->display->display_options['fields']['picture']['table'] = 'users';
+  $handler->display->display_options['fields']['picture']['field'] = 'picture';
+  $handler->display->display_options['fields']['picture']['relationship'] = 'user';
+  $handler->display->display_options['fields']['picture']['label'] = '';
+  $handler->display->display_options['fields']['picture']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['picture']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['picture']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['picture']['image_style'] = 'cseu_profile_style';
+  /* Field: Profile: Title */
+  $handler->display->display_options['fields']['field_cseu_title']['id'] = 'field_cseu_title';
+  $handler->display->display_options['fields']['field_cseu_title']['table'] = 'field_data_field_cseu_title';
+  $handler->display->display_options['fields']['field_cseu_title']['field'] = 'field_cseu_title';
+  $handler->display->display_options['fields']['field_cseu_title']['relationship'] = 'profile';
+  $handler->display->display_options['fields']['field_cseu_title']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_title']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_title']['type'] = 'text_plain';
+  /* Field: Profile: Last Name */
+  $handler->display->display_options['fields']['field_cseu_last_name']['id'] = 'field_cseu_last_name';
+  $handler->display->display_options['fields']['field_cseu_last_name']['table'] = 'field_data_field_cseu_last_name';
+  $handler->display->display_options['fields']['field_cseu_last_name']['field'] = 'field_cseu_last_name';
+  $handler->display->display_options['fields']['field_cseu_last_name']['relationship'] = 'profile';
+  $handler->display->display_options['fields']['field_cseu_last_name']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_last_name']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_last_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_last_name']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_last_name']['type'] = 'text_plain';
+  /* Field: Profile: First Name */
+  $handler->display->display_options['fields']['field_cseu_first_name']['id'] = 'field_cseu_first_name';
+  $handler->display->display_options['fields']['field_cseu_first_name']['table'] = 'field_data_field_cseu_first_name';
+  $handler->display->display_options['fields']['field_cseu_first_name']['field'] = 'field_cseu_first_name';
+  $handler->display->display_options['fields']['field_cseu_first_name']['relationship'] = 'profile';
+  $handler->display->display_options['fields']['field_cseu_first_name']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_first_name']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_first_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_first_name']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_first_name']['type'] = 'text_plain';
+  /* Field: User: Link */
+  $handler->display->display_options['fields']['view_user']['id'] = 'view_user';
+  $handler->display->display_options['fields']['view_user']['table'] = 'users';
+  $handler->display->display_options['fields']['view_user']['field'] = 'view_user';
+  $handler->display->display_options['fields']['view_user']['relationship'] = 'user';
+  $handler->display->display_options['fields']['view_user']['label'] = '';
+  $handler->display->display_options['fields']['view_user']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['view_user']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_user']['element_default_classes'] = FALSE;
+  /* Field: Profile: Institution */
+  $handler->display->display_options['fields']['field_cseu_institution']['id'] = 'field_cseu_institution';
+  $handler->display->display_options['fields']['field_cseu_institution']['table'] = 'field_data_field_cseu_institution';
+  $handler->display->display_options['fields']['field_cseu_institution']['field'] = 'field_cseu_institution';
+  $handler->display->display_options['fields']['field_cseu_institution']['relationship'] = 'profile';
+  $handler->display->display_options['fields']['field_cseu_institution']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_institution']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_institution']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_institution']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_institution']['settings'] = array(
+    'link' => 0,
+  );
+  /* Field: Chair Country */
+  $handler->display->display_options['fields']['field_cseu_address_country']['id'] = 'field_cseu_address_country';
+  $handler->display->display_options['fields']['field_cseu_address_country']['table'] = 'field_data_field_cseu_address';
+  $handler->display->display_options['fields']['field_cseu_address_country']['field'] = 'field_cseu_address_country';
+  $handler->display->display_options['fields']['field_cseu_address_country']['relationship'] = 'field_cseu_institution_target_id';
+  $handler->display->display_options['fields']['field_cseu_address_country']['ui_name'] = 'Chair Country';
+  $handler->display->display_options['fields']['field_cseu_address_country']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_address_country']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_address_country']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_address_country']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_address_country']['display_name'] = 1;
+  /* Field: User: Picture */
+  $handler->display->display_options['fields']['picture_1']['id'] = 'picture_1';
+  $handler->display->display_options['fields']['picture_1']['table'] = 'users';
+  $handler->display->display_options['fields']['picture_1']['field'] = 'picture';
+  $handler->display->display_options['fields']['picture_1']['relationship'] = 'user_1';
+  $handler->display->display_options['fields']['picture_1']['label'] = '';
+  $handler->display->display_options['fields']['picture_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['picture_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['picture_1']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['picture_1']['image_style'] = 'cseu_profile_style';
+  /* Field: Profile: Title */
+  $handler->display->display_options['fields']['field_cseu_title_1']['id'] = 'field_cseu_title_1';
+  $handler->display->display_options['fields']['field_cseu_title_1']['table'] = 'field_data_field_cseu_title';
+  $handler->display->display_options['fields']['field_cseu_title_1']['field'] = 'field_cseu_title';
+  $handler->display->display_options['fields']['field_cseu_title_1']['relationship'] = 'profile_1';
+  $handler->display->display_options['fields']['field_cseu_title_1']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_title_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_title_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_title_1']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_title_1']['type'] = 'text_plain';
+  /* Field: Profile: Last Name */
+  $handler->display->display_options['fields']['field_cseu_last_name_1']['id'] = 'field_cseu_last_name_1';
+  $handler->display->display_options['fields']['field_cseu_last_name_1']['table'] = 'field_data_field_cseu_last_name';
+  $handler->display->display_options['fields']['field_cseu_last_name_1']['field'] = 'field_cseu_last_name';
+  $handler->display->display_options['fields']['field_cseu_last_name_1']['relationship'] = 'profile_1';
+  $handler->display->display_options['fields']['field_cseu_last_name_1']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_last_name_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_last_name_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_last_name_1']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_last_name_1']['type'] = 'text_plain';
+  /* Field: Profile: First Name */
+  $handler->display->display_options['fields']['field_cseu_first_name_1']['id'] = 'field_cseu_first_name_1';
+  $handler->display->display_options['fields']['field_cseu_first_name_1']['table'] = 'field_data_field_cseu_first_name';
+  $handler->display->display_options['fields']['field_cseu_first_name_1']['field'] = 'field_cseu_first_name';
+  $handler->display->display_options['fields']['field_cseu_first_name_1']['relationship'] = 'profile_1';
+  $handler->display->display_options['fields']['field_cseu_first_name_1']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_first_name_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_first_name_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_first_name_1']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_first_name_1']['type'] = 'text_plain';
+  /* Field: User: Link */
+  $handler->display->display_options['fields']['view_user_1']['id'] = 'view_user_1';
+  $handler->display->display_options['fields']['view_user_1']['table'] = 'users';
+  $handler->display->display_options['fields']['view_user_1']['field'] = 'view_user';
+  $handler->display->display_options['fields']['view_user_1']['relationship'] = 'user_1';
+  $handler->display->display_options['fields']['view_user_1']['label'] = '';
+  $handler->display->display_options['fields']['view_user_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['view_user_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_user_1']['element_default_classes'] = FALSE;
+  /* Field: Profile: Institution */
+  $handler->display->display_options['fields']['field_cseu_institution_1']['id'] = 'field_cseu_institution_1';
+  $handler->display->display_options['fields']['field_cseu_institution_1']['table'] = 'field_data_field_cseu_institution';
+  $handler->display->display_options['fields']['field_cseu_institution_1']['field'] = 'field_cseu_institution';
+  $handler->display->display_options['fields']['field_cseu_institution_1']['relationship'] = 'profile_1';
+  $handler->display->display_options['fields']['field_cseu_institution_1']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_institution_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_institution_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_institution_1']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_institution_1']['settings'] = array(
+    'link' => 0,
+  );
+  /* Field: Co-Chair Country */
+  $handler->display->display_options['fields']['field_cseu_address_country_1']['id'] = 'field_cseu_address_country_1';
+  $handler->display->display_options['fields']['field_cseu_address_country_1']['table'] = 'field_data_field_cseu_address';
+  $handler->display->display_options['fields']['field_cseu_address_country_1']['field'] = 'field_cseu_address_country';
+  $handler->display->display_options['fields']['field_cseu_address_country_1']['relationship'] = 'field_cseu_institution_target_id_1';
+  $handler->display->display_options['fields']['field_cseu_address_country_1']['ui_name'] = 'Co-Chair Country';
+  $handler->display->display_options['fields']['field_cseu_address_country_1']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_address_country_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_address_country_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_address_country_1']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_address_country_1']['display_name'] = 1;
+  /* Field:  Chair Full Name */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['ui_name'] = ' Chair Full Name';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '[field_cseu_title] [field_cseu_first_name] [field_cseu_last_name]';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing']['element_default_classes'] = FALSE;
+  /* Field:  Chair Institution */
+  $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
+  $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_1']['ui_name'] = ' Chair Institution';
+  $handler->display->display_options['fields']['nothing_1']['label'] = '';
+  $handler->display->display_options['fields']['nothing_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '[field_cseu_institution], [field_cseu_address_country]';
+  $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_1']['element_default_classes'] = FALSE;
+  /* Field:  Co-Chair Full Name */
+  $handler->display->display_options['fields']['nothing_2']['id'] = 'nothing_2';
+  $handler->display->display_options['fields']['nothing_2']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_2']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_2']['ui_name'] = ' Co-Chair Full Name';
+  $handler->display->display_options['fields']['nothing_2']['label'] = '';
+  $handler->display->display_options['fields']['nothing_2']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nothing_2']['alter']['text'] = '[field_cseu_title_1] [field_cseu_last_name_1] [field_cseu_first_name_1]';
+  $handler->display->display_options['fields']['nothing_2']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_2']['element_default_classes'] = FALSE;
+  /* Field: Co-Chair Institution */
+  $handler->display->display_options['fields']['nothing_3']['id'] = 'nothing_3';
+  $handler->display->display_options['fields']['nothing_3']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_3']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_3']['ui_name'] = 'Co-Chair Institution';
+  $handler->display->display_options['fields']['nothing_3']['label'] = '';
+  $handler->display->display_options['fields']['nothing_3']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nothing_3']['alter']['text'] = '[field_cseu_institution_1], [field_cseu_address_country_1]';
+  $handler->display->display_options['fields']['nothing_3']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_3']['element_default_classes'] = FALSE;
+  /* Field: Column Chair */
+  $handler->display->display_options['fields']['nothing_4']['id'] = 'nothing_4';
+  $handler->display->display_options['fields']['nothing_4']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_4']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_4']['ui_name'] = 'Column Chair';
+  $handler->display->display_options['fields']['nothing_4']['label'] = '';
+  $handler->display->display_options['fields']['nothing_4']['alter']['text'] = '<div class="cseu-wgs-list-attachment-chairs">
+  <h2>Chair</h2>
+  <div class="cseu-wgs-list-profile">
+    <div class="cseu-wgs-list-image">[picture]</div>
+    <div class="cseu-wgs-list-info">
+      <div class="cseu-wgs-list-member">[nothing]</div>
+      <div class="cseu-wgs-list-institution">[nothing_1]</div>
+    </div>
+  </div>
+</div>';
+  $handler->display->display_options['fields']['nothing_4']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_4']['element_default_classes'] = FALSE;
+  /* Field: Column Co-Chair */
+  $handler->display->display_options['fields']['nothing_5']['id'] = 'nothing_5';
+  $handler->display->display_options['fields']['nothing_5']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_5']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_5']['ui_name'] = 'Column Co-Chair';
+  $handler->display->display_options['fields']['nothing_5']['label'] = '';
+  $handler->display->display_options['fields']['nothing_5']['alter']['text'] = '<div class="cseu-wgs-list-attachment-chairs">
+  <h2>Co-Chair</h2>
+  <div class="cseu-wgs-list-profile">
+    <div class="cseu-wgs-list-image">[picture_1]</div>
+    <div class="cseu-wgs-list-info">
+      <div class="cseu-wgs-list-member">[nothing_2]</div>
+      <div class="cseu-wgs-list-institution">[nothing_3]</div>
+    </div>
+  </div>
+</div>';
+  $handler->display->display_options['fields']['nothing_5']['element_label_colon'] = FALSE;
+  /* Field: Column Request Membership */
+  $handler->display->display_options['fields']['nothing_6']['id'] = 'nothing_6';
+  $handler->display->display_options['fields']['nothing_6']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_6']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_6']['ui_name'] = 'Column Request Membership';
+  $handler->display->display_options['fields']['nothing_6']['label'] = '';
+  $handler->display->display_options['fields']['nothing_6']['alter']['text'] = '<div class="cseu-wgs-list-attachment-chairs">
+  <div class="cseu-wgs-list-request-link">
+    <a href="/about/contact">Request Membership for this group</a>
+  </div>
+</div>';
+  $handler->display->display_options['fields']['nothing_6']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_6']['element_default_classes'] = FALSE;
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'empty';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['nid']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['nid']['validate']['type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['validate_options']['types'] = array(
+    'cseu_working_group' => 'cseu_working_group',
+  );
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'cseu_working_group' => 'cseu_working_group',
+  );
+  $handler->display->display_options['displays'] = array(
+    'wg_page' => 'wg_page',
+    'members_page' => 'members_page',
+    'default' => 0,
+    'page' => 0,
+    'wgs' => 0,
+    'wg1' => 0,
+    'wg2' => 0,
+    'wg3' => 0,
+    'wg4' => 0,
+    'wg5' => 0,
+    'wg6' => 0,
+  );
+  $handler->display->display_options['attachment_position'] = 'after';
+
+  /* Display: Attach WG Members */
+  $handler = $view->new_display('attachment', 'Attach WG Members', 'members');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Working Group Members';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Profile referencing via field_cseu_groups_interest */
+  $handler->display->display_options['relationships']['reverse_field_cseu_groups_interest_profile2']['id'] = 'reverse_field_cseu_groups_interest_profile2';
+  $handler->display->display_options['relationships']['reverse_field_cseu_groups_interest_profile2']['table'] = 'node';
+  $handler->display->display_options['relationships']['reverse_field_cseu_groups_interest_profile2']['field'] = 'reverse_field_cseu_groups_interest_profile2';
+  $handler->display->display_options['relationships']['reverse_field_cseu_groups_interest_profile2']['ui_name'] = 'Profile referencing via field_cseu_groups_interest';
+  $handler->display->display_options['relationships']['reverse_field_cseu_groups_interest_profile2']['label'] = 'Profile referencing Content via field_cseu_groups_interest';
+  $handler->display->display_options['relationships']['reverse_field_cseu_groups_interest_profile2']['required'] = TRUE;
+  /* Relationship: User Member */
+  $handler->display->display_options['relationships']['user_1']['id'] = 'user_1';
+  $handler->display->display_options['relationships']['user_1']['table'] = 'profile';
+  $handler->display->display_options['relationships']['user_1']['field'] = 'user';
+  $handler->display->display_options['relationships']['user_1']['relationship'] = 'reverse_field_cseu_groups_interest_profile2';
+  $handler->display->display_options['relationships']['user_1']['ui_name'] = 'User Member';
+  $handler->display->display_options['relationships']['user_1']['label'] = 'User Member';
+  $handler->display->display_options['relationships']['user_1']['required'] = TRUE;
+  /* Relationship: User Member Profile */
+  $handler->display->display_options['relationships']['profile']['id'] = 'profile';
+  $handler->display->display_options['relationships']['profile']['table'] = 'users';
+  $handler->display->display_options['relationships']['profile']['field'] = 'profile';
+  $handler->display->display_options['relationships']['profile']['relationship'] = 'user_1';
+  $handler->display->display_options['relationships']['profile']['ui_name'] = 'User Member Profile';
+  $handler->display->display_options['relationships']['profile']['label'] = 'User Member Profile';
+  $handler->display->display_options['relationships']['profile']['required'] = TRUE;
+  $handler->display->display_options['relationships']['profile']['bundle_types'] = array(
+    'cseu_profile_personal' => 'cseu_profile_personal',
+  );
+  /* Relationship: Entity Reference: Institution */
+  $handler->display->display_options['relationships']['field_cseu_institution_target_id']['id'] = 'field_cseu_institution_target_id';
+  $handler->display->display_options['relationships']['field_cseu_institution_target_id']['table'] = 'field_data_field_cseu_institution';
+  $handler->display->display_options['relationships']['field_cseu_institution_target_id']['field'] = 'field_cseu_institution_target_id';
+  $handler->display->display_options['relationships']['field_cseu_institution_target_id']['relationship'] = 'profile';
+  $handler->display->display_options['relationships']['field_cseu_institution_target_id']['ui_name'] = 'Entity Reference: Institution';
+  $handler->display->display_options['relationships']['field_cseu_institution_target_id']['label'] = 'Reference: Institution';
+  $handler->display->display_options['relationships']['field_cseu_institution_target_id']['required'] = TRUE;
+  /* Relationship: User Chair Profile */
+  $handler->display->display_options['relationships']['reverse_field_cseu_group_chair_profile2']['id'] = 'reverse_field_cseu_group_chair_profile2';
+  $handler->display->display_options['relationships']['reverse_field_cseu_group_chair_profile2']['table'] = 'node';
+  $handler->display->display_options['relationships']['reverse_field_cseu_group_chair_profile2']['field'] = 'reverse_field_cseu_group_chair_profile2';
+  $handler->display->display_options['relationships']['reverse_field_cseu_group_chair_profile2']['ui_name'] = 'User Chair Profile';
+  $handler->display->display_options['relationships']['reverse_field_cseu_group_chair_profile2']['label'] = 'User Chair Profile';
+  /* Relationship: User Chair */
+  $handler->display->display_options['relationships']['user']['id'] = 'user';
+  $handler->display->display_options['relationships']['user']['table'] = 'profile';
+  $handler->display->display_options['relationships']['user']['field'] = 'user';
+  $handler->display->display_options['relationships']['user']['relationship'] = 'reverse_field_cseu_group_chair_profile2';
+  $handler->display->display_options['relationships']['user']['ui_name'] = 'User Chair';
+  $handler->display->display_options['relationships']['user']['label'] = 'User Chair';
+  /* Relationship: User Co-Chair Profile */
+  $handler->display->display_options['relationships']['reverse_field_cseu_group_cochair_profile2']['id'] = 'reverse_field_cseu_group_cochair_profile2';
+  $handler->display->display_options['relationships']['reverse_field_cseu_group_cochair_profile2']['table'] = 'node';
+  $handler->display->display_options['relationships']['reverse_field_cseu_group_cochair_profile2']['field'] = 'reverse_field_cseu_group_cochair_profile2';
+  $handler->display->display_options['relationships']['reverse_field_cseu_group_cochair_profile2']['ui_name'] = 'User Co-Chair Profile';
+  $handler->display->display_options['relationships']['reverse_field_cseu_group_cochair_profile2']['label'] = 'User Co-Chair Profile';
+  /* Relationship: User Co-Chair */
+  $handler->display->display_options['relationships']['user_2']['id'] = 'user_2';
+  $handler->display->display_options['relationships']['user_2']['table'] = 'profile';
+  $handler->display->display_options['relationships']['user_2']['field'] = 'user';
+  $handler->display->display_options['relationships']['user_2']['relationship'] = 'reverse_field_cseu_group_cochair_profile2';
+  $handler->display->display_options['relationships']['user_2']['ui_name'] = 'User Co-Chair';
+  $handler->display->display_options['relationships']['user_2']['label'] = 'User Co-Chair';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nid']['element_default_classes'] = FALSE;
+  /* Field: User: Picture */
+  $handler->display->display_options['fields']['picture']['id'] = 'picture';
+  $handler->display->display_options['fields']['picture']['table'] = 'users';
+  $handler->display->display_options['fields']['picture']['field'] = 'picture';
+  $handler->display->display_options['fields']['picture']['relationship'] = 'user_1';
+  $handler->display->display_options['fields']['picture']['label'] = '';
+  $handler->display->display_options['fields']['picture']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['picture']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['picture']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['picture']['image_style'] = 'cseu_profile_style';
+  /* Field: Profile: Title */
+  $handler->display->display_options['fields']['field_cseu_title']['id'] = 'field_cseu_title';
+  $handler->display->display_options['fields']['field_cseu_title']['table'] = 'field_data_field_cseu_title';
+  $handler->display->display_options['fields']['field_cseu_title']['field'] = 'field_cseu_title';
+  $handler->display->display_options['fields']['field_cseu_title']['relationship'] = 'profile';
+  $handler->display->display_options['fields']['field_cseu_title']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_title']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_title']['type'] = 'text_plain';
+  /* Field: Profile: First Name */
+  $handler->display->display_options['fields']['field_cseu_first_name']['id'] = 'field_cseu_first_name';
+  $handler->display->display_options['fields']['field_cseu_first_name']['table'] = 'field_data_field_cseu_first_name';
+  $handler->display->display_options['fields']['field_cseu_first_name']['field'] = 'field_cseu_first_name';
+  $handler->display->display_options['fields']['field_cseu_first_name']['relationship'] = 'profile';
+  $handler->display->display_options['fields']['field_cseu_first_name']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_first_name']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_first_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_first_name']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_first_name']['type'] = 'text_plain';
+  /* Field: Profile: Last Name */
+  $handler->display->display_options['fields']['field_cseu_last_name']['id'] = 'field_cseu_last_name';
+  $handler->display->display_options['fields']['field_cseu_last_name']['table'] = 'field_data_field_cseu_last_name';
+  $handler->display->display_options['fields']['field_cseu_last_name']['field'] = 'field_cseu_last_name';
+  $handler->display->display_options['fields']['field_cseu_last_name']['relationship'] = 'profile';
+  $handler->display->display_options['fields']['field_cseu_last_name']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_last_name']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_last_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_last_name']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_last_name']['type'] = 'text_plain';
+  /* Field: Profile: Institution */
+  $handler->display->display_options['fields']['field_cseu_institution']['id'] = 'field_cseu_institution';
+  $handler->display->display_options['fields']['field_cseu_institution']['table'] = 'field_data_field_cseu_institution';
+  $handler->display->display_options['fields']['field_cseu_institution']['field'] = 'field_cseu_institution';
+  $handler->display->display_options['fields']['field_cseu_institution']['relationship'] = 'profile';
+  $handler->display->display_options['fields']['field_cseu_institution']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_institution']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_institution']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_institution']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_institution']['settings'] = array(
+    'link' => 0,
+  );
+  /* Field: Country */
+  $handler->display->display_options['fields']['field_cseu_address_country']['id'] = 'field_cseu_address_country';
+  $handler->display->display_options['fields']['field_cseu_address_country']['table'] = 'field_data_field_cseu_address';
+  $handler->display->display_options['fields']['field_cseu_address_country']['field'] = 'field_cseu_address_country';
+  $handler->display->display_options['fields']['field_cseu_address_country']['relationship'] = 'field_cseu_institution_target_id';
+  $handler->display->display_options['fields']['field_cseu_address_country']['ui_name'] = 'Country';
+  $handler->display->display_options['fields']['field_cseu_address_country']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_address_country']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_address_country']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_address_country']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_address_country']['display_name'] = 1;
+  /* Field: User Member UID */
+  $handler->display->display_options['fields']['uid']['id'] = 'uid';
+  $handler->display->display_options['fields']['uid']['table'] = 'users';
+  $handler->display->display_options['fields']['uid']['field'] = 'uid';
+  $handler->display->display_options['fields']['uid']['relationship'] = 'user_1';
+  $handler->display->display_options['fields']['uid']['ui_name'] = 'User Member UID';
+  $handler->display->display_options['fields']['uid']['label'] = '';
+  $handler->display->display_options['fields']['uid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['uid']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['uid']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['uid']['link_to_user'] = FALSE;
+  /* Field: User Chair UID */
+  $handler->display->display_options['fields']['uid_1']['id'] = 'uid_1';
+  $handler->display->display_options['fields']['uid_1']['table'] = 'users';
+  $handler->display->display_options['fields']['uid_1']['field'] = 'uid';
+  $handler->display->display_options['fields']['uid_1']['relationship'] = 'user';
+  $handler->display->display_options['fields']['uid_1']['ui_name'] = 'User Chair UID';
+  $handler->display->display_options['fields']['uid_1']['label'] = '';
+  $handler->display->display_options['fields']['uid_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['uid_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['uid_1']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['uid_1']['link_to_user'] = FALSE;
+  /* Field: User Co-Chair UID */
+  $handler->display->display_options['fields']['uid_2']['id'] = 'uid_2';
+  $handler->display->display_options['fields']['uid_2']['table'] = 'users';
+  $handler->display->display_options['fields']['uid_2']['field'] = 'uid';
+  $handler->display->display_options['fields']['uid_2']['relationship'] = 'user_2';
+  $handler->display->display_options['fields']['uid_2']['ui_name'] = 'User Co-Chair UID';
+  $handler->display->display_options['fields']['uid_2']['label'] = '';
+  $handler->display->display_options['fields']['uid_2']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['uid_2']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['uid_2']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['uid_2']['link_to_user'] = FALSE;
+  /* Field:  Chair Full Name */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['ui_name'] = ' Chair Full Name';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '[field_cseu_title] [field_cseu_first_name] [field_cseu_last_name]';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing']['element_default_classes'] = FALSE;
+  /* Field:  Chair Institution */
+  $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
+  $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_1']['ui_name'] = ' Chair Institution';
+  $handler->display->display_options['fields']['nothing_1']['label'] = '';
+  $handler->display->display_options['fields']['nothing_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '[field_cseu_institution], [field_cseu_address_country]';
+  $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_1']['element_default_classes'] = FALSE;
+  /* Field: Column Member */
+  $handler->display->display_options['fields']['nothing_4']['id'] = 'nothing_4';
+  $handler->display->display_options['fields']['nothing_4']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_4']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_4']['ui_name'] = 'Column Member';
+  $handler->display->display_options['fields']['nothing_4']['label'] = '';
+  $handler->display->display_options['fields']['nothing_4']['alter']['text'] = '<div class="cseu-wgs-list-attachment-members">
+  <div class="cseu-wgs-list-profile">
+    <div class="cseu-wgs-list-image">[picture]</div>
+    <div class="cseu-wgs-list-info">
+      <div class="cseu-wgs-list-member">[nothing]</div>
+      <div class="cseu-wgs-list-institution">[nothing_1]</div>
+    </div>
+  </div>
+</div>';
+  $handler->display->display_options['fields']['nothing_4']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_4']['element_default_classes'] = FALSE;
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'empty';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['nid']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['nid']['validate']['type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['validate_options']['types'] = array(
+    'cseu_working_group' => 'cseu_working_group',
+  );
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'cseu_working_group' => 'cseu_working_group',
+  );
+  /* Filter criterion: Member is not Chair */
+  $handler->display->display_options['filters']['fields_compare']['id'] = 'fields_compare';
+  $handler->display->display_options['filters']['fields_compare']['table'] = 'views';
+  $handler->display->display_options['filters']['fields_compare']['field'] = 'fields_compare';
+  $handler->display->display_options['filters']['fields_compare']['ui_name'] = 'Member is not Chair';
+  $handler->display->display_options['filters']['fields_compare']['operator'] = '<>';
+  $handler->display->display_options['filters']['fields_compare']['right_field'] = 'uid_1';
+  $handler->display->display_options['filters']['fields_compare']['left_field'] = 'uid';
+  /* Filter criterion: Member is not Co-Chair */
+  $handler->display->display_options['filters']['fields_compare_1']['id'] = 'fields_compare_1';
+  $handler->display->display_options['filters']['fields_compare_1']['table'] = 'views';
+  $handler->display->display_options['filters']['fields_compare_1']['field'] = 'fields_compare';
+  $handler->display->display_options['filters']['fields_compare_1']['ui_name'] = 'Member is not Co-Chair';
+  $handler->display->display_options['filters']['fields_compare_1']['operator'] = '<>';
+  $handler->display->display_options['filters']['fields_compare_1']['right_field'] = 'uid_2';
+  $handler->display->display_options['filters']['fields_compare_1']['left_field'] = 'uid';
+  $handler->display->display_options['displays'] = array(
+    'members_page' => 'members_page',
+    'default' => 0,
+    'page' => 0,
+    'wgs' => 0,
+    'wg1' => 0,
+    'wg2' => 0,
+    'wg3' => 0,
+    'wg4' => 0,
+    'wg5' => 0,
+    'wg6' => 0,
+  );
+  $handler->display->display_options['attachment_position'] = 'after';
+
   /* Display: WG1 */
   $handler = $view->new_display('page', 'WG1', 'wg1');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Working Group 1';
+  $handler->display->display_options['enabled'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
@@ -7387,6 +8227,7 @@ function cseu_features_structure_views_default_views() {
   $handler = $view->new_display('page', 'WG2', 'wg2');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Working Group 2';
+  $handler->display->display_options['enabled'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
@@ -7564,6 +8405,7 @@ function cseu_features_structure_views_default_views() {
   $handler = $view->new_display('page', 'WG3', 'wg3');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Working Group 3';
+  $handler->display->display_options['enabled'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
@@ -7741,6 +8583,7 @@ function cseu_features_structure_views_default_views() {
   $handler = $view->new_display('page', 'WG4', 'wg4');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Working Group 4';
+  $handler->display->display_options['enabled'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
@@ -7918,6 +8761,7 @@ function cseu_features_structure_views_default_views() {
   $handler = $view->new_display('page', 'WG5', 'wg5');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Working Group 5';
+  $handler->display->display_options['enabled'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
@@ -8095,6 +8939,7 @@ function cseu_features_structure_views_default_views() {
   $handler = $view->new_display('page', 'WG6', 'wg6');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Working Group 6';
+  $handler->display->display_options['enabled'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
