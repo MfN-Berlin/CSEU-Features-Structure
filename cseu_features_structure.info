@@ -246,6 +246,7 @@ features[variable][] = additional_settings__active_tab_cseu_task
 features[variable][] = additional_settings__active_tab_cseu_working_group
 features[variable][] = comment_webform
 features[variable][] = date_format_cseu_frontpage_short_date
+features[variable][] = date_format_date_format_cseu_date_type_event_long
 features[variable][] = date_format_date_format_cseu_date_type_iso_8601
 features[variable][] = date_format_date_format_cseu_date_type_month
 features[variable][] = ds_extras_view_modes_cseu_institution

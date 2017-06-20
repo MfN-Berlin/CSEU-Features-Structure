@@ -55,6 +55,13 @@ function cseu_features_structure_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'date_format_date_format_cseu_date_type_event_long';
+  $strongarm->value = 'l, F jS, Y';
+  $export['date_format_date_format_cseu_date_type_event_long'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'date_format_date_format_cseu_date_type_iso_8601';
   $strongarm->value = 'Y-m-d';
   $export['date_format_date_format_cseu_date_type_iso_8601'] = $strongarm;
