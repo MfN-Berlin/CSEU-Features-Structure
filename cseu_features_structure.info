@@ -412,6 +412,7 @@ features[views_view][] = cseu_restricted_emails_chairs_view
 features[views_view][] = cseu_restricted_emails_cochairs_view
 features[views_view][] = cseu_restricted_emails_members_view
 features[views_view][] = cseu_tasks_list_view
+features[views_view][] = cseu_wg_resources_list
 features[views_view][] = cseu_wgs_list_view
 features[wysiwyg][] = filtered_html
 features[wysiwyg][] = full_html
