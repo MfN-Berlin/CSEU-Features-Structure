@@ -47,6 +47,132 @@ function cseu_features_structure_menu_default_menu_links() {
     'weight' => -45,
     'customized' => 1,
   );
+  // Exported menu link: main-menu_events:wgs/1/events.
+  $menu_links['main-menu_events:wgs/1/events'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'wgs/1/events',
+    'router_path' => 'wgs/%/events',
+    'link_title' => 'Events',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Events',
+      ),
+      'identifier' => 'main-menu_events:wgs/1/events',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_working-group-1:wgs/1',
+  );
+  // Exported menu link: main-menu_events:wgs/2/events.
+  $menu_links['main-menu_events:wgs/2/events'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'wgs/2/events',
+    'router_path' => 'wgs/%/events',
+    'link_title' => 'Events',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Events',
+      ),
+      'identifier' => 'main-menu_events:wgs/2/events',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_working-group-2:wgs/2',
+  );
+  // Exported menu link: main-menu_events:wgs/3/events.
+  $menu_links['main-menu_events:wgs/3/events'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'wgs/3/events',
+    'router_path' => 'wgs/%/events',
+    'link_title' => 'Events',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Events',
+      ),
+      'identifier' => 'main-menu_events:wgs/3/events',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_working-group-3:wgs/3',
+  );
+  // Exported menu link: main-menu_events:wgs/4/events.
+  $menu_links['main-menu_events:wgs/4/events'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'wgs/4/events',
+    'router_path' => 'wgs/%/events',
+    'link_title' => 'Events',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Events',
+      ),
+      'identifier' => 'main-menu_events:wgs/4/events',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_working-group-4:wgs/4',
+  );
+  // Exported menu link: main-menu_events:wgs/5/events.
+  $menu_links['main-menu_events:wgs/5/events'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'wgs/5/events',
+    'router_path' => 'wgs/%/events',
+    'link_title' => 'Events',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Events',
+      ),
+      'identifier' => 'main-menu_events:wgs/5/events',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_working-group-5:wgs/5',
+  );
+  // Exported menu link: main-menu_events:wgs/6/events.
+  $menu_links['main-menu_events:wgs/6/events'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'wgs/6/events',
+    'router_path' => 'wgs/%/events',
+    'link_title' => 'Events',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Events',
+      ),
+      'identifier' => 'main-menu_events:wgs/6/events',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_working-group-6:wgs/6',
+  );
   // Exported menu link: main-menu_home:<front>.
   $menu_links['main-menu_home:<front>'] = array(
     'menu_name' => 'main-menu',
@@ -122,7 +248,7 @@ function cseu_features_structure_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -50,
+    'weight' => -49,
     'customized' => 1,
     'parent_identifier' => 'main-menu_working-group-1:wgs/1',
   );
@@ -143,7 +269,7 @@ function cseu_features_structure_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -50,
+    'weight' => -49,
     'customized' => 1,
     'parent_identifier' => 'main-menu_working-group-2:wgs/2',
   );
@@ -164,7 +290,7 @@ function cseu_features_structure_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -50,
+    'weight' => -49,
     'customized' => 1,
     'parent_identifier' => 'main-menu_working-group-3:wgs/3',
   );
@@ -185,7 +311,7 @@ function cseu_features_structure_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -50,
+    'weight' => -49,
     'customized' => 1,
     'parent_identifier' => 'main-menu_working-group-4:wgs/4',
   );
@@ -206,7 +332,7 @@ function cseu_features_structure_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -50,
+    'weight' => -49,
     'customized' => 1,
     'parent_identifier' => 'main-menu_working-group-5:wgs/5',
   );
@@ -227,7 +353,7 @@ function cseu_features_structure_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -50,
+    'weight' => -49,
     'customized' => 1,
     'parent_identifier' => 'main-menu_working-group-6:wgs/6',
   );
@@ -329,6 +455,132 @@ function cseu_features_structure_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -44,
     'customized' => 1,
+  );
+  // Exported menu link: main-menu_resources:wgs/1/resources.
+  $menu_links['main-menu_resources:wgs/1/resources'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'wgs/1/resources',
+    'router_path' => 'wgs/%/resources',
+    'link_title' => 'Resources',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Resources',
+      ),
+      'identifier' => 'main-menu_resources:wgs/1/resources',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_working-group-1:wgs/1',
+  );
+  // Exported menu link: main-menu_resources:wgs/2/resources.
+  $menu_links['main-menu_resources:wgs/2/resources'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'wgs/2/resources',
+    'router_path' => 'wgs/%/resources',
+    'link_title' => 'Resources',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Resources',
+      ),
+      'identifier' => 'main-menu_resources:wgs/2/resources',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_working-group-2:wgs/2',
+  );
+  // Exported menu link: main-menu_resources:wgs/3/resources.
+  $menu_links['main-menu_resources:wgs/3/resources'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'wgs/3/resources',
+    'router_path' => 'wgs/%/resources',
+    'link_title' => 'Resources',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Resources',
+      ),
+      'identifier' => 'main-menu_resources:wgs/3/resources',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_working-group-3:wgs/3',
+  );
+  // Exported menu link: main-menu_resources:wgs/4/resources.
+  $menu_links['main-menu_resources:wgs/4/resources'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'wgs/4/resources',
+    'router_path' => 'wgs/%/resources',
+    'link_title' => 'Resources',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Resources',
+      ),
+      'identifier' => 'main-menu_resources:wgs/4/resources',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_working-group-4:wgs/4',
+  );
+  // Exported menu link: main-menu_resources:wgs/5/resources.
+  $menu_links['main-menu_resources:wgs/5/resources'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'wgs/5/resources',
+    'router_path' => 'wgs/%/resources',
+    'link_title' => 'Resources',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Resources',
+      ),
+      'identifier' => 'main-menu_resources:wgs/5/resources',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_working-group-5:wgs/5',
+  );
+  // Exported menu link: main-menu_resources:wgs/6/resources.
+  $menu_links['main-menu_resources:wgs/6/resources'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'wgs/6/resources',
+    'router_path' => 'wgs/%/resources',
+    'link_title' => 'Resources',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Resources',
+      ),
+      'identifier' => 'main-menu_resources:wgs/6/resources',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_working-group-6:wgs/6',
   );
   // Exported menu link: main-menu_tasks:tasks.
   $menu_links['main-menu_tasks:tasks'] = array(
