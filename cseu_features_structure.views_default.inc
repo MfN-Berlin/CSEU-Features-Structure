@@ -6964,7 +6964,7 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['fields']['created']['relationship'] = 'reverse_field_working_group_node';
   $handler->display->display_options['fields']['created']['label'] = '';
   $handler->display->display_options['fields']['created']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['created']['alter']['text'] = 'Created on, [created]';
+  $handler->display->display_options['fields']['created']['alter']['text'] = 'Created on [created]';
   $handler->display->display_options['fields']['created']['element_type'] = 'p';
   $handler->display->display_options['fields']['created']['element_class'] = 'submitted';
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
@@ -8417,7 +8417,7 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['fields']['created']['relationship'] = 'reverse_field_working_group_node';
   $handler->display->display_options['fields']['created']['label'] = '';
   $handler->display->display_options['fields']['created']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['created']['alter']['text'] = 'Created on, [created]';
+  $handler->display->display_options['fields']['created']['alter']['text'] = 'Created on [created]';
   $handler->display->display_options['fields']['created']['element_type'] = 'p';
   $handler->display->display_options['fields']['created']['element_class'] = 'submitted';
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
