@@ -284,6 +284,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
+    'name' => 'scientific literacy',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'ef1a6d86-2f33-4b21-9891-d135ab19dbaa',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
     'name' => 'Newsletter Secondary Proposer',
     'description' => 'Newsletter Secondary Proposer',
     'format' => NULL,
