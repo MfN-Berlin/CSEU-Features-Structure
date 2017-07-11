@@ -1175,7 +1175,7 @@ function cseu_features_structure_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'owlcarousel_rewind_speed_owlcarousel_settings_default';
-  $strongarm->value = '1000';
+  $strongarm->value = '10';
   $export['owlcarousel_rewind_speed_owlcarousel_settings_default'] = $strongarm;
 
   $strongarm = new stdClass();
