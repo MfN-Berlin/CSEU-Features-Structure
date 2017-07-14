@@ -38,6 +38,21 @@ function cseu_features_structure_views_api($module = NULL, $api = NULL) {
 function cseu_features_structure_image_default_styles() {
   $styles = array();
 
+  // Exported image style: cseu_cover_photo_style.
+  $styles['cseu_cover_photo_style'] = array(
+    'label' => 'Cover Photo (800x450)',
+    'effects' => array(
+      2 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 800,
+          'height' => 450,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: cseu_document_thumbnail_style.
   $styles['cseu_document_thumbnail_style'] = array(
     'label' => 'Document Thumbnail (150x*)',
