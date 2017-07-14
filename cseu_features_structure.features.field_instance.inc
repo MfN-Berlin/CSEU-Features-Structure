@@ -33,7 +33,7 @@ function cseu_features_structure_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 4,
       ),
       'preview' => array(
         'label' => 'above',
@@ -89,10 +89,11 @@ function cseu_features_structure_field_default_field_instances() {
         'weight' => 2,
       ),
       'media_cseu_cover_photo' => array(
-        'label' => 'above',
+        'label' => 'hidden',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 1,
       ),
       'preview' => array(
         'label' => 'above',
@@ -155,10 +156,11 @@ function cseu_features_structure_field_default_field_instances() {
         'weight' => 3,
       ),
       'media_cseu_cover_photo' => array(
-        'label' => 'above',
+        'label' => 'hidden',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 2,
       ),
       'preview' => array(
         'label' => 'above',
@@ -225,7 +227,7 @@ function cseu_features_structure_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 3,
       ),
       'preview' => array(
         'label' => 'above',
