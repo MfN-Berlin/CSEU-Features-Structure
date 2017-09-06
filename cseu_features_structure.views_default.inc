@@ -456,6 +456,14 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['filters']['promote']['field'] = 'promote';
   $handler->display->display_options['filters']['promote']['value'] = '1';
   $handler->display->display_options['filters']['promote']['group'] = 1;
+  /* Filter criterion: Content: Exclude from News (field_exclude_from_news) */
+  $handler->display->display_options['filters']['field_exclude_from_news_value']['id'] = 'field_exclude_from_news_value';
+  $handler->display->display_options['filters']['field_exclude_from_news_value']['table'] = 'field_data_field_exclude_from_news';
+  $handler->display->display_options['filters']['field_exclude_from_news_value']['field'] = 'field_exclude_from_news_value';
+  $handler->display->display_options['filters']['field_exclude_from_news_value']['operator'] = 'not';
+  $handler->display->display_options['filters']['field_exclude_from_news_value']['value'] = array(
+    1 => '1',
+  );
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
@@ -5567,6 +5575,14 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
+  );
+  /* Filter criterion: Content: Exclude from News (field_exclude_from_news) */
+  $handler->display->display_options['filters']['field_exclude_from_news_value']['id'] = 'field_exclude_from_news_value';
+  $handler->display->display_options['filters']['field_exclude_from_news_value']['table'] = 'field_data_field_exclude_from_news';
+  $handler->display->display_options['filters']['field_exclude_from_news_value']['field'] = 'field_exclude_from_news_value';
+  $handler->display->display_options['filters']['field_exclude_from_news_value']['operator'] = 'not';
+  $handler->display->display_options['filters']['field_exclude_from_news_value']['value'] = array(
+    1 => '1',
   );
 
   /* Display: Page */

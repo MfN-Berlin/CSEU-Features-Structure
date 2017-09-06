@@ -143,6 +143,9 @@ function cseu_features_structure_strongarm() {
       'ical' => array(
         'custom_settings' => FALSE,
       ),
+      'cseu_ds_view_mode_event' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -150,7 +153,7 @@ function cseu_features_structure_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '6',
+          'weight' => '8',
         ),
       ),
       'display' => array(),
