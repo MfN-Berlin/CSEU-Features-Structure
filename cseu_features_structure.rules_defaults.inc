@@ -12,7 +12,6 @@ function cseu_features_structure_default_rules_configuration() {
   $items['rules_cseu_user_registration_notification_rule'] = entity_import('rules_config', '{ "rules_cseu_user_registration_notification_rule" : {
       "LABEL" : "Custom User Registration Notification",
       "PLUGIN" : "reaction rule",
-      "ACTIVE" : false,
       "OWNER" : "rules",
       "REQUIRES" : [ "rules" ],
       "ON" : { "user_insert" : [] },

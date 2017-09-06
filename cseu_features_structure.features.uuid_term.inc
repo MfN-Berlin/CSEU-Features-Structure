@@ -190,6 +190,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
+    'name' => 'motivation',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'a5bbebda-ccdb-41aa-9def-e3f362f3a79c',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
     'name' => 'Information Material',
     'description' => '<p>Full catalogue of COST Action 151212 information material, some of which can be downloaded.</p>',
     'format' => 'full_html',

@@ -1240,6 +1240,7 @@ function cseu_features_structure_views_default_views() {
     5 => '5',
     6 => '6',
     7 => '7',
+    8 => '8',
   );
   $handler->display->display_options['filters']['field_cseu_secondary_proposer_value']['group'] = 1;
   $handler->display->display_options['filters']['field_cseu_secondary_proposer_value']['exposed'] = TRUE;

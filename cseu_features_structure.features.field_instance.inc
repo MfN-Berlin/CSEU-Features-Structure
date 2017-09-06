@@ -634,6 +634,7 @@ function cseu_features_structure_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -1260,6 +1261,7 @@ function cseu_features_structure_field_default_field_instances() {
         'module' => 'entityreference',
         'settings' => array(
           'links' => 0,
+          'use_content_language' => TRUE,
           'view_mode' => 'cseu_ds_view_mode_wgs_label',
         ),
         'type' => 'entityreference_entity_view',
@@ -1270,6 +1272,7 @@ function cseu_features_structure_field_default_field_instances() {
         'module' => 'entityreference',
         'settings' => array(
           'links' => 0,
+          'use_content_language' => TRUE,
           'view_mode' => 'cseu_ds_view_mode_wgs_label',
         ),
         'type' => 'entityreference_entity_view',
@@ -1279,6 +1282,7 @@ function cseu_features_structure_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -1586,6 +1590,7 @@ function cseu_features_structure_field_default_field_instances() {
         'module' => 'entityreference',
         'settings' => array(
           'links' => 0,
+          'use_content_language' => TRUE,
           'view_mode' => 'cseu_ds_view_mode_event',
         ),
         'type' => 'entityreference_entity_view',
