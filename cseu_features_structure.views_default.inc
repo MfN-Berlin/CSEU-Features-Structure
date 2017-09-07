@@ -464,6 +464,16 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['filters']['field_exclude_from_news_value']['value'] = array(
     1 => '1',
   );
+  /* Filter criterion: Content: Ressource Type (field_ressource_type) */
+  $handler->display->display_options['filters']['field_ressource_type_tid']['id'] = 'field_ressource_type_tid';
+  $handler->display->display_options['filters']['field_ressource_type_tid']['table'] = 'field_data_field_ressource_type';
+  $handler->display->display_options['filters']['field_ressource_type_tid']['field'] = 'field_ressource_type_tid';
+  $handler->display->display_options['filters']['field_ressource_type_tid']['operator'] = 'not';
+  $handler->display->display_options['filters']['field_ressource_type_tid']['value'] = array(
+    52 => '52',
+  );
+  $handler->display->display_options['filters']['field_ressource_type_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_ressource_type_tid']['vocabulary'] = 'cseu_resource_types';
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
@@ -5584,6 +5594,16 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['filters']['field_exclude_from_news_value']['value'] = array(
     1 => '1',
   );
+  /* Filter criterion: Content: Ressource Type (field_ressource_type) */
+  $handler->display->display_options['filters']['field_ressource_type_tid']['id'] = 'field_ressource_type_tid';
+  $handler->display->display_options['filters']['field_ressource_type_tid']['table'] = 'field_data_field_ressource_type';
+  $handler->display->display_options['filters']['field_ressource_type_tid']['field'] = 'field_ressource_type_tid';
+  $handler->display->display_options['filters']['field_ressource_type_tid']['operator'] = 'not';
+  $handler->display->display_options['filters']['field_ressource_type_tid']['value'] = array(
+    52 => '52',
+  );
+  $handler->display->display_options['filters']['field_ressource_type_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_ressource_type_tid']['vocabulary'] = 'cseu_resource_types';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
