@@ -1022,7 +1022,7 @@ function cseu_features_structure_field_default_field_instances() {
   $field_instances['node-cseu_slideshow_entry-field_cseu_slideshow_image'] = array(
     'bundle' => 'cseu_slideshow_entry',
     'deleted' => 0,
-    'description' => 'Minimum image resolution: 800x380 pixels',
+    'description' => 'Minimum image resolution: 980x340 pixels',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1053,7 +1053,7 @@ function cseu_features_structure_field_default_field_instances() {
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '800x380',
+      'min_resolution' => '980x340',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1685,7 +1685,7 @@ function cseu_features_structure_field_default_field_instances() {
   t('Image');
   t('Label');
   t('Long label ');
-  t('Minimum image resolution: 800x380 pixels');
+  t('Minimum image resolution: 980x340 pixels');
   t('Name the person who owns the picture.');
   t('Provide additional details about the image.');
   t('Ressource Type');

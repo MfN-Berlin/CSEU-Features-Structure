@@ -40,13 +40,13 @@ function cseu_features_structure_image_default_styles() {
 
   // Exported image style: cseu_cover_photo_style.
   $styles['cseu_cover_photo_style'] = array(
-    'label' => 'Cover Photo (800x450)',
+    'label' => 'Cover Photo (980x340)',
     'effects' => array(
-      2 => array(
+      3 => array(
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 800,
-          'height' => 450,
+          'width' => 980,
+          'height' => 340,
         ),
         'weight' => 1,
       ),
@@ -86,13 +86,13 @@ function cseu_features_structure_image_default_styles() {
 
   // Exported image style: cseu_slideshow_style.
   $styles['cseu_slideshow_style'] = array(
-    'label' => 'Slideshow (800x380)',
+    'label' => 'Slideshow (980x340)',
     'effects' => array(
       2 => array(
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 800,
-          'height' => 380,
+          'width' => 980,
+          'height' => 340,
         ),
         'weight' => 1,
       ),
