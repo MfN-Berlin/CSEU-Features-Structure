@@ -7494,12 +7494,18 @@ function cseu_features_structure_views_default_views() {
     <div class="cseu-wgs-list-field-content">
       [view_user]
     </div>
+  </div>
   <div class="cseu-wgs-list-field">
     <div class="cseu-wgs-list-field-label">Members: </div>
     <div class="cseu-wgs-list-field-content">
       :nr_members
     </div>
   </div>
+  <div class="cseu-wgs-list-field">
+    <div class="cseu-wgs-list-field-label">Next event: </div>
+    <div class="cseu-wgs-list-field-content">
+      :upcoming_event
+    </div>
   </div>
 </div>';
   $handler->display->display_options['fields']['nothing_2']['element_label_colon'] = FALSE;
