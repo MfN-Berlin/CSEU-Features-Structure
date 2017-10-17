@@ -7494,6 +7494,12 @@ function cseu_features_structure_views_default_views() {
     <div class="cseu-wgs-list-field-content">
       [view_user]
     </div>
+  <div class="cseu-wgs-list-field">
+    <div class="cseu-wgs-list-field-label">Members: </div>
+    <div class="cseu-wgs-list-field-content">
+      :nr_members
+    </div>
+  </div>
   </div>
 </div>';
   $handler->display->display_options['fields']['nothing_2']['element_label_colon'] = FALSE;
@@ -7742,6 +7748,8 @@ function cseu_features_structure_views_default_views() {
   /* Display: Attach WG Chairs */
   $handler = $view->new_display('attachment', 'Attach WG Chairs', 'chairs');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'attachment-wg-chairs';
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
@@ -8101,6 +8109,8 @@ function cseu_features_structure_views_default_views() {
   $handler = $view->new_display('attachment', 'Attach WG Members', 'members');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Working Group Members';
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'attachment-wg-members';
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
@@ -8366,19 +8376,15 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['displays'] = array(
     'members_page' => 'members_page',
     'default' => 0,
-    'page' => 0,
     'wgs' => 0,
-    'wg1' => 0,
-    'wg2' => 0,
-    'wg3' => 0,
-    'wg4' => 0,
-    'wg5' => 0,
-    'wg6' => 0,
+    'wg_page' => 0,
   );
   $handler->display->display_options['attachment_position'] = 'after';
 
   /* Display: Attach WG News */
   $handler = $view->new_display('attachment', 'Attach WG News', 'news');
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'attachment-wg-news';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'views_accordion';
