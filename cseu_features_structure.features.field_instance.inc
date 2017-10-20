@@ -280,7 +280,7 @@ function cseu_features_structure_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -355,59 +355,6 @@ function cseu_features_structure_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-article-field_image'.
-  $field_instances['node-article-field_image'] = array(
-    'bundle' => 'article',
-    'deleted' => 0,
-    'description' => 'Upload an image to go with this article.',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => 'large',
-        ),
-        'type' => 'image',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => 'content',
-          'image_style' => 'medium',
-        ),
-        'type' => 'image',
-        'weight' => -1,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_image',
-    'label' => 'Image',
-    'required' => FALSE,
-    'settings' => array(
-      'alt_field' => TRUE,
-      'default_image' => 0,
-      'file_directory' => 'field/image',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'module' => 'image',
-      'settings' => array(
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'image_image',
-      'weight' => 7,
-    ),
-  );
-
   // Exported field_instance: 'node-article-field_ressource_type'.
   $field_instances['node-article-field_ressource_type'] = array(
     'bundle' => 'article',
@@ -417,6 +364,45 @@ function cseu_features_structure_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'inline',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_ressource_type',
+    'label' => 'Ressource Type',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-article-field_stsm_type'.
+  $field_instances['node-article-field_stsm_type'] = array(
+    'bundle' => 'article',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 2,
@@ -430,8 +416,8 @@ function cseu_features_structure_field_default_field_instances() {
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
-    'field_name' => 'field_ressource_type',
-    'label' => 'Ressource Type',
+    'field_name' => 'field_stsm_type',
+    'label' => 'STSM Type',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1689,12 +1675,12 @@ function cseu_features_structure_field_default_field_instances() {
   t('Name the person who owns the picture.');
   t('Provide additional details about the image.');
   t('Ressource Type');
+  t('STSM Type');
   t('Tags');
   t('Target URL');
   t('Task');
   t('Title Text');
   t('Title text is used in the tool tip when a user hovers their mouse over the image. Adding title text makes it easier to understand the context of an image and improves usability.');
-  t('Upload an image to go with this article.');
   t('Working Group');
 
   return $field_instances;

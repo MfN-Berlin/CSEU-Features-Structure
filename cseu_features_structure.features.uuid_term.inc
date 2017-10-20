@@ -59,6 +59,17 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
+    'name' => 'STSM Reports',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 1,
+    'uuid' => '23f07281-4d2c-4537-8eda-363d65eb0e88',
+    'vocabulary_machine_name' => 'cseu_stsm_types',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+  );
+  $terms[] = array(
     'name' => 'Newsletter Core Group',
     'description' => 'Chairs, Co-Chairs, STM Coordinator, Early Stage Representative, Equal Opportunity Officer, External Liason Officer, Marisa Ponti',
     'format' => NULL,
@@ -204,6 +215,17 @@ function cseu_features_structure_uuid_features_default_terms() {
     'weight' => 2,
     'uuid' => 'b0fd259c-400c-466b-af75-9e2e4f132d45',
     'vocabulary_machine_name' => 'cseu_resource_types',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+  );
+  $terms[] = array(
+    'name' => 'STSM Announcements',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => 'b18bb32e-fdb0-40b9-8bf6-07ca13924bdd',
+    'vocabulary_machine_name' => 'cseu_stsm_types',
     'path' => array(
       'pathauto' => 0,
     ),
