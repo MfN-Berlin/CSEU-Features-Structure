@@ -44,7 +44,7 @@ function cseu_features_structure_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -45,
+    'weight' => -44,
     'customized' => 1,
   );
   // Exported menu link: main-menu_events:wgs/1/events.
@@ -228,7 +228,7 @@ function cseu_features_structure_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -41,
+    'weight' => -40,
     'customized' => 1,
   );
   // Exported menu link: main-menu_members:wgs/1/members.
@@ -394,7 +394,7 @@ function cseu_features_structure_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -46,
+    'weight' => -45,
     'customized' => 1,
   );
   // Exported menu link: main-menu_publications:taxonomy/term/51.
@@ -453,7 +453,7 @@ function cseu_features_structure_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -44,
+    'weight' => -43,
     'customized' => 1,
   );
   // Exported menu link: main-menu_resources:wgs/1/resources.
@@ -599,7 +599,7 @@ function cseu_features_structure_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -42,
+    'weight' => -41,
     'customized' => 1,
   );
   // Exported menu link: main-menu_working-group-1:wgs/1.

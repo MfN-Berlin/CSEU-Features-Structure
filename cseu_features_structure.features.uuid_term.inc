@@ -11,6 +11,22 @@ function cseu_features_structure_uuid_features_default_terms() {
   $terms = array();
 
   $terms[] = array(
+    'name' => 'Journal of Geographical Systems',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '00c86041-eb08-490a-83c4-2d89aad4b73d',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
+    'name' => 'geospatial big data',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '08b011d9-7853-497c-8c94-46805f603a00',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
     'name' => 'Working Groups',
     'description' => NULL,
     'format' => NULL,
@@ -32,6 +48,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'format' => NULL,
     'weight' => 0,
     'uuid' => '0c17c14e-bad2-4e35-bab1-65fa01cb2ffc',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
+    'name' => 'ISPRS International Journal of Geo-Information',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '0e35a405-bc85-45c5-8c55-b9fe087ba560',
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
@@ -59,6 +83,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
+    'name' => 'short term scientific missions',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '1c038954-5517-4f56-a9c2-ec6d19c49d25',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
     'name' => 'STSM Reports',
     'description' => '',
     'format' => 'full_html',
@@ -76,6 +108,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'weight' => 0,
     'uuid' => '2a6cd0bb-a4eb-4a12-8163-7be215f12504',
     'vocabulary_machine_name' => 'newsletter',
+  );
+  $terms[] = array(
+    'name' => 'The Role of Education in Citizen Science; Citizen Science Cost Action; STSM; Short Term Scientific Mission',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '33447ce9-77a4-4aaf-848a-668749e6308e',
+    'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
     'name' => 'Newsletter Working Group 1',
@@ -107,6 +147,22 @@ function cseu_features_structure_uuid_features_default_terms() {
     'format' => NULL,
     'weight' => 0,
     'uuid' => '43b7a66e-6f7c-41be-98f5-0567edc4e029',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
+    'name' => 'International Institute for Applied Systems Analysis',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '48604c12-8cfa-4d93-96a3-7cb108183284',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
+    'name' => 'stsm',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '52886564-ef86-4323-afba-af70275b5c87',
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
@@ -158,6 +214,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'newsletter',
   );
   $terms[] = array(
+    'name' => 'cost action networking tool',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '783e0a30-7131-40a2-9eab-5e1a0af37321',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
     'name' => 'acknowledgements',
     'description' => NULL,
     'format' => NULL,
@@ -166,11 +230,27 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
+    'name' => 'urban studies',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '85641b18-5dcd-4820-ab87-a3c3bf9e38c0',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
     'name' => 'selection',
     'description' => NULL,
     'format' => NULL,
     'weight' => 0,
     'uuid' => '892712a7-3f5b-48ac-b4d2-46a104ae99fe',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
+    'name' => 'open call',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '93dcfc07-5d8a-4ce0-b795-baed7e128d9b',
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
@@ -255,6 +335,22 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'newsletter',
   );
   $terms[] = array(
+    'name' => 'special issue',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'cb089f7f-e4ea-4769-ad22-4349e2fa41ca',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
+    'name' => 'call for paper',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'cce3cf67-e650-4c83-af00-70434facbe22',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
     'name' => 'Newsletter Working Group 6',
     'description' => 'WG6: Overaching - Cross-WG-Synthesis and overarching measures',
     'format' => NULL,
@@ -311,6 +407,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'format' => NULL,
     'weight' => 0,
     'uuid' => 'e90e3ca1-cf47-45ed-8e9e-2ad4c4264dac',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
+    'name' => 'IIASA',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'ee11e0ce-e830-4d40-a15c-1361aeae7078',
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(

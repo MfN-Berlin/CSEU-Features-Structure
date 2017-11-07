@@ -440,7 +440,6 @@ function cseu_features_structure_default_search_api_index() {
         "body:value" : { "type" : "text" },
         "field_cseu_deadline" : { "type" : "date" },
         "field_cseu_department" : { "type" : "text" },
-        "field_cseu_description" : { "type" : "text" },
         "field_cseu_event_type" : { "type" : "integer", "entity_type" : "taxonomy_term" },
         "field_cseu_label" : { "type" : "text" },
         "field_cseu_task" : { "type" : "integer", "entity_type" : "node" },
@@ -546,11 +545,6 @@ function cseu_features_structure_default_search_api_server() {
             "boost" : "1.0"
           },
           "field_cseu_label" : {
-            "table" : "search_api_db_default_node_index_text",
-            "type" : "text",
-            "boost" : "1.0"
-          },
-          "field_cseu_description" : {
             "table" : "search_api_db_default_node_index_text",
             "type" : "text",
             "boost" : "1.0"
