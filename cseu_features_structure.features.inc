@@ -118,6 +118,14 @@ function cseu_features_structure_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'cseu_blog_entry' => array(
+      'name' => t('Blog entry'),
+      'base' => 'node_content',
+      'description' => t('Blog entry'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'cseu_deliverable' => array(
       'name' => t('Deliverable'),
       'base' => 'node_content',

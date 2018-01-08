@@ -19,6 +19,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
+    'name' => 'Citizen Science Cost Action; STSM; Short Term Scientific Mission',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '011972dc-2b03-499e-a60e-9d434a804752',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
     'name' => 'geospatial big data',
     'description' => NULL,
     'format' => NULL,
@@ -163,6 +171,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'format' => NULL,
     'weight' => 0,
     'uuid' => '52886564-ef86-4323-afba-af70275b5c87',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
+    'name' => 'Testtag1',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '52c5ca0c-3956-4af7-ab48-9e6e82e569ad',
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
