@@ -25,10 +25,48 @@ function cseu_features_structure_menu_default_menu_links() {
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 0,
+    'has_children' => 1,
     'expanded' => 0,
     'weight' => -49,
     'customized' => 1,
+  );
+  // Exported menu link: main-menu_blog:blog.
+  $menu_links['main-menu_blog:blog'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'blog',
+    'router_path' => 'blog',
+    'link_title' => 'Blog',
+    'options' => array(
+      'identifier' => 'main-menu_blog:blog',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -40,
+    'customized' => 1,
+  );
+  // Exported menu link: main-menu_details-about-stsm:node/362.
+  $menu_links['main-menu_details-about-stsm:node/362'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/362',
+    'router_path' => 'node/%',
+    'link_title' => 'Details about STSM',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Short Term Scientific Missions (STSM) - General Information',
+      ),
+      'identifier' => 'main-menu_details-about-stsm:node/362',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_stsm:node/400',
   );
   // Exported menu link: main-menu_events:events.
   $menu_links['main-menu_events:events'] = array(
@@ -228,7 +266,7 @@ function cseu_features_structure_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -40,
+    'weight' => -41,
     'customized' => 1,
   );
   // Exported menu link: main-menu_members:wgs/1/members.
@@ -397,6 +435,27 @@ function cseu_features_structure_menu_default_menu_links() {
     'weight' => -45,
     'customized' => 1,
   );
+  // Exported menu link: main-menu_people:node/363.
+  $menu_links['main-menu_people:node/363'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/363',
+    'router_path' => 'node/%',
+    'link_title' => 'People',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'People',
+      ),
+      'identifier' => 'main-menu_people:node/363',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_stsm:node/400',
+  );
   // Exported menu link: main-menu_publications:taxonomy/term/51.
   $menu_links['main-menu_publications:taxonomy/term/51'] = array(
     'menu_name' => 'main-menu',
@@ -453,8 +512,9 @@ function cseu_features_structure_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -43,
+    'weight' => -50,
     'customized' => 1,
+    'parent_identifier' => 'main-menu_about:node/268',
   );
   // Exported menu link: main-menu_resources:wgs/1/resources.
   $menu_links['main-menu_resources:wgs/1/resources'] = array(
@@ -582,6 +642,68 @@ function cseu_features_structure_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_working-group-6:wgs/6',
   );
+  // Exported menu link: main-menu_stsm-announcements:taxonomy/term/59.
+  $menu_links['main-menu_stsm-announcements:taxonomy/term/59'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'taxonomy/term/59',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'STSM Announcements',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'STSM Announcements',
+      ),
+      'identifier' => 'main-menu_stsm-announcements:taxonomy/term/59',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -49,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_stsm:node/400',
+  );
+  // Exported menu link: main-menu_stsm-reports:taxonomy/term/60.
+  $menu_links['main-menu_stsm-reports:taxonomy/term/60'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'taxonomy/term/60',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'STSM Reports',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'STSM Reports',
+      ),
+      'identifier' => 'main-menu_stsm-reports:taxonomy/term/60',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_stsm:node/400',
+  );
+  // Exported menu link: main-menu_stsm:node/400.
+  $menu_links['main-menu_stsm:node/400'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/400',
+    'router_path' => 'node/%',
+    'link_title' => 'STSM',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Short Term Scientific Missions (STSM)',
+      ),
+      'identifier' => 'main-menu_stsm:node/400',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 1,
+    'expanded' => 0,
+    'weight' => -46,
+    'customized' => 1,
+  );
   // Exported menu link: main-menu_tasks:tasks.
   $menu_links['main-menu_tasks:tasks'] = array(
     'menu_name' => 'main-menu',
@@ -599,7 +721,7 @@ function cseu_features_structure_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -41,
+    'weight' => -42,
     'customized' => 1,
   );
   // Exported menu link: main-menu_working-group-1:wgs/1.
@@ -1078,11 +1200,13 @@ function cseu_features_structure_menu_default_menu_links() {
   // Included for use with string extractors like potx.
   t('About');
   t('All members');
+  t('Blog');
   t('By Role');
   t('Chairs');
   t('Chairs by WG');
   t('Co-Chairs');
   t('Co-Chairs by WG');
+  t('Details about STSM');
   t('Emails CSV');
   t('Events');
   t('Home');
@@ -1096,10 +1220,14 @@ function cseu_features_structure_menu_default_menu_links() {
   t('Members by WG');
   t('Network');
   t('News');
+  t('People');
   t('Privacy Policy');
   t('Publications');
   t('Reports');
   t('Resources');
+  t('STSM');
+  t('STSM Announcements');
+  t('STSM Reports');
   t('Tasks');
   t('Working Group 1');
   t('Working Group 2');
