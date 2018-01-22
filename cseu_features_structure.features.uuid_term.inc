@@ -35,6 +35,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
+    'name' => 'WG5',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '08e1c595-1565-4b3c-9c15-3382bfcbaf52',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
     'name' => 'Working Groups',
     'description' => NULL,
     'format' => NULL,
@@ -297,6 +305,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
+    'name' => 'Citizen Science Cost Action',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '9ac37e22-c17e-4060-b484-d3ba16fa6791',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
     'name' => 'motivation',
     'description' => NULL,
     'format' => NULL,
@@ -325,6 +341,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'path' => array(
       'pathauto' => 0,
     ),
+  );
+  $terms[] = array(
+    'name' => 'Scientific Report',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'b6229421-6e7d-4526-9562-f0fe618a28a8',
+    'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
     'name' => 'Newsletter Members',
@@ -381,6 +405,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'weight' => 0,
     'uuid' => 'dbf70826-c0bd-400f-8726-eeb54264324f',
     'vocabulary_machine_name' => 'newsletter',
+  );
+  $terms[] = array(
+    'name' => 'ITC Conference Grant',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'dc3304a2-e633-4671-8a55-c0f162253dbc',
+    'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
     'name' => 'publications',

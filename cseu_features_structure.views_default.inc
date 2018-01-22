@@ -5773,7 +5773,7 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['fields']['mail']['field'] = 'mail';
   $handler->display->display_options['fields']['mail']['label'] = '';
   $handler->display->display_options['fields']['mail']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['mail']['alter']['text'] = '[mail], ';
+  $handler->display->display_options['fields']['mail']['alter']['text'] = '[mail]; ';
   $handler->display->display_options['fields']['mail']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['mail']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['mail']['link_to_user'] = '0';
@@ -5968,7 +5968,7 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['fields']['mail']['relationship'] = 'user';
   $handler->display->display_options['fields']['mail']['label'] = '';
   $handler->display->display_options['fields']['mail']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['mail']['alter']['text'] = '[mail], ';
+  $handler->display->display_options['fields']['mail']['alter']['text'] = '[mail]; ';
   $handler->display->display_options['fields']['mail']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['mail']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['mail']['link_to_user'] = '0';
@@ -6146,7 +6146,7 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['fields']['mail']['relationship'] = 'user';
   $handler->display->display_options['fields']['mail']['label'] = '';
   $handler->display->display_options['fields']['mail']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['mail']['alter']['text'] = '[mail], ';
+  $handler->display->display_options['fields']['mail']['alter']['text'] = '[mail]; ';
   $handler->display->display_options['fields']['mail']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['mail']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['mail']['link_to_user'] = '0';
@@ -6331,7 +6331,7 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['fields']['mail']['relationship'] = 'user';
   $handler->display->display_options['fields']['mail']['label'] = '';
   $handler->display->display_options['fields']['mail']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['mail']['alter']['text'] = '[mail], ';
+  $handler->display->display_options['fields']['mail']['alter']['text'] = '[mail]; ';
   $handler->display->display_options['fields']['mail']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['mail']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['mail']['link_to_user'] = '0';
@@ -6516,7 +6516,7 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['fields']['mail']['relationship'] = 'user';
   $handler->display->display_options['fields']['mail']['label'] = '';
   $handler->display->display_options['fields']['mail']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['mail']['alter']['text'] = '[mail], ';
+  $handler->display->display_options['fields']['mail']['alter']['text'] = '[mail]; ';
   $handler->display->display_options['fields']['mail']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['mail']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['mail']['link_to_user'] = '0';
