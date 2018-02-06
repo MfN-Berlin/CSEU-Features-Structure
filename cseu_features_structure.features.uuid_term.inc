@@ -206,6 +206,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
+    'name' => 'Citizen Science Meeting Barcelona',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '61e043d5-4176-4f1f-844e-6184b8dc03a9',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
     'name' => 'policy',
     'description' => NULL,
     'format' => NULL,
