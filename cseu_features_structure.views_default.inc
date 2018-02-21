@@ -490,17 +490,152 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
   $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['style_options']['row_class'] = 'cseu-teasers-row';
+  $handler->display->display_options['style_options']['row_class'] = 'cseu-article-teaser-row';
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'node';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
+  /* Relationship: Content: Cover picture (field_cseu_cover_image:fid) */
+  $handler->display->display_options['relationships']['field_cseu_cover_image_fid']['id'] = 'field_cseu_cover_image_fid';
+  $handler->display->display_options['relationships']['field_cseu_cover_image_fid']['table'] = 'field_data_field_cseu_cover_image';
+  $handler->display->display_options['relationships']['field_cseu_cover_image_fid']['field'] = 'field_cseu_cover_image_fid';
+  $handler->display->display_options['relationships']['field_cseu_cover_image_fid']['label'] = 'Image from field_cseu_cover_image';
+  /* Field: Content: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['created']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['created']['alter']['text'] = 'Created on [created]';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'date_format_cseu_date_type_event_long';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
+  /* Field: Content: Cover picture */
+  $handler->display->display_options['fields']['field_cseu_cover_image']['id'] = 'field_cseu_cover_image';
+  $handler->display->display_options['fields']['field_cseu_cover_image']['table'] = 'field_data_field_cseu_cover_image';
+  $handler->display->display_options['fields']['field_cseu_cover_image']['field'] = 'field_cseu_cover_image';
+  $handler->display->display_options['fields']['field_cseu_cover_image']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_cover_image']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_cover_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_cover_image']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_cover_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_cseu_cover_image']['type'] = 'colorbox';
+  $handler->display->display_options['fields']['field_cseu_cover_image']['settings'] = array(
+    'colorbox_node_style' => 'cseu_cover_photo_style',
+    'colorbox_node_style_first' => '',
+    'colorbox_image_style' => 'cseu_cover_photo_style',
+    'colorbox_gallery' => 'none',
+    'colorbox_gallery_custom' => '',
+    'colorbox_caption' => 'auto',
+    'colorbox_caption_custom' => '',
+  );
+  /* Field: File: Credit */
+  $handler->display->display_options['fields']['field_file_image_credit_text']['id'] = 'field_file_image_credit_text';
+  $handler->display->display_options['fields']['field_file_image_credit_text']['table'] = 'field_data_field_file_image_credit_text';
+  $handler->display->display_options['fields']['field_file_image_credit_text']['field'] = 'field_file_image_credit_text';
+  $handler->display->display_options['fields']['field_file_image_credit_text']['relationship'] = 'field_cseu_cover_image_fid';
+  $handler->display->display_options['fields']['field_file_image_credit_text']['label'] = '';
+  $handler->display->display_options['fields']['field_file_image_credit_text']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_file_image_credit_text']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_file_image_credit_text']['alter']['text'] = '<p class="cseu-article-teaser-image-caption">[field_file_image_credit_text]</p>';
+  $handler->display->display_options['fields']['field_file_image_credit_text']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_file_image_credit_text']['element_default_classes'] = FALSE;
+  /* Field: File: Caption */
+  $handler->display->display_options['fields']['field_file_image_caption_text']['id'] = 'field_file_image_caption_text';
+  $handler->display->display_options['fields']['field_file_image_caption_text']['table'] = 'field_data_field_file_image_caption_text';
+  $handler->display->display_options['fields']['field_file_image_caption_text']['field'] = 'field_file_image_caption_text';
+  $handler->display->display_options['fields']['field_file_image_caption_text']['relationship'] = 'field_cseu_cover_image_fid';
+  $handler->display->display_options['fields']['field_file_image_caption_text']['label'] = '';
+  $handler->display->display_options['fields']['field_file_image_caption_text']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_file_image_caption_text']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_file_image_caption_text']['alter']['text'] = '<p class="cseu-article-teaser-image-caption">[field_file_image_caption_text]	</p>';
+  $handler->display->display_options['fields']['field_file_image_caption_text']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_file_image_caption_text']['element_default_classes'] = FALSE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '600',
+  );
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['text'] = 'Read more';
+  /* Field: Wrapper */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['ui_name'] = 'Wrapper';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<article class="cseu-article-teaser-horizontal-layout">
+	<header class="cseu-article-teaser-header-container">
+		<p class="cseu-article-teaser-date">
+			[created]
+		</p>		
+		<h2 class="cseu-article-teaser-title-smaller">
+			[title]
+		</h2>
+	</header>
+	<div class="cseu-article-teaser-wrapper">
+		<figure class="cseu-article-teaser-image-container">
+			[field_cseu_cover_image]
+			<div class="cseu-article-teaser-image-meta">
+				[field_file_image_caption_text]
+				[field_file_image_credit_text]
+			</div>
+		</figure>
+		<div class="cseu-article-teaser-content-container">
+			<div class="cseu-article-teaser-synopsis">
+				[body]
+			</div>
+			<p class="cseu-article-teaser-target-link">
+				[view_node]
+			</p>
+		</div>
+	</div>
+</article>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing']['element_default_classes'] = FALSE;
+  /* Field: Content: Edit link */
+  $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['label'] = '';
+  $handler->display->display_options['fields']['edit_node']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
+  /* Field: Global: Contextual Links */
+  $handler->display->display_options['fields']['contextual_links']['id'] = 'contextual_links';
+  $handler->display->display_options['fields']['contextual_links']['table'] = 'views';
+  $handler->display->display_options['fields']['contextual_links']['field'] = 'contextual_links';
+  $handler->display->display_options['fields']['contextual_links']['label'] = '';
+  $handler->display->display_options['fields']['contextual_links']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['contextual_links']['fields'] = array(
+    'edit_node' => 'edit_node',
+  );
+  $handler->display->display_options['fields']['contextual_links']['check_access'] = 0;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
