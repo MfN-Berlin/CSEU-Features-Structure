@@ -383,6 +383,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'newsletter',
   );
   $terms[] = array(
+    'name' => 'Air Pollution; Leiden; Citizen Science',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'c712baf0-4d35-4413-ba80-899fc7db91ac',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
     'name' => 'special issue',
     'description' => NULL,
     'format' => NULL,
@@ -504,6 +512,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'weight' => 0,
     'uuid' => 'fae487b4-946a-44cc-a115-bdc6ff7e0776',
     'vocabulary_machine_name' => 'newsletter',
+  );
+  $terms[] = array(
+    'name' => 'Crowdsourcing; Survey; Public Participation; Citizen Science',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'fdd5d674-fbd7-489d-b8b5-7cecf50f736a',
+    'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
     'name' => 'Europe',
