@@ -150,6 +150,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'newsletter',
   );
   $terms[] = array(
+    'name' => 'itizen science',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '38fd19eb-3a84-4e08-9cef-a3d44c9fb171',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
     'name' => 'education',
     'description' => NULL,
     'format' => NULL,
@@ -214,6 +222,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
+    'name' => 'WG6; Citizen Science Cost Action',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '6467fca2-8322-463e-8571-0d7b1c63032e',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
     'name' => 'policy',
     'description' => NULL,
     'format' => NULL,
@@ -251,6 +267,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'format' => NULL,
     'weight' => 0,
     'uuid' => '783e0a30-7131-40a2-9eab-5e1a0af37321',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
+    'name' => 'Citizen Science Cost Action; STSM; Short Term Scientific Mission; PlasticWatch',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '7ee152c4-c379-4d16-88e3-d656d0d42161',
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
@@ -413,6 +437,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'weight' => 0,
     'uuid' => 'cfb1f191-b7b9-40ad-899a-5c75e3105b7f',
     'vocabulary_machine_name' => 'newsletter',
+  );
+  $terms[] = array(
+    'name' => 'Citizen Sciece;  Social Sciences; Hummanities; Workshop Report; Working Group 6',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'd60a24a4-de7b-4491-aef5-a9cb73a800f0',
+    'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
     'name' => 'Newsletter Working Group 4',
