@@ -10,47 +10,6 @@
 function cseu_features_structure_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: main-menu_about-ca-ca151212:node/268.
-  $menu_links['main-menu_about-ca-ca151212:node/268'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/268',
-    'router_path' => 'node/%',
-    'link_title' => 'About CA CA151212',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'About COST Action CA151212',
-      ),
-      'identifier' => 'main-menu_about-ca-ca151212:node/268',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -50,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_about:node/401',
-  );
-  // Exported menu link: main-menu_about:node/401.
-  $menu_links['main-menu_about:node/401'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/401',
-    'router_path' => 'node/%',
-    'link_title' => 'About',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'About',
-      ),
-      'identifier' => 'main-menu_about:node/401',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 1,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
-  );
   // Exported menu link: main-menu_blog:blog.
   $menu_links['main-menu_blog:blog'] = array(
     'menu_name' => 'main-menu',
@@ -533,9 +492,8 @@ function cseu_features_structure_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -49,
+    'weight' => -48,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_about:node/401',
   );
   // Exported menu link: main-menu_resources:wgs/1/resources.
   $menu_links['main-menu_resources:wgs/1/resources'] = array(
@@ -1219,8 +1177,6 @@ function cseu_features_structure_menu_default_menu_links() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('About');
-  t('About CA CA151212');
   t('All members');
   t('Blog');
   t('By Role');

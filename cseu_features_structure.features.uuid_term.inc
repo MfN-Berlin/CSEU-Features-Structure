@@ -262,6 +262,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'newsletter',
   );
   $terms[] = array(
+    'name' => 'Sustainable lifestyles',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '78147ccd-2c9c-47e4-8f91-a846a88160f3',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
     'name' => 'cost action networking tool',
     'description' => NULL,
     'format' => NULL,
@@ -326,6 +334,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'format' => NULL,
     'weight' => 0,
     'uuid' => '976d7835-b711-49b6-a6db-8253378d3e49',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
+    'name' => 'citizen science scale',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '992649c8-c094-4b8f-af6e-d1b51fe53107',
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
@@ -407,6 +423,22 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'newsletter',
   );
   $terms[] = array(
+    'name' => 'data; metadata',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'c415d40b-bba1-40fd-9b71-4d9f1776ab6b',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
+    'name' => 'questionaire',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'c624e625-20da-4416-a439-89743c51c059',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
     'name' => 'Air Pollution; Leiden; Citizen Science',
     'description' => NULL,
     'format' => NULL,
@@ -428,6 +460,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'format' => NULL,
     'weight' => 0,
     'uuid' => 'cce3cf67-e650-4c83-af00-70434facbe22',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
+    'name' => 'Economy',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'cdaaa5d0-691c-4f20-b90c-3a8540a984cf',
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
@@ -536,6 +576,22 @@ function cseu_features_structure_uuid_features_default_terms() {
     'weight' => 0,
     'uuid' => 'f2c08be9-03bf-414b-9000-b1fd83936a03',
     'vocabulary_machine_name' => 'newsletter',
+  );
+  $terms[] = array(
+    'name' => 'Health',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'f4661245-8e2d-4a8f-8b18-3035ed660978',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
+    'name' => 'Food and agriculture',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'f4cd029a-3ccf-42d0-9ea9-f3d935db2063',
+    'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
     'name' => 'Newsletter Working Group 5',

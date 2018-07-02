@@ -139,10 +139,10 @@ function cseu_features_structure_wysiwyg_default_profiles() {
       'pasteFromWordRemoveFontStyles' => 0,
     ),
     'preferences' => array(
-      'default' => 1,
-      'user_choose' => 0,
-      'show_toggle' => 1,
       'add_to_summaries' => 1,
+      'default' => 1,
+      'show_toggle' => 1,
+      'user_choose' => 0,
       'version' => '4.9.2.95e5d83',
     ),
     'name' => 'formatfull_html',
