@@ -318,17 +318,6 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
-    'name' => 'Publications',
-    'description' => '<p>Full catalogue of COST Action 151212 publications, some of which can be downloaded.</p>',
-    'format' => 'full_html',
-    'weight' => 1,
-    'uuid' => '9418bf2f-ba9c-49df-b732-656b79b04450',
-    'vocabulary_machine_name' => 'cseu_resource_types',
-    'path' => array(
-      'pathauto' => 0,
-    ),
-  );
-  $terms[] = array(
     'name' => 'research',
     'description' => NULL,
     'format' => NULL,

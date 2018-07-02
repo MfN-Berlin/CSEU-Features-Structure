@@ -436,27 +436,6 @@ function cseu_features_structure_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_stsm:node/400',
   );
-  // Exported menu link: main-menu_publications:taxonomy/term/51.
-  $menu_links['main-menu_publications:taxonomy/term/51'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'taxonomy/term/51',
-    'router_path' => 'taxonomy/term/%',
-    'link_title' => 'Publications',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Publications',
-      ),
-      'identifier' => 'main-menu_publications:taxonomy/term/51',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_resources:resources',
-  );
   // Exported menu link: main-menu_reports:taxonomy/term/53.
   $menu_links['main-menu_reports:taxonomy/term/53'] = array(
     'menu_name' => 'main-menu',
@@ -1200,7 +1179,6 @@ function cseu_features_structure_menu_default_menu_links() {
   t('News');
   t('People');
   t('Privacy Policy');
-  t('Publications');
   t('Reports');
   t('Resources');
   t('STSM');
