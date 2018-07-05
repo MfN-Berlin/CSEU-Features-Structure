@@ -7794,7 +7794,6 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['fields']['field_cseu_description']['element_type'] = 'h3';
   $handler->display->display_options['fields']['field_cseu_description']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cseu_description']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_cseu_description']['type'] = 'text_plain';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
