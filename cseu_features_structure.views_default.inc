@@ -7661,6 +7661,19 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['fields']['view_user']['alter']['text'] = '[nothing]';
   $handler->display->display_options['fields']['view_user']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_user']['element_default_classes'] = FALSE;
+  /* Field: Link to Working Group */
+  $handler->display->display_options['fields']['nothing_4']['id'] = 'nothing_4';
+  $handler->display->display_options['fields']['nothing_4']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_4']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_4']['ui_name'] = 'Link to Working Group';
+  $handler->display->display_options['fields']['nothing_4']['label'] = '';
+  $handler->display->display_options['fields']['nothing_4']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nothing_4']['alter']['text'] = 'Find out more';
+  $handler->display->display_options['fields']['nothing_4']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['nothing_4']['alter']['path'] = 'wgs/wg[nid]';
+  $handler->display->display_options['fields']['nothing_4']['alter']['alt'] = 'Find out more';
+  $handler->display->display_options['fields']['nothing_4']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_4']['element_default_classes'] = FALSE;
   /* Field: Column-Text */
   $handler->display->display_options['fields']['nothing_2']['id'] = 'nothing_2';
   $handler->display->display_options['fields']['nothing_2']['table'] = 'views';
@@ -7690,6 +7703,9 @@ function cseu_features_structure_views_default_views() {
         :upcoming_event
       </div>
     </div>
+  </div>
+  <div class="cseu-wgs-list-group-link">
+    [nothing_4]
   </div>
 </div>';
   $handler->display->display_options['fields']['nothing_2']['element_label_colon'] = FALSE;
