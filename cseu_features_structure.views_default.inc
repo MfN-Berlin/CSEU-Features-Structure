@@ -7809,9 +7809,17 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['fields']['field_cseu_description']['table'] = 'field_data_field_cseu_description';
   $handler->display->display_options['fields']['field_cseu_description']['field'] = 'field_cseu_description';
   $handler->display->display_options['fields']['field_cseu_description']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_description']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cseu_description']['element_type'] = 'h3';
   $handler->display->display_options['fields']['field_cseu_description']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cseu_description']['element_default_classes'] = FALSE;
+  /* Field: Content: Long description */
+  $handler->display->display_options['fields']['field_cseu_long_description']['id'] = 'field_cseu_long_description';
+  $handler->display->display_options['fields']['field_cseu_long_description']['table'] = 'field_data_field_cseu_long_description';
+  $handler->display->display_options['fields']['field_cseu_long_description']['field'] = 'field_cseu_long_description';
+  $handler->display->display_options['fields']['field_cseu_long_description']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_long_description']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_long_description']['element_default_classes'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
@@ -8308,7 +8316,6 @@ function cseu_features_structure_views_default_views() {
     'wg5' => 0,
     'wg6' => 0,
   );
-  $handler->display->display_options['attachment_position'] = 'after';
 
   /* Display: Attach WG Members */
   $handler = $view->new_display('attachment', 'Attach WG Members', 'members');

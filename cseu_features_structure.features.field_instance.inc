@@ -1725,6 +1725,76 @@ function cseu_features_structure_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance:
+  // 'node-cseu_working_group-field_cseu_long_description'.
+  $field_instances['node-cseu_working_group-field_cseu_long_description'] = array(
+    'bundle' => 'cseu_working_group',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'cseu_ds_view_mode_wg_label_only' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'cseu_ds_view_mode_wgs' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'cseu_ds_view_mode_wgs_full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'cseu_ds_view_mode_wgs_label' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_cseu_long_description',
+    'label' => 'Long description',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => '',
+        'maxlength_js_enforce' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_truncate_html' => 0,
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 4,
+    ),
+  );
+
   // Exported field_instance: 'node-cseu_working_group-field_cseu_long_label'.
   $field_instances['node-cseu_working_group-field_cseu_long_label'] = array(
     'bundle' => 'cseu_working_group',
@@ -1899,6 +1969,7 @@ function cseu_features_structure_field_default_field_instances() {
   t('Geofield');
   t('Image');
   t('Label');
+  t('Long description');
   t('Long label ');
   t('Minimum image resolution: 980x340 pixels');
   t('Name the person who owns the picture.');
