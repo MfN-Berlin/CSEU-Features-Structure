@@ -380,6 +380,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'citizen science; storytelling',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'b2eb3d76-5416-4a03-acc7-52d1e808bd92',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
     'name' => 'Scientific Report',
     'description' => NULL,
     'format' => NULL,
