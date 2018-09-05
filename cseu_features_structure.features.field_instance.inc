@@ -361,6 +361,12 @@ function cseu_features_structure_field_default_field_instances() {
     'required' => 1,
     'settings' => array(
       'display_summary' => 1,
+      'required_summary' => array(
+        0 => 1,
+      ),
+      'show_summary' => array(
+        0 => 1,
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -379,6 +385,67 @@ function cseu_features_structure_field_default_field_instances() {
       ),
       'type' => 'text_textarea_with_summary',
       'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'node-article-field_cseu_cover_image'.
+  $field_instances['node-article-field_cseu_cover_image'] = array(
+    'bundle' => 'article',
+    'deleted' => 0,
+    'description' => 'Cover picture for the front page. Minimum image resolution: 980x340 pixels.',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_cseu_cover_image',
+    'label' => 'Cover picture',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => 'pictures/covers',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '980x340',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'oembed' => 0,
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 'media_default--media_browser_1',
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 0,
+          'upload' => 'upload',
+        ),
+      ),
+      'type' => 'media_generic',
+      'weight' => 7,
     ),
   );
 
@@ -611,6 +678,12 @@ function cseu_features_structure_field_default_field_instances() {
     'required' => 1,
     'settings' => array(
       'display_summary' => 1,
+      'required_summary' => array(
+        0 => 1,
+      ),
+      'show_summary' => array(
+        0 => 1,
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -929,6 +1002,73 @@ function cseu_features_structure_field_default_field_instances() {
       ),
       'type' => 'options_select',
       'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'node-cseu_event-field_cseu_cover_image'.
+  $field_instances['node-cseu_event-field_cseu_cover_image'] = array(
+    'bundle' => 'cseu_event',
+    'deleted' => 0,
+    'description' => 'Cover picture for the front page. Minimum image resolution: 980x340 pixels.',
+    'display' => array(
+      'cseu_ds_view_mode_event' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_cseu_cover_image',
+    'label' => 'Cover picture',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => 'pictures/covers',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '980x340',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'oembed' => 0,
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 'media_default--media_browser_1',
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 0,
+          'upload' => 'upload',
+        ),
+      ),
+      'type' => 'media_generic',
+      'weight' => 6,
     ),
   );
 
@@ -1957,6 +2097,7 @@ function cseu_features_structure_field_default_field_instances() {
   t('Body');
   t('Caption');
   t('Cover picture');
+  t('Cover picture for the front page. Minimum image resolution: 980x340 pixels.');
   t('Credit');
   t('Deadline');
   t('Department');

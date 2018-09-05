@@ -102,7 +102,7 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '4';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['row_class'] = 'cseu-block-frontpage-row cseu-block-frontpage-event-row';
@@ -117,6 +117,14 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['footer']['area']['content'] = '[nothing]';
   $handler->display->display_options['footer']['area']['format'] = 'full_html';
   $handler->display->display_options['footer']['area']['tokenize'] = TRUE;
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nid']['element_default_classes'] = FALSE;
   /* Field: Content: Venue - Locality (i.e. City) */
   $handler->display->display_options['fields']['field_cseu_event_venue_locality']['id'] = 'field_cseu_event_venue_locality';
   $handler->display->display_options['fields']['field_cseu_event_venue_locality']['table'] = 'field_data_field_cseu_event_venue';
@@ -134,40 +142,38 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['fields']['field_cseu_event_venue_country']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cseu_event_venue_country']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_cseu_event_venue_country']['display_name'] = 1;
-  /* Field: Content: Date */
-  $handler->display->display_options['fields']['field_cseu_event_date']['id'] = 'field_cseu_event_date';
-  $handler->display->display_options['fields']['field_cseu_event_date']['table'] = 'field_data_field_cseu_event_date';
-  $handler->display->display_options['fields']['field_cseu_event_date']['field'] = 'field_cseu_event_date';
-  $handler->display->display_options['fields']['field_cseu_event_date']['label'] = '';
-  $handler->display->display_options['fields']['field_cseu_event_date']['element_type'] = 'span';
-  $handler->display->display_options['fields']['field_cseu_event_date']['element_class'] = 'cseu-block-frontpage-row-date';
-  $handler->display->display_options['fields']['field_cseu_event_date']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_cseu_event_date']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_cseu_event_date']['settings'] = array(
-    'format_type' => 'cseu_frontpage_short_date',
-    'fromto' => 'value',
-    'multiple_number' => '',
-    'multiple_from' => '',
-    'multiple_to' => '',
-    'show_remaining_days' => 0,
+  /* Field: Content: Cover picture */
+  $handler->display->display_options['fields']['field_cseu_cover_image']['id'] = 'field_cseu_cover_image';
+  $handler->display->display_options['fields']['field_cseu_cover_image']['table'] = 'field_data_field_cseu_cover_image';
+  $handler->display->display_options['fields']['field_cseu_cover_image']['field'] = 'field_cseu_cover_image';
+  $handler->display->display_options['fields']['field_cseu_cover_image']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_cover_image']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_cover_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_cover_image']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_cover_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_cseu_cover_image']['settings'] = array(
+    'image_style' => 'cseu_cover_photo_style',
+    'image_link' => '',
   );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['text'] = '[title], [field_cseu_event_venue_locality], [field_cseu_event_venue_country]';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_type'] = 'h3';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['exclude'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
@@ -179,10 +185,28 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['exclude'] = TRUE;
   $handler->display->display_options['fields']['view_node']['element_type'] = 'p';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'Read more';
+  /* Field: Content: Date */
+  $handler->display->display_options['fields']['field_cseu_event_date']['id'] = 'field_cseu_event_date';
+  $handler->display->display_options['fields']['field_cseu_event_date']['table'] = 'field_data_field_cseu_event_date';
+  $handler->display->display_options['fields']['field_cseu_event_date']['field'] = 'field_cseu_event_date';
+  $handler->display->display_options['fields']['field_cseu_event_date']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_event_date']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_event_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_event_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_event_date']['settings'] = array(
+    'format_type' => 'cseu_frontpage_short_date',
+    'custom_date_format' => '',
+    'fromto' => 'value',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_remaining_days' => 0,
+  );
   /* Field: All Events Link */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
@@ -190,9 +214,26 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['fields']['nothing']['ui_name'] = 'All Events Link';
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="cseu-block-link-to-all"><a href="/events">All Events</a></div>';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="cseu-block-link-to-all"><a href="/events">All Events <i class="fa fa-angle-double-right"></i></a></div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing']['element_default_classes'] = FALSE;
+  /* Field: Event Item Link */
+  $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
+  $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_1']['ui_name'] = 'Event Item Link';
+  $handler->display->display_options['fields']['nothing_1']['label'] = '';
+  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<div class="cseu-block-frontpage-item">
+  <div class="cseu-block-frontpage-picture">[field_cseu_cover_image]</div>
+  <h3 class="cseu-block-frontpage-title">[title]</h3>
+  <div class="cseu-block-frontpage-teaser">[body]</div>
+  <div class="cseu-block-frontpage-date">[field_cseu_event_date]</div>
+</div>';
+  $handler->display->display_options['fields']['nothing_1']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['nothing_1']['alter']['path'] = 'node/[nid] ';
+  $handler->display->display_options['fields']['nothing_1']['alter']['link_class'] = 'cseu-block-frontpage-item-link';
+  $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_1']['element_default_classes'] = FALSE;
   /* Sort criterion: Content: Date -  start date (field_cseu_event_date) */
   $handler->display->display_options['sorts']['field_cseu_event_date_value']['id'] = 'field_cseu_event_date_value';
   $handler->display->display_options['sorts']['field_cseu_event_date_value']['table'] = 'field_data_field_cseu_event_date';
@@ -355,7 +396,7 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '2';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['row_class'] = 'cseu-block-frontpage-row cseu-block-frontpage-news-row';
@@ -370,6 +411,14 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['footer']['area']['content'] = '[nothing]';
   $handler->display->display_options['footer']['area']['format'] = 'full_html';
   $handler->display->display_options['footer']['area']['tokenize'] = TRUE;
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nid']['element_default_classes'] = FALSE;
   /* Field: Content: Updated date */
   $handler->display->display_options['fields']['changed']['id'] = 'changed';
   $handler->display->display_options['fields']['changed']['table'] = 'node';
@@ -380,21 +429,36 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['fields']['changed']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['changed']['date_format'] = 'cseu_frontpage_short_date';
   $handler->display->display_options['fields']['changed']['second_date_format'] = 'long';
+  /* Field: Content: Cover picture */
+  $handler->display->display_options['fields']['field_cseu_cover_image']['id'] = 'field_cseu_cover_image';
+  $handler->display->display_options['fields']['field_cseu_cover_image']['table'] = 'field_data_field_cseu_cover_image';
+  $handler->display->display_options['fields']['field_cseu_cover_image']['field'] = 'field_cseu_cover_image';
+  $handler->display->display_options['fields']['field_cseu_cover_image']['label'] = '';
+  $handler->display->display_options['fields']['field_cseu_cover_image']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cseu_cover_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_cover_image']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cseu_cover_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_cseu_cover_image']['settings'] = array(
+    'image_style' => 'cseu_cover_photo_style',
+    'image_link' => '',
+  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_type'] = 'h3';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['exclude'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
@@ -406,6 +470,7 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['exclude'] = TRUE;
   $handler->display->display_options['fields']['view_node']['element_type'] = 'p';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
@@ -417,9 +482,25 @@ function cseu_features_structure_views_default_views() {
   $handler->display->display_options['fields']['nothing']['ui_name'] = 'All News Link';
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="cseu-block-link-to-all"><a href="/news">All News</a></div>';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="cseu-block-link-to-all"><a href="/news">All News <i class="fa fa-angle-double-right"></i></a></div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing']['element_default_classes'] = FALSE;
+  /* Field: News Item Link */
+  $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
+  $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_1']['ui_name'] = 'News Item Link';
+  $handler->display->display_options['fields']['nothing_1']['label'] = '';
+  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<div class="cseu-block-frontpage-item">
+  <div class="cseu-block-frontpage-picture">[field_cseu_cover_image]</div>
+  <h3 class="cseu-block-frontpage-title">[title]</h3>
+  <div class="cseu-block-frontpage-teaser">[body]</div>
+</div>';
+  $handler->display->display_options['fields']['nothing_1']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['nothing_1']['alter']['path'] = 'node/[nid] ';
+  $handler->display->display_options['fields']['nothing_1']['alter']['link_class'] = 'cseu-block-frontpage-item-link';
+  $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_1']['element_default_classes'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
