@@ -414,7 +414,7 @@ function cseu_features_structure_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
-      'default_image' => 649,
+      'default_image' => 650,
       'file_directory' => 'pictures/covers',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -1037,7 +1037,7 @@ function cseu_features_structure_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
-      'default_image' => 650,
+      'default_image' => 651,
       'file_directory' => 'pictures/covers',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',

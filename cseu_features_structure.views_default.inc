@@ -230,7 +230,7 @@ function cseu_features_structure_views_default_views() {
   <div class="cseu-block-frontpage-date">[field_cseu_event_date]</div>
 </div>';
   $handler->display->display_options['fields']['nothing_1']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['nothing_1']['alter']['path'] = 'node/[nid] ';
+  $handler->display->display_options['fields']['nothing_1']['alter']['path'] = 'node/[nid]';
   $handler->display->display_options['fields']['nothing_1']['alter']['link_class'] = 'cseu-block-frontpage-item-link';
   $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing_1']['element_default_classes'] = FALSE;
@@ -497,7 +497,7 @@ function cseu_features_structure_views_default_views() {
   <div class="cseu-block-frontpage-teaser">[body]</div>
 </div>';
   $handler->display->display_options['fields']['nothing_1']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['nothing_1']['alter']['path'] = 'node/[nid] ';
+  $handler->display->display_options['fields']['nothing_1']['alter']['path'] = 'node/[nid]';
   $handler->display->display_options['fields']['nothing_1']['alter']['link_class'] = 'cseu-block-frontpage-item-link';
   $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing_1']['element_default_classes'] = FALSE;
