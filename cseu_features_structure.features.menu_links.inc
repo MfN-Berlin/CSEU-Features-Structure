@@ -225,9 +225,9 @@ function cseu_features_structure_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -48,
+    'weight' => -50,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_resources:resources',
+    'parent_identifier' => 'main-menu_about:node/268',
   );
   // Exported menu link: main-menu_members-list:community/list.
   $menu_links['main-menu_members-list:community/list'] = array(
@@ -453,9 +453,9 @@ function cseu_features_structure_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -50,
+    'weight' => -48,
     'customized' => 1,
-    'parent_identifier' => 'main-menu_resources:resources',
+    'parent_identifier' => 'main-menu_about:node/268',
   );
   // Exported menu link: main-menu_resources:resources.
   $menu_links['main-menu_resources:resources'] = array(
@@ -467,7 +467,7 @@ function cseu_features_structure_menu_default_menu_links() {
       'identifier' => 'main-menu_resources:resources',
     ),
     'module' => 'system',
-    'hidden' => 0,
+    'hidden' => 1,
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
