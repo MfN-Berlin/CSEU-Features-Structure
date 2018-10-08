@@ -182,6 +182,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(
+    'name' => 'Data standards; Citizen science',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '4a74a2e7-31de-4eeb-a782-3ded6da7f1cb',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
     'name' => 'stsm',
     'description' => NULL,
     'format' => NULL,
@@ -195,6 +203,14 @@ function cseu_features_structure_uuid_features_default_terms() {
     'format' => NULL,
     'weight' => 0,
     'uuid' => '52c5ca0c-3956-4af7-ab48-9e6e82e569ad',
+    'vocabulary_machine_name' => 'tags',
+  );
+  $terms[] = array(
+    'name' => 'Data standards',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '55c81a81-b6dd-4c6a-89b3-40992da394dc',
     'vocabulary_machine_name' => 'tags',
   );
   $terms[] = array(

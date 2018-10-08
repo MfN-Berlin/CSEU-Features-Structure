@@ -1021,7 +1021,7 @@ function cseu_features_structure_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1068,7 +1068,7 @@ function cseu_features_structure_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -1077,7 +1077,7 @@ function cseu_features_structure_field_default_field_instances() {
     'bundle' => 'cseu_event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Show this event on the Working Group events page.',
     'display' => array(
       'cseu_ds_view_mode_event' => array(
         'label' => 'above',
@@ -1113,7 +1113,7 @@ function cseu_features_structure_field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 5,
+      'weight' => 3,
     ),
   );
 
@@ -2117,6 +2117,7 @@ function cseu_features_structure_field_default_field_instances() {
   t('Provide additional details about the image.');
   t('Ressource Type');
   t('STSM Type');
+  t('Show this event on the Working Group events page.');
   t('Tags');
   t('Target URL');
   t('Task');

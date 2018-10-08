@@ -24,7 +24,7 @@ function cseu_features_structure_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -40,
+    'weight' => -39,
     'customized' => 1,
   );
   // Exported menu link: main-menu_details-about-stsm:node/362.
@@ -62,7 +62,7 @@ function cseu_features_structure_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -43,
+    'weight' => -42,
     'customized' => 1,
   );
   // Exported menu link: main-menu_events:wgs/1/events.
@@ -246,7 +246,7 @@ function cseu_features_structure_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -41,
+    'weight' => -40,
     'customized' => 1,
   );
   // Exported menu link: main-menu_members:wgs/1/members.
@@ -412,7 +412,7 @@ function cseu_features_structure_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -44,
+    'weight' => -43,
     'customized' => 1,
   );
   // Exported menu link: main-menu_people:node/363.
@@ -679,7 +679,7 @@ function cseu_features_structure_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -42,
+    'weight' => -41,
     'customized' => 1,
   );
   // Exported menu link: main-menu_working-group-1:wgs/1.
