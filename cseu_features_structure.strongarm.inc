@@ -192,10 +192,10 @@ function cseu_features_structure_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '0',
+          'weight' => '9',
         ),
         'path' => array(
-          'weight' => '8',
+          'weight' => '3',
         ),
       ),
       'display' => array(),

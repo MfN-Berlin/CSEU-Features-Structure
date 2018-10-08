@@ -384,7 +384,7 @@ function cseu_features_structure_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 1,
+      'weight' => 10,
     ),
   );
 
@@ -445,7 +445,7 @@ function cseu_features_structure_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -613,7 +613,7 @@ function cseu_features_structure_field_default_field_instances() {
     'bundle' => 'article',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Show this article on the Working Group news page.',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -2117,6 +2117,7 @@ function cseu_features_structure_field_default_field_instances() {
   t('Provide additional details about the image.');
   t('Ressource Type');
   t('STSM Type');
+  t('Show this article on the Working Group news page.');
   t('Show this event on the Working Group events page.');
   t('Tags');
   t('Target URL');
