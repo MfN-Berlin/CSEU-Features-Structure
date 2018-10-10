@@ -1167,6 +1167,7 @@ function cseu_features_structure_field_default_field_instances() {
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_cseu_address',
     'label' => 'Address',
@@ -1333,6 +1334,7 @@ function cseu_features_structure_field_default_field_instances() {
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_cseu_geofield',
     'label' => 'Geofield',
@@ -1346,7 +1348,7 @@ function cseu_features_structure_field_default_field_instances() {
       'settings' => array(
         'delta_handling' => 'default',
         'geocoder_field' => 'field_cseu_address',
-        'geocoder_handler' => 'google',
+        'geocoder_handler' => 'openstreetmap_nominatim',
         'handler_settings' => array(
           'google' => array(
             'all_results' => 0,
